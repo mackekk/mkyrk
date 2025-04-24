@@ -50,7 +50,10 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # Append comments with runtime information tags to SQL queries in logs.
-  config.active_record.query_log_tags_enabled = true
+  # config.active_record.query_log_tags_enabled = true
+
+  # Set asset digests to false in development - REMOVED as it didn't solve the root cause
+  # config.assets.digest = false 
 
   # Highlight code that enqueued background job in logs.
   config.active_job.verbose_enqueue_logs = true
