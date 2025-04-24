@@ -30,11 +30,18 @@
             <div class="flex">
               <div class="flex flex-shrink-0 items-center">
                 <a href="/">
-                 <%= image_tag 'kyrk-logo.png', class: 'h-12 w-12' %>
+                 <%= image_tag 'kyrk-logo.png', class: 'h-20 w-20' %>
                 </a>
               </div>
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a href="/" class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900">Home</a>
+                <%# Define classes for active and inactive states to avoid repetition %>
+                <% active_class = "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900" %>
+                <% inactive_class = "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" %>
+
+                <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
+                <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
+                <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
+                <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
                 <!-- Add more navigation links here -->
               </div>
             </div>

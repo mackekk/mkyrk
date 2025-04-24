@@ -1,0 +1,65 @@
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <h1 class="text-3xl font-bold text-gray-900 mb-8">Kontakta mig</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Left Column: Contact Information -->
+    <div class="bg-white shadow sm:rounded-lg p-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Kontaktinformation</h2>
+      <dl class="space-y-4">
+        <div>
+          <dt class="text-sm font-medium text-gray-500">Email:</dt>
+          <dd class="mt-1 text-sm text-gray-900">
+            <a href="mailto:marcus.kyrk2@gmail.com" class="text-indigo-600 hover:text-indigo-800">marcus.kyrk2@gmail.com</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="text-sm font-medium text-gray-500">LinkedIn:</dt>
+          <dd class="mt-1 text-sm text-gray-900">
+            <a href="https://www.linkedin.com/in/marcuskyrk/" class="text-indigo-600 hover:text-indigo-800">Marcus Kyrk</a> <!-- Replace # with actual LinkedIn URL -->
+          </dd>
+        </div>
+        <div>
+          <dt class="text-sm font-medium text-gray-500">GitHub:</dt>
+          <dd class="mt-1 text-sm text-gray-900">
+            <a href="https://github.com/mackekk" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">mackekk</a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <div class="bg-white shadow sm:rounded-lg p-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Skicka meddelande</h2>
+      <form action="#" method="POST"> <!-- Replace # with your form submission endpoint -->
+        <div class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Namn</label>
+            <div class="mt-1">
+              <input type="text" name="name" id="name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <div class="mt-1">
+              <input id="email" name="email" type="email" autocomplete="email" required class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Meddelande</label>
+            <div class="mt-1">
+              <textarea id="message" name="message" rows="4" required class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"></textarea>
+            </div>
+          </div>
+          <div>
+            <button type="submit"
+                    class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Skicka
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div> 
