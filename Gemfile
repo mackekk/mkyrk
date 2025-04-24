@@ -43,6 +43,9 @@ gem "thruster", require: false
 # Add Tailwind CSS support
 gem "tailwindcss-rails"
 
+
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -55,6 +58,8 @@ group :development, :test do
 end
 
 group :development do
+  # foreman for running the server and other processes
+  gem "foreman"  
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
