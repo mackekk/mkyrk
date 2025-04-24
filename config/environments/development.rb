@@ -25,6 +25,9 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
   end
 
+  # Force serving of assets from app/assets in dev (for troubleshooting) - REVERTED
+  # config.public_file_server.enabled = true 
+
   # Change to :null_store to avoid any caching.
   config.cache_store = :memory_store
 
