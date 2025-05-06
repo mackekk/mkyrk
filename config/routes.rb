@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # Route for the contact page
   get "/contact", to: "home#contact"
+  post "/send_contact", to: "home#send_contact"
 
   # Route for the about page
   get "/about", to: "home#about"

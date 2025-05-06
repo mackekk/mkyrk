@@ -31,7 +31,19 @@
     <!-- Right Column: Contact Form -->
     <div class="bg-white shadow sm:rounded-lg p-6">
       <h2 class="text-xl font-semibold text-gray-800 mb-4">Skicka meddelande</h2>
-      <form action="#" method="POST"> <!-- Replace # with your form submission endpoint -->
+      
+      <!-- Success Message (hidden by default) -->
+      <div id="success-message" class="mb-4 p-4 bg-green-100 text-green-700 rounded-md hidden">
+        <p>Ditt meddelande har skickats! Tack för att du kontaktade mig.</p>
+      </div>
+      
+      <!-- Error Message (hidden by default) -->
+      <div id="error-message" class="mb-4 p-4 bg-red-100 text-red-700 rounded-md hidden">
+        <p id="error-text">Ett fel uppstod. Vänligen försök igen senare.</p>
+      </div>
+      
+      <form id="contact-form" action="/send_contact" method="POST">
+        <%= csrf_meta_tags %>
         <div class="space-y-6">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700">Namn</label>
@@ -53,6 +65,7 @@
           </div>
           <div>
             <button type="submit"
+                    id="submit-button"
                     class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Skicka
             </button>
@@ -60,6 +73,75 @@
         </div>
       </form>
     </div>
-
   </div>
-</div> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+  const submitButton = document.getElementById('submit-button');
+  const successMessage = document.getElementById('success-message');
+  const errorMessage = document.getElementById('error-message');
+  const errorText = document.getElementById('error-text');
+  
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Disable the submit button and show loading state
+    submitButton.disabled = true;
+    submitButton.innerHTML = 'Skickar...';
+    
+    // Hide any previous messages
+    successMessage.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+    
+    // Get form data
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message')
+    };
+    
+    // Get the CSRF token from meta tags
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    
+    // Send the form data
+    fetch('/send_contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Reset button state
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Skicka';
+      
+      if (data.success) {
+        // Show success message
+        successMessage.classList.remove('hidden');
+        // Reset the form
+        form.reset();
+      } else {
+        // Show error message
+        errorText.textContent = data.error || 'Ett fel uppstod. Vänligen försök igen senare.';
+        errorMessage.classList.remove('hidden');
+      }
+    })
+    .catch(error => {
+      // Reset button state
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Skicka';
+      
+      // Show error message
+      errorText.textContent = 'Ett fel uppstod. Vänligen försök igen senare.';
+      errorMessage.classList.remove('hidden');
+      console.error('Error:', error);
+    });
+  });
+});
+</script> 

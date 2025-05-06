@@ -25,17 +25,27 @@ Rails.application.configure do
     config.action_controller.perform_caching = false
   end
 
-  # Force serving of assets from app/assets in dev (for troubleshooting) - REVERTED
-  # config.public_file_server.enabled = true 
-
   # Change to :null_store to avoid any caching.
   config.cache_store = :memory_store
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  # Email configuration
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  
+  # Gmail SMTP configuration
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: 'gmail.com',
+    user_name: ENV['GMAIL_USER'],
+    password: ENV['GMAIL_APP_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
 
   # Make template changes take effect immediately.
   config.action_mailer.perform_caching = false
@@ -53,10 +63,7 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # Append comments with runtime information tags to SQL queries in logs.
-  # config.active_record.query_log_tags_enabled = true
-
-  # Set asset digests to false in development - REMOVED as it didn't solve the root cause
-  # config.assets.digest = false 
+  config.active_record.query_log_tags_enabled = true
 
   # Highlight code that enqueued background job in logs.
   config.active_job.verbose_enqueue_logs = true
