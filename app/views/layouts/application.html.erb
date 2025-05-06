@@ -52,6 +52,24 @@
         </div>
       </nav>
 
+      <!-- Flash messages -->
+      <% if flash.any? %>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-4">
+          <% flash.each do |type, message| %>
+            <% alert_class = type.to_s == 'notice' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700' %>
+            <div class="p-4 mb-4 rounded-md <%= alert_class %> flex justify-between items-center" role="alert">
+              <div><%= message %></div>
+              <button type="button" class="text-gray-500 hover:text-gray-700" onclick="this.parentElement.style.display='none'">
+                <span class="sr-only">Close</span>
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+
       <main class="py-10">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <%= yield %>
