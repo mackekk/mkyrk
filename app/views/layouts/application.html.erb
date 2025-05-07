@@ -33,14 +33,16 @@
               </a>
             </div>
             
-            <div class="flex flex-wrap items-center space-x-2 md:space-x-8 md:ml-6 mt-2 md:mt-0">
-              <% active_class = "border-b-2 border-indigo-500 px-3 py-2 text-sm font-medium text-gray-900" %>
-              <% inactive_class = "border-b-2 border-transparent px-3 py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" %>
+            <div class="overflow-x-auto whitespace-nowrap md:whitespace-normal md:ml-6 mt-2 md:mt-0 py-1">
+              <div class="flex flex-wrap space-x-2 md:space-x-8">
+                <% active_class = "inline-block border-b-2 border-indigo-500 px-3 py-2 text-sm font-medium text-gray-900 flex-shrink-0" %>
+                <% inactive_class = "inline-block border-b-2 border-transparent px-3 py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 flex-shrink-0" %>
 
-              <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
-              <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
-              <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
-              <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
+                <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
+                <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
+                <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
+                <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
+              </div>
             </div>
           </div>
         </div>
