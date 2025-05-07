@@ -26,27 +26,21 @@
     <div class="min-h-full">
       <nav class="bg-white shadow">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 justify-between">
-            <div class="flex">
-              <div class="flex flex-shrink-0 items-center">
-                <a href="/">
-                 <%= image_tag 'kyrk-logo.png', class: 'h-15 w-auto' %>
-                </a>
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <%# Define classes for active and inactive states to avoid repetition %>
-                <% active_class = "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900" %>
-                <% inactive_class = "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" %>
-
-                <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
-                <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
-                <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
-                <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
-                <!-- Add more navigation links here -->
-              </div>
+          <div class="flex flex-col md:flex-row md:items-center h-auto py-3 md:h-16 md:py-0">
+            <div class="flex items-center">
+              <a href="/">
+                <%= image_tag 'kyrk-logo.png', class: 'h-10 w-auto md:h-15' %>
+              </a>
             </div>
-            <div class="hidden sm:ml-6 sm:flex sm:items-center">
-              <!-- Add user profile or other right-side navigation items here -->
+            
+            <div class="flex flex-wrap items-center space-x-2 md:space-x-8 md:ml-6 mt-2 md:mt-0">
+              <% active_class = "border-b-2 border-indigo-500 px-3 py-2 text-sm font-medium text-gray-900" %>
+              <% inactive_class = "border-b-2 border-transparent px-3 py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700" %>
+
+              <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
+              <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
+              <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
+              <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
             </div>
           </div>
         </div>
