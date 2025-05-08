@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   # Route for the projects page
   get "/projects", to: "home#projects"
 
+  # Route for individual project pages
+  get "/project0", to: "home#project0"
+
   # Route for the CV page
   get "/cv", to: "home#cv"
 
