@@ -10,7 +10,7 @@ class ContactMailer < ApplicationMailer
     @name = name
     @email = email
     @message = message
-    
+
     mail(
       subject: "New message from contact form",
       reply_to: email
