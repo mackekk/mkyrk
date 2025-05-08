@@ -59,4 +59,8 @@ class HomeController < ApplicationController
   def projects
     # This renders the projects page (app/views/home/projects.html.erb)
   end
+
+  def cv
+    # This renders the CV page (app/views/home/cv.html.erb)
+  end
 end 
