@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="h-full bg-gray-50">
   <head>
-    <title><%= content_for(:title) || "Marcus Kyrk – Projektledare & AI-entusiast" %></title>
+    <title><%= content_for(:title) || t('layout.title') %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,10 +38,10 @@
                 <% active_class = "inline-block border-b-2 border-indigo-500 px-3 py-2 text-sm font-medium text-gray-900 flex-shrink-0" %>
                 <% inactive_class = "inline-block border-b-2 border-transparent px-3 py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 flex-shrink-0" %>
 
-                <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>">Hem</a>
-                <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>">Om mig</a>
-                <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>">Projekt</a>
-                <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>">Kontakt</a>
+                <a href="<%= root_path %>" class="<%= current_page?(root_path) ? active_class : inactive_class %>"><%= t('layout.navigation.home') %></a>
+                <a href="/about" class="<%= current_page?('/about') ? active_class : inactive_class %>"><%= t('layout.navigation.about') %></a>
+                <a href="/projects" class="<%= current_page?('/projects') ? active_class : inactive_class %>"><%= t('layout.navigation.projects') %></a>
+                <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>"><%= t('layout.navigation.contact') %></a>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
             <div class="p-4 mb-4 rounded-md <%= alert_class %> flex justify-between items-center" role="alert">
               <div><%= message %></div>
               <button type="button" class="text-gray-500 hover:text-gray-700" onclick="this.parentElement.style.display='none'">
-                <span class="sr-only">Close</span>
+                <span class="sr-only"><%= t('layout.flash.close') %></span>
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -74,7 +74,7 @@
 
       <footer class="bg-white">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <p class="text-center text-sm text-gray-500">&copy; <%= Date.today.year %> Mkyrk. All rights reserved.</p>
+          <p class="text-center text-sm text-gray-500">&copy; <%= Date.today.year %> Mkyrk. <%= t('layout.footer.copyright') %></p>
         </div>
       </footer>
     </div>

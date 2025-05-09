@@ -29,3 +29,41 @@
 
 en:
   hello: "Hello world"
+  
+  # Application layout
+  layout:
+    title: "Marcus Kyrk – Project Manager & AI Enthusiast"
+    navigation:
+      home: "Home"
+      about: "About Me"
+      projects: "Projects"
+      contact: "Contact"
+    flash:
+      close: "Close"
+    footer:
+      copyright: "All rights reserved."
+  
+  # Projects page
+  projects:
+    title: "My Projects"
+    intro: "Here are some of the projects I have worked on."
+    project_status:
+      ongoing: "Ongoing"
+      coming_soon: "Coming Soon"
+    more_info: "Read more"
+    more_info_soon: "More information coming soon"
+    mkyrk:
+      title: "Mkyrk.se"
+      description: "Personal website built with modern tools and AI-assisted development. A project to explore the future of work."
+      technologies: "Technologies used:"
+      tech_list: "Ruby on Rails, TailwindCSS, AI assistants"
+    python:
+      title: "Python Project"
+      description: "An upcoming project where I explore Python for data analysis and automation. Focus on practical applications of AI and machine learning."
+      technologies: "Planned technologies:"
+      tech_list: "Python, Pandas, TensorFlow"
+    social_chef:
+      title: "The Social Chef"
+      description: "A community for everyone who loves food, curiosity, and technology. Use AI to create recipes, get inspired by others, and share your own culinary ideas."
+      technologies: "Planned technologies:"
+      tech_list: "React, Node.js, AI APIs, image generation"
