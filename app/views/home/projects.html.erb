@@ -9,7 +9,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Project 0 - mkyrk website -->
-      <a href="/project0" class="block group">
+      <%= link_to params[:locale] ? localized_project0_path : project0_path, class: "block group" do %>
         <div class="bg-white shadow-sm rounded-lg overflow-hidden flex flex-col relative h-full transition-all duration-200 transform group-hover:shadow-md group-hover:-translate-y-1">
           <span class="absolute top-2 right-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
             <%= t('projects.project_status.ongoing') %>
@@ -39,7 +39,7 @@
             </span>
           </div>
         </div>
-      </a>
+      <% end %>
 
       <!-- Project 1 - Python Project -->
       <div class="bg-white shadow-sm rounded-lg overflow-hidden flex flex-col relative h-full cursor-pointer transition-all duration-200 transform hover:shadow-md hover:-translate-y-1">
