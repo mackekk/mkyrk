@@ -4,20 +4,20 @@
     <div class="max-w-4xl mx-auto bg-white shadow-sm rounded-lg overflow-hidden">
       <div class="px-6 py-8">
         <div class="flex items-center justify-between mb-8">
-          <h1 class="text-3xl font-bold text-gray-900">Mkyrk.se</h1>
+          <h1 class="text-3xl font-bold text-gray-900"><%= t('project0.title') %></h1>
           <div class="flex flex-col space-y-3">
             <a href="https://github.com/mackekk/mkyrk" class="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200">
               <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
-              Se källkod
+              <%= t('project0.view_source') %>
             </a>
-            <a href="/contact" class="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200">
+            <%= link_to params[:locale] ? localized_contact_path : contact_path, class: "inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
               <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              Kontakta mig
-            </a>
+              <%= t('project0.contact_me') %>
+            <% end %>
           </div>
         </div>
         
@@ -27,15 +27,15 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <span class="text-gray-600">2023 - 2024</span>
+          <span class="text-gray-600"><%= t('project0.timeline') %></span>
           <span class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-            Pågående
+            <%= t('project0.status') %>
           </span>
         </div>
         
         <div class="border-l-4 border-indigo-500 pl-4 italic mt-6">
           <p class="text-xl text-gray-800">
-            "Ett experiment där <strong>AI blir en kreativ partner</strong> i utvecklingsprocessen - ett utforskande av nya sätt att skapa digitala produkter."
+            <%= raw(t('project0.quote')) %>
           </p>
         </div>
       </div>
@@ -54,14 +54,12 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900">Projektöversikt</h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.overview.title') %></h2>
             </div>
             
             <div>
               <p class="text-gray-800">
-                Detta projekt representerar ett experiment i framtidens arbetssätt, 
-                där jag utforskar hur AI-verktyg kan integreras i utvecklingsprocessen för att 
-                bygga en personlig webbplats som är både funktionell och estetiskt tilltalande.
+                <%= t('project0.sections.overview.content') %>
               </p>
             </div>
           </div>
@@ -76,19 +74,15 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900">Bakgrund</h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.background.title') %></h2>
             </div>
             
             <div class="space-y-4">
               <p class="text-gray-800">
-                I en tid när AI-verktyg revolutionerar hur vi arbetar ville jag utforska 
-                hur dessa verktyg kan användas för att förbättra webbutvecklingsprocessen. 
-                Syftet var att skapa en personlig webbplats och samtidigt utforska ett nytt 
-                arbetssätt där jag fungerade som orkestrator mellan människa och AI.
+                <%= t('project0.sections.background.content1') %>
               </p>
               <p class="text-gray-800">
-                Målet var att bygga en responsiv, modern webbplats med hög kvalitet, 
-                samtidigt som jag lärde mig mer om AI-assisterad utveckling.
+                <%= t('project0.sections.background.content2') %>
               </p>
             </div>
           </div>
@@ -104,54 +98,34 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900">Verktyg och tekniker</h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.tools.title') %></h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">Utvecklingsstack</h3>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools.development_stack') %></h3>
                 <ul class="space-y-2 text-gray-800">
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>Ruby on Rails</span>
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>TailwindCSS</span>
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>HTML & ERB</span>
-                  </li>
+                  <% t('project0.sections.tools.stack_list').each do |tool| %>
+                    <li class="flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <span><%= tool %></span>
+                    </li>
+                  <% end %>
                 </ul>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">AI-verktyg</h3>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools.ai_tools') %></h3>
                 <ul class="space-y-2 text-gray-800">
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>Cursor</span>
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>ChatGPT</span>
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>Claude</span>
-                  </li>
+                  <% t('project0.sections.tools.ai_list').each do |tool| %>
+                    <li class="flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <span><%= tool %></span>
+                    </li>
+                  <% end %>
                 </ul>
               </div>
             </div>
@@ -167,35 +141,24 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900">Arbetsflöde</h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.workflow.title') %></h2>
             </div>
             
             <div>
               <p class="text-gray-800 mb-4">
-                En av de mest intressanta aspekterna av detta projekt var min roll som 
-                orkestrator mellan olika AI-verktyg och tekniska lösningar. 
+                <%= t('project0.sections.workflow.intro') %>
               </p>
               
-              <h3 class="text-lg font-bold text-gray-800 mt-4">Utvecklingscykler</h3>
+              <h3 class="text-lg font-bold text-gray-800 mt-4"><%= t('project0.sections.workflow.cycles_title') %></h3>
               <ul class="mt-2 space-y-2 text-gray-800">
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span>Jag formulerade tydliga mål och krav för varje del</span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span>AI-assistenterna genererade kod och lösningsförslag</span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span>Jag granskade, testade och anpassade koden</span>
-                </li>
+                <% t('project0.sections.workflow.cycles').each do |cycle| %>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span><%= cycle %></span>
+                  </li>
+                <% end %>
               </ul>
             </div>
           </div>
@@ -210,29 +173,19 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900">Lärdomar</h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.lessons.title') %></h2>
             </div>
             
             <div>
               <ul class="space-y-2 text-gray-800">
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span><strong>Ökad effektivitet</strong> – Utvecklingstiden minskade med AI-assistans</span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span><strong>Nya färdigheter</strong> – Utvecklade nya arbetssätt med AI</span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <span><strong>Balans människa-maskin</strong> – Mänskligt omdöme är kritiskt</span>
-                </li>
+                <% t('project0.sections.lessons.list').each do |lesson| %>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span><%= raw(lesson) %></span>
+                  </li>
+                <% end %>
               </ul>
             </div>
           </div>
@@ -244,11 +197,11 @@
   
   <!-- Back Button -->
   <div class="max-w-4xl mx-auto mt-8 mb-6">
-    <a href="/projects" class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200">
+    <%= link_to params[:locale] ? localized_projects_path : projects_path, class: "inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
       <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
       </svg>
-      Tillbaka till projektsidan
-    </a>
+      <%= t('project0.back_to_projects') %>
+    <% end %>
   </div>
 </div> 

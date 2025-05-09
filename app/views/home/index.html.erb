@@ -5,23 +5,18 @@
       <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <div class="sm:text-center lg:text-left">
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            <span class="block">Hej där</span>
-            <span class="block text-indigo-600">Vad roligt att du är här!</span>
+            <span class="block"><%= t('home.hero.greeting') %></span>
+            <span class="block text-indigo-600"><%= t('home.hero.welcome') %></span>
           </h1>
           <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Jag bygger, leder och utforskar projekt i gränslandet mellan teknik och verksamhet.
-            Här kan du lära känna mig, se vad jag brinner för – och följa mina projekt.
+            <%= t('home.hero.intro') %>
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="/cv" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-              Se mitt CV
-              </a>
+              <%= link_to t('home.hero.buttons.cv'), params[:locale] ? localized_cv_path : cv_path, class: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10" %>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
-              <a href="/about" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-              Läs mer om mig
-              </a>
+              <%= link_to t('home.hero.buttons.about'), params[:locale] ? localized_about_path : about_path, class: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10" %>
             </div>
           </div>
         </div>
@@ -34,12 +29,12 @@
 <div class="py-12 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Färdigheter</h2>
+      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase"><%= t('home.features.title') %></h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        Kompetensområden
+        <%= t('home.features.subtitle') %>
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-        Här är några av de områden där jag bidrar med min erfarenhet och expertis.
+        <%= t('home.features.intro') %>
       </p>
     </div>
 
@@ -53,9 +48,9 @@
             </svg>
           </div>
           <div class="ml-16">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Projektledning</h3>
+            <h3 class="text-lg leading-6 font-medium text-gray-900"><%= t('home.features.project_management.title') %></h3>
             <p class="mt-2 text-base text-gray-500">
-            Drivande och lyhörd projektledare som skapar tydlighet, för samman team och leder projekt från idé till resultat – alltid med energi, struktur och framåtanda.
+            <%= t('home.features.project_management.description') %>
             </p>
           </div>
         </div>
@@ -68,9 +63,9 @@
             </svg>
           </div>
           <div class="ml-16">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Teknisk Utveckling</h3>
+            <h3 class="text-lg leading-6 font-medium text-gray-900"><%= t('home.features.tech_development.title') %></h3>
             <p class="mt-2 text-base text-gray-500">
-              Kunskap inom systemutveckling och förmåga att överbrygga gapet mellan teknik och verksamhet.
+              <%= t('home.features.tech_development.description') %>
             </p>
           </div>
         </div>
@@ -83,9 +78,9 @@
             </svg>
           </div>
           <div class="ml-16">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Förändringsledning</h3>
+            <h3 class="text-lg leading-6 font-medium text-gray-900"><%= t('home.features.change_management.title') %></h3>
             <p class="mt-2 text-base text-gray-500">
-              Erfarenhet av att leda team genom förändring med fokus på kommunikation och engagemang.
+              <%= t('home.features.change_management.description') %>
             </p>
           </div>
         </div>
@@ -98,9 +93,9 @@
             </svg>
           </div>
           <div class="ml-16">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Strategisk Analys</h3>
+            <h3 class="text-lg leading-6 font-medium text-gray-900"><%= t('home.features.strategic_analysis.title') %></h3>
             <p class="mt-2 text-base text-gray-500">
-              Förmåga att analysera komplexa problem och utveckla strategiska lösningar baserade på data och insikter.
+              <%= t('home.features.strategic_analysis.description') %>
             </p>
           </div>
         </div>

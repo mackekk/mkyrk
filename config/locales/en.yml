@@ -43,6 +43,32 @@ en:
     footer:
       copyright: "All rights reserved."
   
+  # Home page
+  home:
+    hero:
+      greeting: "Hello there"
+      welcome: "Great to have you here!"
+      intro: "I build, lead, and explore projects at the intersection of technology and business. Here you can get to know me, see what I'm passionate about – and follow my projects."
+      buttons:
+        cv: "See my CV"
+        about: "Read more about me"
+    features:
+      title: "Skills"
+      subtitle: "Areas of expertise"
+      intro: "Here are some of the areas where I contribute with my experience and expertise."
+      project_management:
+        title: "Project Management"
+        description: "Driving and responsive project manager who creates clarity, brings teams together, and leads projects from idea to results – always with energy, structure, and forward thinking."
+      tech_development:
+        title: "Technical Development"
+        description: "Knowledge in system development and ability to bridge the gap between technology and business."
+      change_management:
+        title: "Change Management"
+        description: "Experience in leading teams through change with a focus on communication and engagement."
+      strategic_analysis:
+        title: "Strategic Analysis"
+        description: "Ability to analyze complex problems and develop strategic solutions based on data and insights."
+  
   # Projects page
   projects:
     title: "My Projects"
@@ -67,3 +93,179 @@ en:
       description: "A community for everyone who loves food, curiosity, and technology. Use AI to create recipes, get inspired by others, and share your own culinary ideas."
       technologies: "Planned technologies:"
       tech_list: "React, Node.js, AI APIs, image generation"
+
+  # About page
+  about:
+    title: "About Me"
+    bio:
+      intro: "Hi! My name is Marcus and I work as a project manager with a passion for digital technologies, change management, and people. I enjoy when ideas take off and become reality – especially at the intersection of IT and business operations."
+      approach: "I thrive in the role of driving progress, keeping things together, and creating clarity. But I'm equally passionate about listening, including, and building trust. For me, a good project isn't just something that's completed on time – it's something we do together, with purpose."
+      ai_interest: "At the same time, I'm deeply fascinated by what AI and new technology mean for how we work. I follow developments closely and am passionate about exploring how we can use it smarter – both in everyday life and in our workflows."
+      website_purpose: "This is also something I hope to explore and build upon here, through this site – as a creative space where thoughts, projects, and curiosity can find their place."
+      outdoor: "When I'm not working, you'll usually find me outdoors – I love being active, whether it's ski touring, climbing, mountain biking, or cross-country skiing. Nature gives me both energy and new perspectives, and that's where I recharge."
+    skills:
+      project_management: "Project Management"
+      tech_ai: "Technology & AI"
+      outdoor_life: "Outdoor Life"
+      cv_link: "Feel free to check out my CV"
+    passion:
+      title: "What I'm Passionate About"
+      bridge: "As a project manager, I'm passionate about creating bridges between technology and business operations. I'm driven by simplifying complex solutions and making them understandable for everyone involved."
+      innovation:
+        title: "Innovation and Creativity"
+        description: "Finding new solutions to old problems and combining different perspectives to create something better."
+      learning:
+        title: "Continuous Learning"
+        description: "Constant development and curiosity - I always strive to learn new techniques and ways of working."
+      visual_communication:
+        title: "Visual Communication"
+        description: "I love visual communication and enjoy diving deep into Miro, Figma, or PowerPoint. It helps me think – and explain."
+
+  # CV page
+  cv:
+    title: "Curriculum Vitae"
+    download_pdf: "Download PDF"
+    contact_me: "Contact me"
+    personal_info:
+      name: "Marcus Kyrk"
+      email: "Email:"
+      phone: "Phone:"
+      linkedin: "LinkedIn:"
+      location: "Location:"
+    quote: "Project manager driving innovation from idea to reality. <strong>Technology, pace, and clear focus on results</strong> - that's the foundation of my approach and something I bring to every assignment."
+    work_experience:
+      title: "Work Experience"
+      positions:
+        project_manager:
+          title: "Project Manager"
+          timeframe: "January 2023 - Present"
+          company: "Holmen Skog"
+          location: "Umeå"
+          responsibilities:
+            - "Leading digital development projects and business-focused change management"
+            - "Driving technically oriented initiatives to develop digital solutions and platforms"
+            - "Initiated and leads an AI group to strengthen the organization's capability in generative AI"
+            - "Contributing to structured decision-making through needs analysis, requirement specification, and investment documentation"
+        innovation_leader:
+          title: "Innovation Leader"
+          timeframe: "August 2021 - December 2022"
+          company: "Holmen Skog"
+          location: "Umeå"
+          responsibilities:
+            - "Designed and implemented innovation processes"
+            - "Collaborated with management and teams to strengthen the organization's ability for systematic change and digital development"
+    education:
+      title: "Education"
+      degrees:
+        masters:
+          title: "Master's Degree in IT Management"
+          timeframe: "2019 - 2021"
+          institution: "Umeå University"
+        bachelors:
+          title: "Bachelor's Degree in Systems Science"
+          timeframe: "2016 - 2019"
+          institution: "Umeå University"
+    certifications:
+      title: "Courses and Certifications"
+      list:
+        - "Grunderna i innovationsledning ISO 56002 – Svenska Institutet för Standarder"
+        - "Värdedriven Projektledning – Cornerstone"
+        - "Att leda utan att vara chef – Move"
+        - "Change maker – Making Change Sweden"
+    skills:
+      title: "Skills"
+      project_management:
+        title: "Project Management"
+        list:
+          - "Digital development"
+          - "Change management"
+          - "Feasibility studies and analyses"
+      innovation:
+        title: "Innovation"
+        list:
+          - "Generative AI"
+          - "Innovation processes"
+          - "Systematic change management"
+          - "Digital transformation"
+    technical_skills:
+      title: "Technical Skills"
+      list:
+        - "Ruby on Rails"
+        - "JavaScript"
+        - "HTML & CSS"
+        - "SQL & Database Management"
+        - "Git & Version Control"
+    languages:
+      title: "Languages"
+      swedish: 
+        language: "Swedish:"
+        level: "Native"
+      english:
+        language: "English:"
+        level: "Fluent"
+    references:
+      title: "References"
+      note: "References available upon request"
+
+  # Project0 page
+  project0:
+    title: "Mkyrk.se"
+    view_source: "View source code"
+    contact_me: "Contact me"
+    timeline: "2023 - 2024"
+    status: "Ongoing"
+    quote: "An experiment where <strong>AI becomes a creative partner</strong> in the development process - an exploration of new ways to create digital products."
+    sections:
+      overview:
+        title: "Project Overview"
+        content: "This project represents an experiment in future ways of working, where I explore how AI tools can be integrated into the development process to build a personal website that is both functional and aesthetically pleasing."
+      background:
+        title: "Background"
+        content1: "In an era when AI tools are revolutionizing how we work, I wanted to explore how these tools can be used to improve the web development process. The purpose was to create a personal website while exploring a new way of working where I functioned as an orchestrator between human and AI."
+        content2: "The goal was to build a responsive, modern website with high quality, while learning more about AI-assisted development."
+      tools:
+        title: "Tools and Technologies"
+        development_stack: "Development Stack"
+        stack_list:
+          - "Ruby on Rails"
+          - "TailwindCSS"
+          - "HTML & ERB"
+        ai_tools: "AI Tools"
+        ai_list:
+          - "Cursor"
+          - "ChatGPT"
+          - "Claude"
+      workflow:
+        title: "Workflow"
+        intro: "One of the most interesting aspects of this project was my role as an orchestrator between different AI tools and technical solutions."
+        cycles_title: "Development Cycles"
+        cycles:
+          - "I formulated clear goals and requirements for each part"
+          - "AI assistants generated code and solution proposals"
+          - "I reviewed, tested, and adapted the code"
+      lessons:
+        title: "Lessons Learned"
+        list:
+          - "<strong>Increased efficiency</strong> – Development time decreased with AI assistance"
+          - "<strong>New skills</strong> – Developed new ways of working with AI"
+          - "<strong>Human-machine balance</strong> – Human judgment is critical"
+    back_to_projects: "Back to projects"
+
+  # Contact page
+  contact:
+    title: "Contact Me"
+    info:
+      title: "Contact Information"
+      email: "Email:"
+      linkedin: "LinkedIn:"
+      github: "GitHub:"
+    form:
+      title: "Send Message"
+      name: "Name"
+      email: "Email"
+      message: "Message"
+      send: "Send"
+      sending: "Sending..."
+      success: "Your message has been sent! Thank you for contacting me."
+      error: "An error occurred. Please try again later."
+      fields_required: "All fields must be filled in."

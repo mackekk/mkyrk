@@ -31,8 +31,8 @@ class HomeController < ApplicationController
     # Validate input
     if name.blank? || email.blank? || message.blank?
       respond_to do |format|
-        format.html { redirect_to contact_path, alert: "Alla fält måste fyllas i." }
-        format.json { render json: { success: false, error: "Alla fält måste fyllas i." }, status: :unprocessable_entity }
+        format.html { redirect_to params[:locale] ? localized_contact_path(locale: params[:locale]) : contact_path, alert: I18n.t('contact.form.fields_required') }
+        format.json { render json: { success: false, error: I18n.t('contact.form.fields_required') }, status: :unprocessable_entity }
       end
       return
     end
@@ -42,15 +42,15 @@ class HomeController < ApplicationController
       ContactMailer.contact_message(name, email, message).deliver_now
 
       respond_to do |format|
-        format.html { redirect_to contact_path, notice: "Ditt meddelande har skickats!" }
-        format.json { render json: { success: true, message: "Ditt meddelande har skickats!" } }
+        format.html { redirect_to params[:locale] ? localized_contact_path(locale: params[:locale]) : contact_path, notice: I18n.t('contact.form.success') }
+        format.json { render json: { success: true, message: I18n.t('contact.form.success') } }
       end
     rescue => e
       Rails.logger.error("Email sending failed: #{e.message}")
 
       respond_to do |format|
-        format.html { redirect_to contact_path, alert: "Ett fel uppstod. Vänligen försök igen senare." }
-        format.json { render json: { success: false, error: "Ett fel uppstod. Vänligen försök igen senare." }, status: :internal_server_error }
+        format.html { redirect_to params[:locale] ? localized_contact_path(locale: params[:locale]) : contact_path, alert: I18n.t('contact.form.error') }
+        format.json { render json: { success: false, error: I18n.t('contact.form.error') }, status: :internal_server_error }
       end
     end
   end

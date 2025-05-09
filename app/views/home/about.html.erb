@@ -3,42 +3,27 @@
 
     <div class="max-w-4xl mx-auto bg-white shadow-sm rounded-lg overflow-hidden">
       <div class="px-6 py-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-6">Om mig</h1>
+        <h1 class="text-3xl font-bold text-gray-900 mb-6"><%= t('about.title') %></h1>
         
         <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
           <p>
-            Hej! Jag heter Marcus och jobbar som projektledare med hjärtat i teknik, förändring och människor. 
-            Jag gillar när idéer får ta fart och bli verklighet – särskilt i gränslandet mellan IT och verksamhet.
+            <%= t('about.bio.intro') %>
           </p>
           
           <p>
-            Jag trivs i rollen som den som driver på, håller ihop trådar och skapar tydlighet. 
-            Men lika mycket brinner jag för att lyssna, inkludera och bygga förtroende. 
-            För mig är ett bra projekt inte bara något som blir klart i tid – det är något vi gör tillsammans, med mening.
-          </p>
-          
-          <div class="my-8 border-l-4 border-indigo-500 pl-4 italic">
-            <p class="text-xl text-gray-700">
-              "Jag älskar visuell kommunikation och nördar gärna ner mig i Miro, Figma eller PowerPoint. 
-              Det hjälper mig att tänka – och att förklara."
-            </p>
-          </div>
-          
-          <p>
-            Samtidigt är jag djupt fascinerad av vad AI och ny teknik betyder för hur vi arbetar. 
-            Jag följer utvecklingen noga och brinner för att utforska hur vi kan använda den smartare 
-            – både i vardagen och i våra arbetsflöden.
+            <%= t('about.bio.approach') %>
           </p>
           
           <p>
-            Det är också något jag hoppas kunna utforska och bygga vidare på här, genom den här sidan 
-            – som ett kreativt utrymme där både tankar, projekt och nyfikenhet får ta plats.
+            <%= t('about.bio.ai_interest') %>
           </p>
           
           <p>
-            När jag inte jobbar hittar du mig oftast ute – jag älskar att röra på mig, oavsett om det 
-            handlar om toppturer, klättring, mountainbike eller längdskidor. Naturen ger mig både 
-            energi och nya perspektiv, och det är där jag tankar på.
+            <%= t('about.bio.website_purpose') %>
+          </p>
+          
+          <p>
+            <%= t('about.bio.outdoor') %>
           </p>
         </div>
         
@@ -49,7 +34,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
-            <h3 class="font-semibold">Projektledning</h3>
+            <h3 class="font-semibold"><%= t('about.skills.project_management') %></h3>
           </div>
           <div class="bg-gray-50 p-4 rounded-md text-center flex-shrink-0">
             <div class="text-indigo-600 text-3xl mb-2">
@@ -57,7 +42,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 class="font-semibold">Teknik & AI</h3>
+            <h3 class="font-semibold"><%= t('about.skills.tech_ai') %></h3>
           </div>
           <div class="bg-gray-50 p-4 rounded-md text-center flex-shrink-0">
             <div class="text-indigo-600 text-3xl mb-2">
@@ -66,17 +51,17 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <h3 class="font-semibold">Friluftsliv</h3>
+            <h3 class="font-semibold"><%= t('about.skills.outdoor_life') %></h3>
           </div>
           <div class="bg-gray-50 p-4 rounded-md text-center flex-shrink-0">
-            <a href="/cv" class="block">
+            <%= link_to params[:locale] ? localized_cv_path : cv_path, class: "block" do %>
               <div class="text-indigo-600 text-3xl mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 class="font-semibold">Kika gärna in mitt CV</h3>
-            </a>
+              <h3 class="font-semibold"><%= t('about.skills.cv_link') %></h3>
+            <% end %>
           </div>
         </div>
       </div>
@@ -92,13 +77,12 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 3.75 3.75 0 0 0-1.993-1.118 3.75 3.75 0 0 0-1.612 1.118 3.75 3.75 0 0 0 .496 7.468 3.75 3.75 0 0 0 1.611-1.118Z" />
             </svg>
           </div>
-          <h2 class="ml-4 text-2xl font-bold text-gray-900">Vad jag brinner för</h2>
+          <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('about.passion.title') %></h2>
         </div>
         
         <div class="mt-6 space-y-4 text-lg text-gray-600 leading-relaxed">
           <p>
-            Som projektledare brinner jag för att skapa broar mellan teknik och verksamhet. Jag drivs av att 
-            förenkla komplexa lösningar och göra dem begripliga för alla inblandade.
+            <%= t('about.passion.bridge') %>
           </p>
           
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 overflow-x-auto">
@@ -107,10 +91,10 @@
                 <svg class="h-5 w-5 text-indigo-500 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
                 </svg>
-                <h3 class="font-semibold text-gray-800">Innovation och kreativitet</h3>
+                <h3 class="font-semibold text-gray-800"><%= t('about.passion.innovation.title') %></h3>
               </div>
               <p class="text-base">
-                Att hitta nya lösningar på gamla problem och kombinera olika perspektiv för att skapa något bättre.
+                <%= t('about.passion.innovation.description') %>
               </p>
             </div>
             
@@ -119,10 +103,22 @@
                 <svg class="h-5 w-5 text-indigo-500 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
                 </svg>
-                <h3 class="font-semibold text-gray-800">Kontinuerligt lärande</h3>
+                <h3 class="font-semibold text-gray-800"><%= t('about.passion.learning.title') %></h3>
               </div>
               <p class="text-base">
-                Ständig utveckling och nyfikenhet - jag strävar alltid efter att lära mig nya tekniker och arbetssätt.
+                <%= t('about.passion.learning.description') %>
+              </p>
+            </div>
+            
+            <div class="p-4 bg-gray-50 rounded-lg flex-shrink-0">
+              <div class="flex items-center mb-3">
+                <svg class="h-5 w-5 text-indigo-500 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
+                </svg>
+                <h3 class="font-semibold text-gray-800"><%= t('about.passion.visual_communication.title') %></h3>
+              </div>
+              <p class="text-base">
+                <%= t('about.passion.visual_communication.description') %>
               </p>
             </div>
           </div>
