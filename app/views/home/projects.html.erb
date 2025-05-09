@@ -11,17 +11,20 @@
       <div class="inline-flex shadow-sm rounded-md bg-white p-1" role="group" aria-label="<%= t('projects.filter.title') %>">
         <button type="button" 
                 class="project-filter-btn active-filter px-4 py-2 text-sm font-medium rounded-md bg-indigo-100 text-indigo-700 transition-colors duration-200" 
-                data-filter="all">
+                data-filter="all"
+                data-button-type="all">
           <%= t('projects.filter.all') %>
         </button>
         <button type="button" 
-                class="project-filter-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md transition-colors duration-200" 
-                data-filter="work">
+                class="project-filter-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-green-100 hover:text-green-700 rounded-md transition-colors duration-200" 
+                data-filter="work"
+                data-button-type="work">
           <%= t('projects.filter.work') %>
         </button>
         <button type="button" 
                 class="project-filter-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-md transition-colors duration-200" 
-                data-filter="personal">
+                data-filter="personal"
+                data-button-type="personal">
           <%= t('projects.filter.personal') %>
         </button>
       </div>
@@ -248,12 +251,21 @@
       button.addEventListener('click', function() {
         // Remove active class from all buttons
         filterButtons.forEach(btn => {
-          btn.classList.remove('active-filter', 'bg-indigo-100', 'text-indigo-700');
+          btn.classList.remove('active-filter', 'bg-indigo-100', 'text-indigo-700', 'bg-green-100', 'text-green-700');
           btn.classList.add('text-gray-700');
         });
         
-        // Add active class to clicked button
-        this.classList.add('active-filter', 'bg-indigo-100', 'text-indigo-700');
+        // Add active class to clicked button with appropriate color based on type
+        const buttonType = this.getAttribute('data-button-type');
+        
+        if (buttonType === 'work') {
+          // Green styling for work filter
+          this.classList.add('active-filter', 'bg-green-100', 'text-green-700');
+        } else {
+          // Default indigo styling for other filters
+          this.classList.add('active-filter', 'bg-indigo-100', 'text-indigo-700');
+        }
+        
         this.classList.remove('text-gray-700');
         
         // Get the filter value
