@@ -79,7 +79,7 @@ en:
     more_info: "Read more"
     more_info_soon: "More information coming soon"
     mkyrk:
-      title: "Mkyrk.se"
+      title: "Kyrk.org"
       description: "Personal website built with modern tools and AI-assisted development. A project to explore the future of work."
       technologies: "Technologies used:"
       tech_list: "Ruby on Rails, TailwindCSS, AI assistants"
@@ -98,11 +98,11 @@ en:
   about:
     title: "About Me"
     bio:
-      intro: "Hi! My name is Marcus and I work as a project manager with a passion for digital technologies, change management, and people. I enjoy when ideas take off and become reality – especially at the intersection of IT and business operations."
-      approach: "I thrive in the role of driving progress, keeping things together, and creating clarity. But I'm equally passionate about listening, including, and building trust. For me, a good project isn't just something that's completed on time – it's something we do together, with purpose."
-      ai_interest: "At the same time, I'm deeply fascinated by what AI and new technology mean for how we work. I follow developments closely and am passionate about exploring how we can use it smarter – both in everyday life and in our workflows."
-      website_purpose: "This is also something I hope to explore and build upon here, through this site – as a creative space where thoughts, projects, and curiosity can find their place."
-      outdoor: "When I'm not working, you'll usually find me outdoors – I love being active, whether it's ski touring, climbing, mountain biking, or cross-country skiing. Nature gives me both energy and new perspectives, and that's where I recharge."
+      intro: "Hi! I'm Marcus and I work as a project manager with a passion for digital technologies, change management, and people. I love seeing ideas come to life – especially at the intersection of IT and business operations."
+      approach: "I thrive in the role of driving progress, keeping things together, and creating clarity. But I'm equally passionate about listening, including others, and building trust. For me, a successful project isn't just about meeting deadlines – it's something we accomplish together, with purpose."
+      ai_interest: "I'm also deeply fascinated by how AI and emerging technologies are transforming the way we work. I closely follow these developments and am passionate about exploring smarter ways to leverage them – both in everyday life and in our professional workflows."
+      website_purpose: "That's something I hope to explore further here on this site – as a creative space where thoughts, projects, and curiosity can find their place."
+      outdoor: "When I'm not working, you'll usually find me outdoors – I love being active, whether it's ski touring, climbing, mountain biking, or cross-country skiing. Nature gives me both energy and fresh perspectives, and that's where I recharge."
     skills:
       project_management: "Project Management"
       tech_ai: "Technology & AI"
@@ -110,16 +110,16 @@ en:
       cv_link: "Feel free to check out my CV"
     passion:
       title: "What I'm Passionate About"
-      bridge: "As a project manager, I'm passionate about creating bridges between technology and business operations. I'm driven by simplifying complex solutions and making them understandable for everyone involved."
+      bridge: "As a project manager, I'm passionate about bridging the gap between technology and business operations. I'm driven by the desire to simplify complex solutions and make them accessible to everyone involved."
       innovation:
         title: "Innovation and Creativity"
-        description: "Finding new solutions to old problems and combining different perspectives to create something better."
+        description: "Finding fresh solutions to old problems and combining diverse perspectives to create something better."
       learning:
         title: "Continuous Learning"
-        description: "Constant development and curiosity - I always strive to learn new techniques and ways of working."
+        description: "Ongoing growth and curiosity - I constantly seek to learn new techniques and approaches to work."
       visual_communication:
         title: "Visual Communication"
-        description: "I love visual communication and enjoy diving deep into Miro, Figma, or PowerPoint. It helps me think – and explain."
+        description: "I love visual communication and enjoy diving deep into tools like Miro, Figma, or PowerPoint. It helps me think – and explain my thoughts to others."
 
   # CV page
   cv:
@@ -132,7 +132,7 @@ en:
       phone: "Phone:"
       linkedin: "LinkedIn:"
       location: "Location:"
-    quote: "Project manager driving innovation from idea to reality. <strong>Technology, pace, and clear focus on results</strong> - that's the foundation of my approach and something I bring to every assignment."
+    quote: "Project manager driving innovation from concept to reality. <strong>Technology, momentum, and a clear focus on results</strong> - that's the foundation of my approach and something I bring to every assignment."
     work_experience:
       title: "Work Experience"
       positions:
@@ -144,7 +144,7 @@ en:
           responsibilities:
             - "Leading digital development projects and business-focused change management"
             - "Driving technically oriented initiatives to develop digital solutions and platforms"
-            - "Initiated and leads an AI group to strengthen the organization's capability in generative AI"
+            - "Initiated and leads an AI group to strengthen the organization's capabilities in generative AI"
             - "Contributing to structured decision-making through needs analysis, requirement specification, and investment documentation"
         innovation_leader:
           title: "Innovation Leader"
@@ -153,7 +153,7 @@ en:
           location: "Umeå"
           responsibilities:
             - "Designed and implemented innovation processes"
-            - "Collaborated with management and teams to strengthen the organization's ability for systematic change and digital development"
+            - "Collaborated with management and teams to strengthen the organization's capacity for systematic change and digital development"
     education:
       title: "Education"
       degrees:
@@ -209,20 +209,20 @@ en:
 
   # Project0 page
   project0:
-    title: "Mkyrk.se"
+    title: "Kyrk.org"
     view_source: "View source code"
     contact_me: "Contact me"
     timeline: "2023 - 2024"
     status: "Ongoing"
-    quote: "An experiment where <strong>AI becomes a creative partner</strong> in the development process - an exploration of new ways to create digital products."
+    quote: "An experiment where <strong>AI becomes a creative partner</strong> in the development process - exploring new ways to create digital products."
     sections:
       overview:
         title: "Project Overview"
         content: "This project represents an experiment in future ways of working, where I explore how AI tools can be integrated into the development process to build a personal website that is both functional and aesthetically pleasing."
       background:
         title: "Background"
-        content1: "In an era when AI tools are revolutionizing how we work, I wanted to explore how these tools can be used to improve the web development process. The purpose was to create a personal website while exploring a new way of working where I functioned as an orchestrator between human and AI."
-        content2: "The goal was to build a responsive, modern website with high quality, while learning more about AI-assisted development."
+        content1: "In an era when AI tools are revolutionizing how we work, I wanted to explore how these tools can enhance the web development process. My goal was to create a personal website while exploring a new workflow where I act as an orchestrator between human creativity and AI capabilities."
+        content2: "I aimed to build a responsive, modern website with high quality, while gaining insights into AI-assisted development."
       tools:
         title: "Tools and Technologies"
         development_stack: "Development Stack"
@@ -237,18 +237,18 @@ en:
           - "Claude"
       workflow:
         title: "Workflow"
-        intro: "One of the most interesting aspects of this project was my role as an orchestrator between different AI tools and technical solutions."
+        intro: "One of the most fascinating aspects of this project was my role as an orchestrator between different AI tools and technical solutions."
         cycles_title: "Development Cycles"
         cycles:
-          - "I formulated clear goals and requirements for each part"
+          - "I formulated clear goals and requirements for each component"
           - "AI assistants generated code and solution proposals"
-          - "I reviewed, tested, and adapted the code"
+          - "I reviewed, tested, and refined the code"
       lessons:
         title: "Lessons Learned"
         list:
           - "<strong>Increased efficiency</strong> – Development time decreased with AI assistance"
-          - "<strong>New skills</strong> – Developed new ways of working with AI"
-          - "<strong>Human-machine balance</strong> – Human judgment is critical"
+          - "<strong>New skills</strong> – Developed novel approaches to working with AI"
+          - "<strong>Human-machine balance</strong> – Human judgment remains critical"
     back_to_projects: "Back to projects"
 
   # Contact page

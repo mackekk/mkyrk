@@ -50,7 +50,7 @@ sv:
     more_info: "Läs mer"
     more_info_soon: "Mer information kommer snart"
     mkyrk:
-      title: "Mkyrk.se"
+      title: "Kyrk.org"
       description: "Personlig webbplats byggd med moderna verktyg och AI-assisterad utveckling. Ett projekt för att utforska framtidens arbetssätt."
       technologies: "Tekniker använda:"
       tech_list: "Ruby on Rails, TailwindCSS, AI-assistenter"
@@ -180,7 +180,7 @@ sv:
 
   # Project0 page
   project0:
-    title: "Mkyrk.se"
+    title: "Kyrk.org"
     view_source: "Se källkod"
     contact_me: "Kontakta mig"
     timeline: "2023 - 2024"
