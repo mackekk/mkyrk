@@ -1,256 +1,287 @@
+---
 sv:
-  # Application layout
-  layout:
-    title: "Marcus Kyrk – Projektledare & AI-entusiast"
-    navigation:
-      home: "Hem"
-      about: "Om mig"
-      projects: "Projekt"
-      contact: "Kontakt"
-    flash:
-      close: "Stäng"
-    footer:
-      copyright: "Alla rättigheter förbehållna."
-  
-  # Home page
-  home:
-    hero:
-      greeting: "Hej där"
-      welcome: "Vad roligt att du är här!"
-      intro: "Jag bygger, leder och utforskar projekt i gränslandet mellan teknik och verksamhet. Här kan du lära känna mig, se vad jag brinner för – och följa mina projekt."
-      buttons:
-        cv: "Se mitt CV"
-        about: "Läs mer om mig"
-    features:
-      title: "Färdigheter"
-      subtitle: "Kompetensområden"
-      intro: "Här är några av de områden där jag bidrar med min erfarenhet och expertis."
-      project_management:
-        title: "Projektledning"
-        description: "Drivande och lyhörd projektledare som skapar tydlighet, för samman team och leder projekt från idé till resultat – alltid med energi, struktur och framåtanda."
-      tech_development:
-        title: "Teknisk Utveckling"
-        description: "Kunskap inom systemutveckling och förmåga att överbrygga gapet mellan teknik och verksamhet."
-      change_management:
-        title: "Förändringsledning"
-        description: "Erfarenhet av att leda team genom förändring med fokus på kommunikation och engagemang."
-      strategic_analysis:
-        title: "Strategisk Analys"
-        description: "Förmåga att analysera komplexa problem och utveckla strategiska lösningar baserade på data och insikter."
-  
-  # Projects page
-  projects:
-    title: "Mina projekt"
-    intro: "Här är några av de projekt jag har arbetat med."
-    filter:
-      title: "Filtrera Projekt"
-      all: "Alla Projekt"
-      work: "Arbetsprojekt"
-      personal: "Personliga Projekt"
-    project_status:
-      ongoing: "Pågående"
-      coming_soon: "Kommer snart"
-    more_info: "Läs mer"
-    more_info_soon: "Mer information kommer snart"
-    project_type:
-      work: "Arbete"
-      personal: "Personligt"
-    mkyrk:
-      title: "Kyrk.org"
-      description: "Personlig webbplats byggd med moderna verktyg och AI-assisterad utveckling. Ett projekt för att utforska framtidens arbetssätt."
-      technologies: "Tekniker använda:"
-      tech_list: "Ruby on Rails, TailwindCSS, AI-assistenter"
-    python:
-      title: "Python-projekt"
-      description: "Ett kommande projekt där jag utforskar Python för dataanalys och automatisering. Fokus på praktiska tillämpningar av AI och maskininlärning."
-      technologies: "Tekniker planerade:"
-      tech_list: "Python, Pandas, TensorFlow"
-    social_chef:
-      title: "The Social Chef"
-      description: "Ett community för alla som älskar mat, nyfikenhet och teknik. Använd AI för att skapa recept, inspireras av andra och dela dina egna kulinariska idéer."
-      technologies: "Tekniker planerade:"
-      tech_list: "React, Node.js, AI API:er, bildgenerering"
-    work_example:
-      title: "Exempel på Arbetsprojekt"
-      description: "Detta är ett exempel på ett arbetsprojekt för att demonstrera filtreringsfunktionen. När du klickar på 'Arbetsprojekt' i filtret ovan, visas endast detta kort."
-      technologies: "Tekniker använda:"
-      tech_list: "Enterprise Stack, Dataanalys, AI-integration"
-    no_projects:
-      title: "Inga projekt hittades"
-      message: "Det finns inga projekt som matchar din nuvarande filterval."
-
-  # About page
   about:
-    title: "Om mig"
     bio:
-      intro: "Hej! Jag heter Marcus och jobbar som projektledare med hjärtat i teknik, förändring och människor. Jag gillar när idéer får ta fart och bli verklighet – särskilt i gränslandet mellan IT och verksamhet."
-      approach: "Jag trivs i rollen som den som driver på, håller ihop trådar och skapar tydlighet. Men lika mycket brinner jag för att lyssna, inkludera och bygga förtroende. För mig är ett bra projekt inte bara något som blir klart i tid – det är något vi gör tillsammans, med mening."
-      ai_interest: "Samtidigt är jag djupt fascinerad av vad AI och ny teknik betyder för hur vi arbetar. Jag följer utvecklingen noga och brinner för att utforska hur vi kan använda den smartare – både i vardagen och i våra arbetsflöden."
-      website_purpose: "Det är också något jag hoppas kunna utforska och bygga vidare på här, genom den här sidan – som ett kreativt utrymme där både tankar, projekt och nyfikenhet får ta plats."
-      outdoor: "När jag inte jobbar hittar du mig oftast ute – jag älskar att röra på mig, oavsett om det handlar om toppturer, klättring, mountainbike eller längdskidor. Naturen ger mig både energi och nya perspektiv, och det är där jag tankar på."
-    skills:
-      project_management: "Projektledning"
-      tech_ai: "Teknik & AI"
-      outdoor_life: "Friluftsliv"
-      cv_link: "Kika gärna in mitt CV"
+      ai_interest: Samtidigt är jag djupt fascinerad av vad AI och ny teknik betyder
+        för hur vi arbetar. Jag följer utvecklingen noga och brinner för att utforska
+        hur vi kan använda den smartare – både i vardagen och i våra arbetsflöden.
+      approach: Jag trivs i rollen som den som driver på, håller ihop trådar och skapar
+        tydlighet. Men lika mycket brinner jag för att lyssna, inkludera och bygga
+        förtroende. För mig är ett bra projekt inte bara något som blir klart i tid
+        – det är något vi gör tillsammans, med mening.
+      intro: Hej! Jag heter Marcus och jobbar som projektledare med hjärtat i teknik,
+        förändring och människor. Jag gillar när idéer får ta fart och bli verklighet
+        – särskilt i gränslandet mellan IT och verksamhet.
+      outdoor: När jag inte jobbar hittar du mig oftast ute – jag älskar att röra
+        på mig, oavsett om det handlar om toppturer, klättring, mountainbike eller
+        längdskidor. Naturen ger mig både energi och nya perspektiv, och det är där
+        jag tankar på.
+      website_purpose: Det är också något jag hoppas kunna utforska och bygga vidare
+        på här, genom den här sidan – som ett kreativt utrymme där både tankar, projekt
+        och nyfikenhet får ta plats.
     passion:
-      title: "Vad jag brinner för"
-      bridge: "Som projektledare brinner jag för att skapa broar mellan teknik och verksamhet. Jag drivs av att förenkla komplexa lösningar och göra dem begripliga för alla inblandade."
+      bridge: Som projektledare brinner jag för att skapa broar mellan teknik och
+        verksamhet. Jag drivs av att förenkla komplexa lösningar och göra dem begripliga
+        för alla inblandade.
       innovation:
-        title: "Innovation och kreativitet"
-        description: "Att hitta nya lösningar på gamla problem och kombinera olika perspektiv för att skapa något bättre."
+        description: Att hitta nya lösningar på gamla problem och kombinera olika
+          perspektiv för att skapa något bättre.
+        title: Innovation och kreativitet
       learning:
-        title: "Kontinuerligt lärande"
-        description: "Ständig utveckling och nyfikenhet - jag strävar alltid efter att lära mig nya tekniker och arbetssätt."
+        description: Ständig utveckling och nyfikenhet - jag strävar alltid efter
+          att lära mig nya tekniker och arbetssätt.
+        title: Kontinuerligt lärande
+      title: Vad jag brinner för
       visual_communication:
-        title: "Visuell kommunikation"
-        description: "Jag älskar visuell kommunikation och nördar gärna ner mig i Miro, Figma eller PowerPoint. Det hjälper mig att tänka – och att förklara."
-
-  # CV page
-  cv:
-    title: "Curriculum Vitae"
-    download_pdf: "Ladda ner PDF"
-    contact_me: "Kontakta mig"
-    personal_info:
-      name: "Marcus Kyrk"
-      email: "Email:"
-      phone: "Telefon:"
-      linkedin: "LinkedIn:"
-      location: "Plats:"
-    quote: "Projektledare som driver innovation från idé till verklighet. <strong>Teknik, tempo och tydligt fokus på resultat</strong> – det är grunden i mitt arbetssätt och något jag tar med mig i varje uppdrag."
-    work_experience:
-      title: "Arbetslivserfarenhet"
-      positions:
-        project_manager:
-          title: "Projektledare"
-          timeframe: "Januari 2023 - Nuvarande"
-          company: "Holmen Skog"
-          location: "Umeå"
-          responsibilities:
-            - "Leder digitala utvecklingsprojekt och verksamhetsnära förändringsledning"
-            - "Driver tekniskt inriktade initiativ för att utveckla digitala lösningar och plattformar"
-            - "Initierat och driver en AI-grupp för att stärka organisationens förmåga inom generativ AI"
-            - "Bidrar till strukturerad beslutsfattning genom behovsanalys, kravställning och underlag till investeringar"
-        innovation_leader:
-          title: "Innovationsledare"
-          timeframe: "Augusti 2021 - December 2022"
-          company: "Holmen Skog"
-          location: "Umeå"
-          responsibilities:
-            - "Utformade och implementerade innovationsprocesser"
-            - "Samarbetade med ledning och team för att stärka organisationens förmåga till systematisk förändring och digital utveckling"
-    education:
-      title: "Utbildning"
-      degrees:
-        masters:
-          title: "Masterexamen i IT-Management"
-          timeframe: "2019 - 2021"
-          institution: "Umeå Universitet"
-        bachelors:
-          title: "Kandidatexamen i Systemvetenskap"
-          timeframe: "2016 - 2019"
-          institution: "Umeå Universitet"
-    certifications:
-      title: "Kurser och certifieringar"
-      list:
-        - "Grunderna i innovationsledning ISO 56002 – Svenska Institutet för Standarder"
-        - "Värdedriven Projektledning – Cornerstone"
-        - "Att leda utan att vara chef – Move"
-        - "Change maker – Making Change Sweden"
+        description: Jag älskar visuell kommunikation och nördar gärna ner mig i Miro,
+          Figma eller PowerPoint. Det hjälper mig att tänka – och att förklara.
+        title: Visuell kommunikation
     skills:
-      title: "Kompetenser"
-      project_management:
-        title: "Projektledning"
-        list:
-          - "Digital utveckling"
-          - "Förändringsarbete"
-          - "Förstudier och analyser"
-      innovation:
-        title: "Innovation"
-        list:
-          - "Generativ AI"
-          - "Innovationsprocesser"
-          - "Systematiskt förändringsarbete"
-          - "Digital transformation"
-    technical_skills:
-      title: "Tekniska färdigheter"
-      list:
-        - "Ruby on Rails"
-        - "JavaScript"
-        - "HTML & CSS"
-        - "SQL & Databashantering"
-        - "Git & Versionskontroll"
-    languages:
-      title: "Språkkunskaper"
-      swedish: 
-        language: "Svenska:"
-        level: "Modersmål"
-      english:
-        language: "Engelska:"
-        level: "Flytande"
-    references:
-      title: "Referenser"
-      note: "Referenser lämnas på begäran"
-
-  # Project0 page
-  project0:
-    title: "Kyrk.org"
-    view_source: "Se källkod"
-    contact_me: "Kontakta mig"
-    timeline: "2023 - 2024"
-    status: "Pågående"
-    quote: "Ett experiment där <strong>AI blir en kreativ partner</strong> i utvecklingsprocessen - ett utforskande av nya sätt att skapa digitala produkter."
-    sections:
-      overview:
-        title: "Projektöversikt"
-        content: "Detta projekt representerar ett experiment i framtidens arbetssätt, där jag utforskar hur AI-verktyg kan integreras i utvecklingsprocessen för att bygga en personlig webbplats som är både funktionell och estetiskt tilltalande."
-      background:
-        title: "Bakgrund"
-        content1: "I en tid när AI-verktyg revolutionerar hur vi arbetar ville jag utforska hur dessa verktyg kan användas för att förbättra webbutvecklingsprocessen. Syftet var att skapa en personlig webbplats och samtidigt utforska ett nytt arbetssätt där jag fungerade som orkestrator mellan människa och AI."
-        content2: "Målet var att bygga en responsiv, modern webbplats med hög kvalitet, samtidigt som jag lärde mig mer om AI-assisterad utveckling."
-      tools:
-        title: "Verktyg och tekniker"
-        development_stack: "Utvecklingsstack"
-        stack_list:
-          - "Ruby on Rails"
-          - "TailwindCSS"
-          - "HTML & ERB"
-        ai_tools: "AI-verktyg"
-        ai_list:
-          - "Cursor"
-          - "ChatGPT"
-          - "Claude"
-      workflow:
-        title: "Arbetsflöde"
-        intro: "En av de mest intressanta aspekterna av detta projekt var min roll som orkestrator mellan olika AI-verktyg och tekniska lösningar."
-        cycles_title: "Utvecklingscykler"
-        cycles:
-          - "Jag formulerade tydliga mål och krav för varje del"
-          - "AI-assistenterna genererade kod och lösningsförslag"
-          - "Jag granskade, testade och anpassade koden"
-      lessons:
-        title: "Lärdomar"
-        list:
-          - "<strong>Ökad effektivitet</strong> – Utvecklingstiden minskade med AI-assistans"
-          - "<strong>Nya färdigheter</strong> – Utvecklade nya arbetssätt med AI"
-          - "<strong>Balans människa-maskin</strong> – Mänskligt omdöme är kritiskt"
-    back_to_projects: "Tillbaka till projekt"
-
-  # Contact page
+      cv_link: Kika gärna in mitt CV
+      outdoor_life: Friluftsliv
+      project_management: Projektledning
+      tech_ai: Teknik & AI
+    title: Om mig
   contact:
-    title: "Kontakta mig"
-    info:
-      title: "Kontaktinformation"
-      email: "Email:"
-      linkedin: "LinkedIn:"
-      github: "GitHub:"
     form:
-      title: "Skicka meddelande"
-      name: "Namn"
-      email: "Email"
-      message: "Meddelande"
-      send: "Skicka"
-      sending: "Skickar..."
-      success: "Ditt meddelande har skickats! Tack för att du kontaktade mig."
-      error: "Ett fel uppstod. Vänligen försök igen senare."
-      fields_required: "Alla fält måste fyllas i." 
+      email: Email
+      error: Ett fel uppstod. Vänligen försök igen senare.
+      fields_required: Alla fält måste fyllas i.
+      message: Meddelande
+      name: Namn
+      send: Skicka
+      sending: Skickar...
+      success: Ditt meddelande har skickats! Tack för att du kontaktade mig.
+      title: Skicka meddelande
+    info:
+      email: 'Email:'
+      github: 'GitHub:'
+      linkedin: 'LinkedIn:'
+      title: Kontaktinformation
+    title: Kontakta mig
+  cv:
+    certifications:
+      list:
+      - Grunderna i innovationsledning ISO 56002 – Svenska Institutet för Standarder
+      - Värdedriven Projektledning – Cornerstone
+      - Att leda utan att vara chef – Move
+      - Change maker – Making Change Sweden
+      title: Kurser och certifieringar
+    contact_me: Kontakta mig
+    download_pdf: Ladda ner PDF
+    education:
+      degrees:
+        bachelors:
+          institution: Umeå Universitet
+          timeframe: 2016 - 2019
+          title: Kandidatexamen i Systemvetenskap
+        masters:
+          institution: Umeå Universitet
+          timeframe: 2019 - 2021
+          title: Masterexamen i IT-Management
+      title: Utbildning
+    languages:
+      english:
+        language: 'Engelska:'
+        level: Flytande
+      swedish:
+        language: 'Svenska:'
+        level: Modersmål
+      title: Språkkunskaper
+    personal_info:
+      email: 'Email:'
+      linkedin: 'LinkedIn:'
+      location: 'Plats:'
+      name: Marcus Kyrk
+      phone: 'Telefon:'
+    quote: Projektledare som driver innovation från idé till verklighet. <strong>Teknik,
+      tempo och tydligt fokus på resultat</strong> – det är grunden i mitt arbetssätt
+      och något jag tar med mig i varje uppdrag.
+    references:
+      note: Referenser lämnas på begäran
+      title: Referenser
+    skills:
+      innovation:
+        list:
+        - Generativ AI
+        - Innovationsprocesser
+        - Systematiskt förändringsarbete
+        - Digital transformation
+        title: Innovation
+      project_management:
+        list:
+        - Digital utveckling
+        - Förändringsarbete
+        - Förstudier och analyser
+        title: Projektledning
+      title: Kompetenser
+    technical_skills:
+      list:
+      - Ruby on Rails
+      - JavaScript
+      - HTML & CSS
+      - SQL & Databashantering
+      - Git & Versionskontroll
+      title: Tekniska färdigheter
+    title: Curriculum Vitae
+    work_experience:
+      positions:
+        innovation_leader:
+          company: Holmen Skog
+          location: Umeå
+          responsibilities:
+          - Utformade och implementerade innovationsprocesser
+          - Samarbetade med ledning och team för att stärka organisationens förmåga
+            till systematisk förändring och digital utveckling
+          timeframe: Augusti 2021 - December 2022
+          title: Innovationsledare
+        project_manager:
+          company: Holmen Skog
+          location: Umeå
+          responsibilities:
+          - Leder digitala utvecklingsprojekt och verksamhetsnära förändringsledning
+          - Driver tekniskt inriktade initiativ för att utveckla digitala lösningar
+            och plattformar
+          - Initierat och driver en AI-grupp för att stärka organisationens förmåga
+            inom generativ AI
+          - Bidrar till strukturerad beslutsfattning genom behovsanalys, kravställning
+            och underlag till investeringar
+          timeframe: Januari 2023 - Nuvarande
+          title: Projektledare
+      title: Arbetslivserfarenhet
+  home:
+    features:
+      change_management:
+        description: Erfarenhet av att leda team genom förändring med fokus på kommunikation
+          och engagemang.
+        title: Förändringsledning
+      intro: Här är några av de områden där jag bidrar med min erfarenhet och expertis.
+      project_management:
+        description: Drivande och lyhörd projektledare som skapar tydlighet, för samman
+          team och leder projekt från idé till resultat – alltid med energi, struktur
+          och framåtanda.
+        title: Projektledning
+      strategic_analysis:
+        description: Förmåga att analysera komplexa problem och utveckla strategiska
+          lösningar baserade på data och insikter.
+        title: Strategisk Analys
+      subtitle: Kompetensområden
+      tech_development:
+        description: Kunskap inom systemutveckling och förmåga att överbrygga gapet
+          mellan teknik och verksamhet.
+        title: Teknisk Utveckling
+      title: Färdigheter
+    hero:
+      buttons:
+        about: Läs mer om mig
+        cv: Se mitt CV
+      greeting: Hej där
+      intro: Jag bygger, leder och utforskar projekt i gränslandet mellan teknik och
+        verksamhet. Här kan du lära känna mig, se vad jag brinner för – och följa
+        mina projekt.
+      welcome: Vad roligt att du är här!
+  layout:
+    flash:
+      close: Stäng
+    footer:
+      copyright: Alla rättigheter förbehållna.
+    navigation:
+      about: Om mig
+      contact: Kontakt
+      home: Hem
+      projects: Projekt
+    title: Marcus Kyrk – Projektledare & AI-entusiast
+  project0:
+    back_to_projects: Tillbaka till projekt
+    contact_me: Kontakta mig
+    quote: Ett experiment där <strong>AI blir en kreativ partner</strong> i utvecklingsprocessen
+      - ett utforskande av nya sätt att skapa digitala produkter.
+    sections:
+      background:
+        content1: I en tid när AI-verktyg revolutionerar hur vi arbetar ville jag
+          utforska hur dessa verktyg kan användas för att förbättra webbutvecklingsprocessen.
+          Syftet var att skapa en personlig webbplats och samtidigt utforska ett nytt
+          arbetssätt där jag fungerade som orkestrator mellan människa och AI.
+        content2: Målet var att bygga en responsiv, modern webbplats med hög kvalitet,
+          samtidigt som jag lärde mig mer om AI-assisterad utveckling.
+        title: Bakgrund
+      lessons:
+        list:
+        - "<strong>Ökad effektivitet</strong> – Utvecklingstiden minskade med AI-assistans"
+        - "<strong>Nya färdigheter</strong> – Utvecklade nya arbetssätt med AI"
+        - "<strong>Balans människa-maskin</strong> – Mänskligt omdöme är kritiskt"
+        title: Lärdomar
+      overview:
+        content: Detta projekt representerar ett experiment i framtidens arbetssätt,
+          där jag utforskar hur AI-verktyg kan integreras i utvecklingsprocessen för
+          att bygga en personlig webbplats som är både funktionell och estetiskt tilltalande.
+        title: Projektöversikt
+      tools:
+        ai_list:
+        - Cursor
+        - ChatGPT
+        - Claude
+        ai_tools: AI-verktyg
+        development_stack: Utvecklingsstack
+        stack_list:
+        - Ruby on Rails
+        - TailwindCSS
+        - HTML & ERB
+        title: Verktyg och tekniker
+      workflow:
+        cycles:
+        - Jag formulerade tydliga mål och krav för varje del
+        - AI-assistenterna genererade kod och lösningsförslag
+        - Jag granskade, testade och anpassade koden
+        cycles_title: Utvecklingscykler
+        intro: En av de mest intressanta aspekterna av detta projekt var min roll
+          som orkestrator mellan olika AI-verktyg och tekniska lösningar.
+        title: Arbetsflöde
+    status: Pågående
+    timeline: 2023 - 2024
+    title: Kyrk.org
+    view_source: Se källkod
+  projects:
+    filter:
+      all: Alla Projekt
+      personal: Personliga Projekt
+      title: Filtrera Projekt
+      work: Arbetsprojekt
+    intro: Här är några av de projekt jag har arbetat med.
+    mkyrk:
+      description: Personlig webbplats byggd med moderna verktyg och AI-assisterad
+        utveckling. Ett projekt för att utforska framtidens arbetssätt.
+      tech_list: Ruby on Rails, TailwindCSS, AI-assistenter
+      technologies: 'Tekniker använda:'
+      title: Kyrk.org
+    more_info: Läs mer
+    more_info_soon: Mer information kommer snart
+    no_projects:
+      message: Det finns inga projekt som matchar din nuvarande filterval.
+      title: Inga projekt hittades
+    project_status:
+      coming_soon: Kommer snart
+      ongoing: Pågående
+    project_type:
+      personal: Personligt
+      work: Arbete
+    python:
+      description: Ett kommande projekt där jag utforskar Python för dataanalys och
+        automatisering. Fokus på praktiska tillämpningar av AI och maskininlärning.
+      tech_list: Python, Pandas, TensorFlow
+      technologies: 'Tekniker planerade:'
+      title: Python-projekt
+    social_chef:
+      description: Ett community för alla som älskar mat, nyfikenhet och teknik. Använd
+        AI för att skapa recept, inspireras av andra och dela dina egna kulinariska
+        idéer.
+      tech_list: React, Node.js, AI API:er, bildgenerering
+      technologies: 'Tekniker planerade:'
+      title: The Social Chef
+    title: Mina projekt
+    work_example:
+      description: Detta är ett exempel på ett arbetsprojekt för att demonstrera filtreringsfunktionen.
+        När du klickar på 'Arbetsprojekt' i filtret ovan, visas endast detta kort.
+      tech_list: Enterprise Stack, Dataanalys, AI-integration
+      technologies: 'Tekniker använda:'
+      title: Exempel på Arbetsprojekt
