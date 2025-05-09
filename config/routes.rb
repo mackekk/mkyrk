@@ -5,6 +5,29 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  # Routes with locale prefix (e.g., /en/about, /sv/contact)
+  scope "/:locale" do
+    # Route for the contact page
+    get "/contact", to: "home#contact", as: :localized_contact
+    post "/send_contact", to: "home#send_contact", as: :localized_send_contact
+
+    # Route for the about page
+    get "/about", to: "home#about", as: :localized_about
+
+    # Route for the projects page
+    get "/projects", to: "home#projects", as: :localized_projects
+
+    # Route for individual project pages
+    get "/project0", to: "home#project0", as: :localized_project0
+
+    # Route for the CV page
+    get "/cv", to: "home#cv", as: :localized_cv
+
+    # Defines the root path route with locale ("/en", "/sv")
+    root to: "home#index", as: :localized_root
+  end
+
+  # Non-prefixed routes (will redirect to default locale)
   # Route for the contact page
   get "/contact", to: "home#contact"
   post "/send_contact", to: "home#send_contact"
