@@ -24,5 +24,4 @@ Things you may want to cover:
 * ...
 
 * todo: 
-1. make the headlogo bigger
-2. Add CV under mig. 
+1. add english as an option for the whole project 
