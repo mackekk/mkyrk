@@ -44,6 +44,10 @@
                 <a href="/contact" class="<%= current_page?('/contact') ? active_class : inactive_class %>"><%= t('layout.navigation.contact') %></a>
               </div>
             </div>
+            
+            <div class="md:ml-auto mt-2 md:mt-0">
+              <%= render 'shared/language_switcher' %>
+            </div>
           </div>
         </div>
       </nav>
