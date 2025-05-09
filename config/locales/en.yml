@@ -73,26 +73,45 @@ en:
   projects:
     title: "My Projects"
     intro: "Here are some of the projects I have worked on."
+    filter:
+      title: "Filter Projects"
+      all: "All Projects"
+      work: "Work Projects"
+      personal: "Personal Projects"
     project_status:
       ongoing: "Ongoing"
       coming_soon: "Coming Soon"
     more_info: "Read more"
     more_info_soon: "More information coming soon"
+    project_type:
+      work: "Work"
+      personal: "Personal"
     mkyrk:
       title: "Kyrk.org"
       description: "Personal website built with modern tools and AI-assisted development. A project to explore the future of work."
       technologies: "Technologies used:"
       tech_list: "Ruby on Rails, TailwindCSS, AI assistants"
+      type: "personal"
     python:
       title: "Python Project"
       description: "An upcoming project where I explore Python for data analysis and automation. Focus on practical applications of AI and machine learning."
       technologies: "Planned technologies:"
       tech_list: "Python, Pandas, TensorFlow"
+      type: "personal"
     social_chef:
       title: "The Social Chef"
       description: "A community for everyone who loves food, curiosity, and technology. Use AI to create recipes, get inspired by others, and share your own culinary ideas."
       technologies: "Planned technologies:"
       tech_list: "React, Node.js, AI APIs, image generation"
+      type: "personal"
+    work_example:
+      title: "Work Project Example"
+      description: "This is a sample work project to demonstrate the filtering functionality. When you click on 'Work Projects' in the filter above, only this card will be shown."
+      technologies: "Technologies used:"
+      tech_list: "Enterprise Stack, Data Analysis, AI Integration"
+    no_projects:
+      title: "No projects found"
+      message: "There are no projects that match your current filter selection."
 
   # About page
   about:
