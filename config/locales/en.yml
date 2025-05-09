@@ -28,8 +28,6 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
-  
   # Application layout
   layout:
     title: "Marcus Kyrk – Project Manager & AI Enthusiast"
@@ -91,19 +89,16 @@ en:
       description: "Personal website built with modern tools and AI-assisted development. A project to explore the future of work."
       technologies: "Technologies used:"
       tech_list: "Ruby on Rails, TailwindCSS, AI assistants"
-      type: "personal"
     python:
       title: "Python Project"
       description: "An upcoming project where I explore Python for data analysis and automation. Focus on practical applications of AI and machine learning."
       technologies: "Planned technologies:"
       tech_list: "Python, Pandas, TensorFlow"
-      type: "personal"
     social_chef:
       title: "The Social Chef"
       description: "A community for everyone who loves food, curiosity, and technology. Use AI to create recipes, get inspired by others, and share your own culinary ideas."
       technologies: "Planned technologies:"
       tech_list: "React, Node.js, AI APIs, image generation"
-      type: "personal"
     work_example:
       title: "Work Project Example"
       description: "This is a sample work project to demonstrate the filtering functionality. When you click on 'Work Projects' in the filter above, only this card will be shown."

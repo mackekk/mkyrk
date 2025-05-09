@@ -1,6 +1,4 @@
 sv:
-  hello: "Hej världen"
-
   # Application layout
   layout:
     title: "Marcus Kyrk – Projektledare & AI-entusiast"
@@ -62,19 +60,16 @@ sv:
       description: "Personlig webbplats byggd med moderna verktyg och AI-assisterad utveckling. Ett projekt för att utforska framtidens arbetssätt."
       technologies: "Tekniker använda:"
       tech_list: "Ruby on Rails, TailwindCSS, AI-assistenter"
-      type: "personal"
     python:
       title: "Python-projekt"
       description: "Ett kommande projekt där jag utforskar Python för dataanalys och automatisering. Fokus på praktiska tillämpningar av AI och maskininlärning."
       technologies: "Tekniker planerade:"
       tech_list: "Python, Pandas, TensorFlow"
-      type: "personal"
     social_chef:
       title: "The Social Chef"
       description: "Ett community för alla som älskar mat, nyfikenhet och teknik. Använd AI för att skapa recept, inspireras av andra och dela dina egna kulinariska idéer."
       technologies: "Tekniker planerade:"
       tech_list: "React, Node.js, AI API:er, bildgenerering"
-      type: "personal"
     work_example:
       title: "Exempel på Arbetsprojekt"
       description: "Detta är ett exempel på ett arbetsprojekt för att demonstrera filtreringsfunktionen. När du klickar på 'Arbetsprojekt' i filtret ovan, visas endast detta kort."
