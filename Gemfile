@@ -62,7 +62,7 @@ group :development do
   gem "foreman"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  # i18n-tasks for managing translations  
+  # i18n-tasks for managing translations
   gem "i18n-tasks"
 end
 

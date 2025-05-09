@@ -23,10 +23,10 @@ module Mkyrk
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    
+
     # Internationalization configuration
-    config.i18n.available_locales = [:sv, :en]
+    config.i18n.available_locales = [ :sv, :en ]
     config.i18n.default_locale = :sv
-    config.i18n.fallbacks = [:en]
+    config.i18n.fallbacks = [ :en ]
   end
 end
