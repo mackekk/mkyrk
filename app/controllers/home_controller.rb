@@ -3,6 +3,9 @@ class HomeController < ApplicationController
   protect_from_forgery with: :exception
   skip_before_action :verify_authenticity_token, only: [ :send_contact ], if: -> { request.format.json? }
 
+  # Redirect non-localized routes to localized ones
+  before_action :redirect_to_localized, except: [:index, :about, :contact, :send_contact, :projects, :project0, :cv]
+
   def index
     # This is our Hello World page
   end
@@ -62,5 +65,18 @@ class HomeController < ApplicationController
 
   def cv
     # This renders the CV page (app/views/home/cv.html.erb)
+  end
+
+  def project0
+    # Project 0 page logic
+  end
+
+  private
+
+  def redirect_to_localized
+    # Only redirect if locale is not present in the URL
+    unless params[:locale]
+      redirect_to url_for(locale: I18n.default_locale, controller: controller_name, action: action_name)
+    end
   end
 end
