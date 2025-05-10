@@ -1,7 +1,7 @@
 <div class="bg-gray-50 py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header Card -->
-    <div class="max-w-4xl mx-auto bg-white shadow-sm rounded-lg overflow-hidden">
+    <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
       <div class="px-6 py-8">
         <div class="flex items-center justify-between mb-8">
           <h1 class="text-3xl font-bold text-gray-900"><%= t('project0.title') %></h1>
@@ -21,7 +21,7 @@
           </div>
         </div>
         
-        <div class="flex items-center mb-4">
+        <div class="flex items-center mb-6">
           <div class="bg-indigo-100 rounded-full p-2 mr-3">
             <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -45,8 +45,8 @@
     <div class="max-w-4xl mx-auto mt-8">
       <div class="grid grid-cols-1 gap-8">
         
-        <!-- Overview Section -->
-        <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <!-- Background & Purpose Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
               <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
@@ -54,42 +54,72 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.overview.title') %></h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.background_purpose.title') %></h2>
             </div>
             
-            <div>
-              <p class="text-gray-800">
-                <%= t('project0.sections.overview.content') %>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Background Section -->
-        <div class="bg-white shadow-sm rounded-lg overflow-hidden">
-          <div class="px-6 py-8">
-            <div class="flex items-center mb-6">
-              <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
-                <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div class="space-y-5">
+              <div class="text-gray-800 space-y-6">
+                <%= raw(t('project0.sections.background_purpose.content')) %>
+                <p class="mb-6 font-bold"><%= raw(t('project0.sections.background_purpose.bold_statement')) %></p>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.background.title') %></h2>
-            </div>
-            
-            <div class="space-y-4">
-              <p class="text-gray-800">
-                <%= t('project0.sections.background.content1') %>
-              </p>
-              <p class="text-gray-800">
-                <%= t('project0.sections.background.content2') %>
-              </p>
+              
+              <!-- Merged Goals & Approach -->
+              <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <div class="border-b md:border-b-0 md:border-r border-gray-200 pb-5 md:pb-0 md:pr-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <%= t('project0.sections.goals_approach.goals_title', default: 'Goals') %>
+                    </h3>
+                    <p class="text-gray-800">
+                      <%= t('project0.sections.goals_approach.goals') %>
+                    </p>
+                  </div>
+                  <div class="pt-5 md:pt-0 md:pl-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <%= t('project0.sections.goals_approach.approach_title', default: 'Approach') %>
+                    </h3>
+                    <p class="text-gray-800">
+                      <%= t('project0.sections.goals_approach.approach') %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Brief Results -->
+              <div class="mt-8 bg-gray-50 p-5 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                  <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <%= t('project0.sections.tools_services.brief_results_title') %>
+                </h3>
+                <ul class="space-y-3 text-gray-800">
+                  <% t('project0.sections.results.brief_results').each do |result| %>
+                    <li class="flex items-start">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <span><%= raw(result) %></span>
+                    </li>
+                  <% end %>
+                </ul>
+                
+                <p class="mt-6 text-gray-800 italic">
+                  <%= raw(t('project0.sections.background_purpose.conclusion')) %>
+                </p>
+              </div>
             </div>
           </div>
         </div>
         
-        <!-- Tools Section -->
-        <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <!-- Technical Solution & Costs Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
               <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
@@ -98,74 +128,177 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.tools.title') %></h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.tools_services.title') %></h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-              <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools.development_stack') %></h3>
-                <ul class="space-y-2 text-gray-800">
-                  <% t('project0.sections.tools.stack_list').each do |tool| %>
-                    <li class="flex items-center">
-                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                      </svg>
-                      <span><%= tool %></span>
-                    </li>
-                  <% end %>
-                </ul>
+            <div>
+              <p class="text-gray-800 mb-6">
+                <%= t('project0.sections.tools_services.content') %>
+              </p>
+              
+              <div class="text-gray-800 mb-6 space-y-4">
+                <%= raw(t('project0.sections.tools_services.tech_description')) %>
               </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools.ai_tools') %></h3>
-                <ul class="space-y-2 text-gray-800">
-                  <% t('project0.sections.tools.ai_list').each do |tool| %>
-                    <li class="flex items-center">
-                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                      </svg>
-                      <span><%= tool %></span>
+              
+              <!-- Development & AI Tools -->
+              <div class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
+                    </svg>
+                    <%= t('project0.sections.tools_services.development_stack') %>
+                  </h3>
+                  <ul class="space-y-2 text-gray-800">
+                    <% t('project0.sections.tools_services.stack_list').each_with_index do |tool, index| %>
+                      <li class="flex items-center">
+                        <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <% case index %>
+                        <% when 0 # Ruby on Rails %>
+                          <a href="https://rubyonrails.org/" target="_blank" class="text-gray-800 hover:text-indigo-600"><%= tool %></a>
+                        <% when 1 # TailwindCSS %>
+                          <a href="https://tailwindcss.com/" target="_blank" class="text-gray-800 hover:text-indigo-600"><%= tool %></a>
+                        <% when 3 # Git Bash %>
+                          <a href="https://git-scm.com/downloads" target="_blank" class="text-gray-800 hover:text-indigo-600"><%= tool %></a>
+                        <% else %>
+                          <span><%= tool %></span>
+                        <% end %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                    <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                    </svg>
+                    <%= t('project0.sections.tools_services.ai_tools') %>
+                  </h3>
+                  <ul class="space-y-2 text-gray-800">
+                    <% t('project0.sections.tools_services.ai_list').each_with_index do |tool, index| %>
+                      <li class="flex items-center">
+                        <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <% case index %>
+                        <% when 0 # Cursor %>
+                          <a href="https://www.cursor.com/" target="_blank" class="text-gray-800 hover:text-indigo-600"><%= tool %></a>
+                        <% when 1 # ChatGPT %>
+                          <a href="https://chat.openai.com/" target="_blank" class="text-gray-800 hover:text-indigo-600"><%= tool %></a>
+                        <% else %>
+                          <span><%= tool %></span>
+                        <% end %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Services & Costs -->
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools_services.services_title') %></h3>
+                <ul class="space-y-3 text-gray-800">
+                  <% t('project0.sections.tools_services.services').each_with_index do |service, index| %>
+                    <li class="flex items-start">
+                      <% case index %>
+                      <% when 0 # Namecheap %>
+                        <div class="h-6 w-6 mr-2 text-red-500 mt-0.5 flex-shrink-0 bg-white rounded-full flex items-center justify-center">
+                          <span class="font-bold">N</span>
+                        </div>
+                        <span>
+                          <%= raw(service.gsub("<strong>Namecheap</strong>", "<strong><a href='https://www.namecheap.com/' target='_blank' class='text-gray-800 hover:text-indigo-600'>Namecheap</a></strong>")) %>
+                        </span>
+                      <% when 1 # Render %>
+                        <div class="h-6 w-6 mr-2 mt-0.5 flex-shrink-0 flex items-center justify-center">
+                          <svg class="h-5 w-5" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 40H120C142 40 160 58 160 80V160H80C58 160 40 142 40 120V40Z" fill="black"/>
+                            <path d="M160 80C160 58 142 40 120 40C142 40 160 58 160 80Z" fill="black"/>
+                          </svg>
+                        </div>
+                        <span>
+                          <%= raw(service.gsub("<strong>Render</strong>", "<strong><a href='https://render.com/' target='_blank' class='text-gray-800 hover:text-indigo-600'>Render</a></strong>")) %>
+                        </span>
+                      <% when 2 # Cursor %>
+                        <div class="h-6 w-6 mr-2 text-gray-800 mt-0.5 flex-shrink-0 bg-black rounded-md flex items-center justify-center">
+                          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 6.5V17.5L12 22L20 17.5V6.5L12 2Z" fill="black"/>
+                            <path d="M12 2L4 6.5L12 11L20 6.5L12 2Z" fill="#FFFFFF"/>
+                            <path d="M12 11L4 6.5V17.5L12 22V11Z" fill="#888888"/>
+                            <path d="M12 11L20 6.5V17.5L12 22V11Z" fill="#CCCCCC"/>
+                          </svg>
+                        </div>
+                        <span>
+                          <%= raw(service.gsub("<strong>Cursor</strong>", "<strong><a href='https://www.cursor.com/' target='_blank' class='text-gray-800 hover:text-indigo-600'>Cursor</a></strong>")) %>
+                        </span>
+                      <% when 3 # ChatGPT %>
+                        <div class="h-6 w-6 mr-2 mt-0.5 flex-shrink-0 bg-white flex items-center justify-center">
+                          <svg class="h-4 w-4 text-black" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.5093-2.6067-1.4997z"/>
+                          </svg>
+                        </div>
+                        <span>
+                          <%= raw(service.gsub("<strong>ChatGPT</strong>", "<strong><a href='https://chat.openai.com/' target='_blank' class='text-gray-800 hover:text-indigo-600'>ChatGPT</a></strong>")) %>
+                        </span>
+                      <% end %>
                     </li>
                   <% end %>
                 </ul>
+                
+                <p class="text-gray-600 italic text-sm mt-2"><%= t('project0.sections.tools_services.cost_note') %></p>
+                
+                <div class="mt-4 px-4 py-3 bg-indigo-50 rounded-lg border border-indigo-100">
+                  <p class="text-gray-800 font-medium"><%= raw(t('project0.sections.tools_services.total')) %></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Workflow Section -->
-        <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <!-- Results & Reflection Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
               <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
                 <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.workflow.title') %></h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.results.title') %></h2>
             </div>
             
             <div>
-              <p class="text-gray-800 mb-4">
-                <%= t('project0.sections.workflow.intro') %>
+              <div class="text-gray-800 mb-6 space-y-4">
+                <%= raw(t('project0.sections.results.intro')) %>
+              </div>
+              
+              <p class="text-gray-800 mb-6">
+                <%= t('project0.sections.results.time_content') %>
               </p>
               
-              <h3 class="text-lg font-bold text-gray-800 mt-4"><%= t('project0.sections.workflow.cycles_title') %></h3>
-              <ul class="mt-2 space-y-2 text-gray-800">
-                <% t('project0.sections.workflow.cycles').each do |cycle| %>
-                  <li class="flex items-start">
-                    <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span><%= cycle %></span>
-                  </li>
-                <% end %>
-              </ul>
+              <div class="bg-gray-50 p-5 rounded-lg">
+                <ul class="space-y-3 text-gray-800 grid md:grid-cols-2 md:gap-4 md:space-y-0">
+                  <% t('project0.sections.results.commits').each do |commit| %>
+                    <li class="flex items-start">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <span><%= raw(commit) %></span>
+                    </li>
+                  <% end %>
+                </ul>
+                
+                <div class="mt-6 px-4 py-3 bg-indigo-50 rounded-lg border border-indigo-100 text-center">
+                  <p class="text-gray-800 font-medium text-lg"><%= raw(t('project0.sections.results.total')) %></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Lessons Learned Section -->
-        <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
               <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
@@ -177,9 +310,9 @@
             </div>
             
             <div>
-              <ul class="space-y-2 text-gray-800">
+              <ul class="space-y-4 text-gray-800">
                 <% t('project0.sections.lessons.list').each do |lesson| %>
-                  <li class="flex items-start">
+                  <li class="flex items-start bg-gray-50 p-3 rounded-lg">
                     <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                     </svg>
