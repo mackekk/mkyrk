@@ -338,9 +338,12 @@ sv:
         background_purpose:
           title: Projektöversikt
           content: |-
-            <p>Projektet syftade till att införa ett nytt digitalt verktyg som stödjer samplaneringsprocessen mellan Holmen och berörda samebyar. Lösningen byggdes i samarbete med en extern utvecklingspartner och inkluderade allt från datamigrering och funktionalitetstestning till utbildningsinsatser och införande i verksamheten.</p>
-            <p>Plattformen förbättrar datautbyte och kommunikation i planeringsarbetet och skapar bättre förutsättningar för samråd och ömsesidig förståelse.</p>
-          bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering.
+            <p>Samplanering.se var ett digitaliseringsprojekt som jag ledde i rollen som projektledare. Målet var att införa ett nytt digitalt verktyg som förbättrar kommunikationen och informationsutbytet mellan Holmen och berörda samebyar – i syfte att effektivisera planeringsarbetet och skapa bättre förutsättningar för samråd.</p>
+            
+            <div class="mt-6"></div>
+            <p>Lösningen togs fram i samarbete med en extern systemleverantör och omfattade allt från datamigrering och funktionstestning till utbildningsinsatser och införande i verksamheten.</p>
+            <h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">Men vad är samplanering?</h4>
+            <p>Samplanering är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
         tools_services:
           title: Mål & Arbetssätt
           stack_title: Mål
