@@ -198,15 +198,13 @@ sv:
       produkter formas? Det ville jag ta reda på med Kyrk.org.
     sections:
       background_purpose:
-        bold_statement: Detta projekt var ett praktiskt experiment i framtidens AI-stödda
-          arbetssätt.
         conclusion: Det här projektet visar att AI inte bara kan spara tid, utan också
           förändra hur vi tänker, organiserar och skapar – på riktigt.
         content: |-
           <p>Under de senaste åren har AI gått från att vara ett forskningsområde till att bli en del av vardagen för allt fler yrkesgrupper – från utvecklare och formgivare till jurister och redaktörer. Verktyg som ChatGPT, Claude och kodassistenter som Copilot och Cursor förändrar nu hur vi tänker, skapar och bygger.</p>
           <p>Samtidigt står många organisationer och individer inför frågor som:<br> <em>Hur kan AI integreras i det dagliga arbetet utan att tappa kontroll?</em><br> <em>Vad händer med kreativiteten när algoritmer är medskapare?</em><br> <em>Vilken roll spelar det mänskliga omdömet i en AI-driven utvecklingsprocess?</em></p>
           <p>Detta projekt representerar ett svar – eller snarare ett experiment – i just dessa frågor. Jag ville utforska hur AI-verktyg konkret kan användas för att bygga en personlig webbplats från grunden, där jag inte bara är användare av AI, utan även fungerar som samordnare i ett samspel mellan mänsklig kreativitet och maskinell snabbhet.</p>
-        title: Projektöversikt
+        title: Om projektet
       goals_approach:
         approach: 'Min tanke var enkel: kan samarbete mellan människa och AI göra
           utvecklingen snabbare och bättre? Genom att låta AI stötta mig i både planering
@@ -336,7 +334,7 @@ sv:
       quote: "Vad händer när teknik används för att bygga broar mellan verksamheter, kulturer och geografier? Med projektet Samplanering.se fick jag möjlighet att som projektledare driva ett arbete där teknisk implementation och mellanmänsklig dialog gick hand i hand."
       sections:
         background_purpose:
-          title: Projektöversikt
+          title: Om projektet
           content: |-
             <p>Samplanering.se var ett digitaliseringsprojekt som jag ledde i rollen som projektledare. Målet var att införa ett nytt digitalt verktyg som förbättrar kommunikationen och informationsutbytet mellan Holmen och berörda samebyar – i syfte att effektivisera planeringsarbetet och skapa bättre förutsättningar för samråd.</p>
             
@@ -344,11 +342,12 @@ sv:
             <p>Lösningen togs fram i samarbete med en extern systemleverantör och omfattade allt från datamigrering och funktionstestning till utbildningsinsatser och införande i verksamheten.</p>
             <h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">Men vad är samplanering?</h4>
             <p>Samplanering är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
+          bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering.
         tools_services:
-          title: Mål & Arbetssätt
+          title: Projektöversikt
           stack_title: Mål
           stack_list:
-            - Införa ett nytt digitalt verktyg för samplanering i tid inför nästa verksamhetssäsong
+            - Införa ett nytt digitalt verktyg för en effektivare samplanering  
             - Skapa en användarvänlig upplevelse för alla parter
             - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
           services_title: Arbetssätt
@@ -369,5 +368,5 @@ sv:
           title: Lärdomar
           list:
             - "Vikten av en tydlig rollfördelning mellan verksamhet, IT och leverantörer."
-            - "Betydelsen av tidig involvering av framtida förvaltning."
+            - "Betydelsen av tidig involvering av förvaltning."
             - "Värdet av lyhördhet inför olika användargruppers behov."

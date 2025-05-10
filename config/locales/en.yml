@@ -341,7 +341,7 @@ en:
       quote: "What happens when technology is used to build bridges between operations, cultures, and geographies? With the Samplanering.se project, I had the opportunity as a project manager to lead work where technical implementation and interpersonal dialogue went hand in hand."
       sections:
         background_purpose:
-          title: Project Overview
+          title: About the Project
           content: |-
             <p>Samplanering.se was a digitalization project that I led in my role as project manager. The goal was to implement a new digital tool that improves communication and information exchange between Holmen and affected Sami villages – in order to streamline planning work and create better conditions for consultation.</p>
             
@@ -351,10 +351,10 @@ en:
             <p>"Samplanering" (co-planning) is a structured form of dialogue between the forestry industry and reindeer husbandry, where parties jointly plan forestry measures in reindeer herding areas. The purpose is to create mutual understanding, facilitate consultation, and make more well-founded decisions.</p>
           bold_statement: Digital collaboration with Sami villages – a project in change management and digitalization.
         tools_services:
-          title: Goals & Approach
+          title: Project Overview
           stack_title: Goals
           stack_list:
-            - Implement a new digital tool for co-planning in time for the next operational season
+            - Implement a new digital tool for effective co-planning
             - Create a user-friendly experience for all parties
             - Secure a long-term maintainable system with good technical stability
           services_title: Approach
@@ -375,5 +375,5 @@ en:
           title: Key Learnings
           list:
             - "The importance of a clear division of roles between operations, IT, and suppliers."
-            - "The significance of early involvement of future maintenance and operations teams."
+            - "The significance of early involvement of maintenance and operations teams."
             - "The value of responsiveness to the needs of different user groups."
