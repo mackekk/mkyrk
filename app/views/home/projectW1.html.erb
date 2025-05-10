@@ -27,6 +27,17 @@
 
           <h1 class="text-3xl font-bold text-gray-900 mb-4"><%= t('projects.work_example.title') %></h1>
           
+          <!-- Company name -->
+          <div class="flex items-center mb-4">
+            <div class="rounded mr-3" style="width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background-color: #0F233B;">
+              <!-- Holmen "H" logo - white H on blue background -->
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor" style="transform: translateY(0px);">
+                <path d="M7 5v14h2v-6h6v6h2V5h-2v6H9V5z"/>
+              </svg>
+            </div>
+            <span class="text-gray-700 font-medium"><%= t('projects.work_example.company') %></span>
+          </div>
+          
           <div class="flex items-center mb-6">
             <div class="bg-green-100 rounded-full p-2 mr-3">
               <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,8 +45,8 @@
               </svg>
             </div>
             <span class="text-gray-600"><%= t('projects.work_example.timeline') %></span>
-            <span class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-              <%= t('projects.project_status.coming_soon') %>
+            <span class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <%= t('projects.work_example.status') %>
             </span>
           </div>
           
@@ -169,7 +180,7 @@
       
       <!-- Back Button -->
       <div class="mt-6 mb-12">
-        <%= link_to params[:locale] ? localized_projects_path : projects_path, class: "inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
+        <%= link_to params[:locale] ? localized_projects_path : projects_path, class: "w-full sm:w-auto inline-flex items-center justify-center px-4 py-3 sm:py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
           <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
           </svg>

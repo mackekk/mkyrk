@@ -337,7 +337,9 @@ en:
       tech_list: Collaboration platform, Digital consultation process, Change management
       technologies: 'Technologies used:'
       title: Digital Collaboration with Sami Villages
-      timeline: "2022 - 2023"
+      timeline: "May - December 2023"
+      status: "Completed"
+      company: "Holmen Skog"
       quote: "<strong>How can digital technology support collaboration between forestry and reindeer husbandry?</strong>
 In the Samplanering.se project, as a project manager I led work where technical solutions, business needs, and close collaboration with IT and suppliers needed to go hand in hand."
       sections:
@@ -374,30 +376,30 @@ In the Samplanering.se project, as a project manager I led work where technical 
             - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
             - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
             - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"
-          results:
-            title: Results
-            intro: |-
-              <div class="mt-6"></div>
+        results:
+          title: Results
+          intro: |-
+            <div class="mt-6"></div>
 
-              <p>The project resulted in a stable and functional platform that is used today in the daily co-planning work between Holmen and affected Sami villages. We achieved our goal – and most importantly, the tool is being used for real.</p>
+            <p>The project resulted in a stable and functional platform that is used today in the daily co-planning work between Holmen and affected Sami villages. We achieved our goal – and most importantly, the tool is being used for real.</p>
 
-              <div class="mt-6"></div>
-              
-              <p>One of the major benefits is that further development now happens jointly with other forestry companies and the system provider. This ensures that the user experience remains the same for reindeer husbandry regardless of who invites to consultation – something that both simplifies and lowers the threshold for digital participation.</p>
-            outcomes:
-              - "The system was put into operation according to plan and is used today as a support for consultation processes"
-              - "Streamlining of internal working methods and improved accessibility to digital materials"
-              - "Model for future digitalization initiatives where different actors collaborate"
-          lessons:
-            title: Key Learnings
-            intro: "Leading a digital project in collaboration with operations, IT, and an external supplier provided several concrete learnings:"
-            list:
-              - "Clear role distribution and shared expectations from the start made the work smoother and reduced friction in decision pathways"
-              - "When maintenance teams are involved early, the transition from project to operation becomes significantly easier and more sustainable"
-              - "Different users have different needs – being responsive to those needs, even when they're not part of the project team, has a major impact on how well a solution is received"
-          section_headings:
-            project_overview: "Project Overview"
-            technologies_used: "Technologies Used"
-            my_role: "My Role"
-            results: "Results"
-            lessons_learned: "Lessons Learned"
+            <div class="mt-6"></div>
+            
+            <p>One of the major benefits is that further development now happens jointly with other forestry companies and the system provider. This ensures that the user experience remains the same for reindeer husbandry regardless of who invites to consultation – something that both simplifies and lowers the threshold for digital participation.</p>
+          outcomes:
+            - "The system was put into operation according to plan and is used today as a support for consultation processes"
+            - "Streamlining of internal working methods and improved accessibility to digital materials"
+            - "Model for future digitalization initiatives where different actors collaborate"
+        lessons:
+          title: Key Learnings
+          intro: "Leading a digital project in collaboration with operations, IT, and an external supplier provided several concrete learnings:"
+          list:
+            - "Clear role distribution and shared expectations from the start made the work smoother and reduced friction in decision pathways"
+            - "When maintenance teams are involved early, the transition from project to operation becomes significantly easier and more sustainable"
+            - "Different users have different needs – being responsive to those needs, even when they're not part of the project team, has a major impact on how well a solution is received"
+        section_headings:
+          project_overview: "Project Overview"
+          technologies_used: "Technologies Used"
+          my_role: "My Role"
+          results: "Results"
+          lessons_learned: "Lessons Learned"
