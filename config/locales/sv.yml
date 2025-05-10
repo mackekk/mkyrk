@@ -331,17 +331,19 @@ sv:
       technologies: 'Tekniker använda:'
       title: Digital samverkan med samebyar
       timeline: "2022 - 2023"
-      quote: "Vad händer när teknik används för att bygga broar mellan verksamheter, kulturer och geografier? Med projektet Samplanering.se fick jag möjlighet att som projektledare driva ett arbete där teknisk implementation och mellanmänsklig dialog gick hand i hand."
+      quote: "<strong>Hur kan digital teknik stötta samverkan mellan skogsbruk och rennäring?</strong>
+I projektet Samplanering.se fick jag som projektledare leda ett arbete där teknisk lösning, verksamhetens behov och ett nära samarbete med IT och leverantör behövde gå hand i hand."
       sections:
         background_purpose:
           title: Om projektet
           content: |-
-            <p>Samplanering.se var ett digitaliseringsprojekt som jag ledde i rollen som projektledare. Målet var att införa ett nytt digitalt verktyg som förbättrar kommunikationen och informationsutbytet mellan Holmen och berörda samebyar – i syfte att effektivisera planeringsarbetet och skapa bättre förutsättningar för samråd.</p>
+            <p>I Samplanering.se fick jag leda arbetet med att införa ett nytt digitalt verktyg som skulle förbättra kommunikationen och informationsutbytet mellan Holmen och berörda samebyar – för att effektivisera planeringen och skapa bättre förutsättningar för samråd.</p>
             
             <div class="mt-6"></div>
             <p>Lösningen togs fram i samarbete med en extern systemleverantör och omfattade allt från datamigrering och funktionstestning till utbildningsinsatser och införande i verksamheten.</p>
-            <h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">Men vad är samplanering?</h4>
-            <p>Samplanering är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
+            
+            <div class="mt-6"></div>
+            <p>För den som inte är bekant med begreppet: <strong>samplanering</strong> är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
             
             <div class="mt-6"></div>
             <p>Projektet bedrevs i tätt samarbete mellan verksamhet, IT och externa leverantörer. Vi arbetade agilt och målstyrt, med fokus på kvalitet, användarbehov och tidsramar.</p>
@@ -360,6 +362,7 @@ sv:
             - Skapa en användarvänlig upplevelse för alla parter
             - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
           services_title: Arbetssätt
+          services_intro: "Vi drev projektet i nära samarbete mellan verksamhet, IT och leverantör, med fokus på kvalitet, tempo och framtida förvaltning. Några av de viktigaste momenten:"
           services:
             - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
             - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
@@ -368,6 +371,14 @@ sv:
           title: Resultat
           intro: |-
             <p>Projektet levererade flera betydande resultat som fick positiv inverkan på samarbetet mellan Holmen och samebyarna:</p>
+
+            <div class="mt-6"></div>
+
+            <p>Projektet resulterade i en stabil och fungerande plattform som idag används i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar. Vi nådde vårt mål – och viktigast av allt, verktyget används på riktigt.</p>
+
+            <div class="mt-6"></div>
+            
+            <p>En av de stora vinsterna är att vidareutvecklingen nu sker gemensamt med andra skogsbolag och systemleverantören. Det gör att användarupplevelsen blir densamma för rennäringen oavsett vem som bjuder in till samråd – något som både förenklar och sänker tröskeln för att delta digitalt.</p>
           outcomes:
             - "Systemet togs i drift enligt plan och används idag som ett stöd för samrådsprocesser"
             - "Effektivisering av interna arbetssätt och förbättrad tillgänglighet till digitala underlag"
