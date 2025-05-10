@@ -64,10 +64,10 @@ en:
   cv:
     certifications:
       list:
-      - Grunderna i innovationsledning ISO 56002 – Svenska Institutet för Standarder
-      - Värdedriven Projektledning – Cornerstone
-      - Att leda utan att vara chef – Move
-      - Change maker – Making Change Sweden
+      - Fundamentals of Innovation Management ISO 56002 – Swedish Standards Institute
+      - Value-Driven Project Management – Cornerstone
+      - Leading Without Being a Manager – Move
+      - Change Maker – Making Change Sweden
       title: Courses and Certifications
     contact_me: Contact me
     download_pdf: Download PDF
@@ -197,95 +197,96 @@ en:
   project0:
     back_to_projects: Back to projects
     contact_me: Contact me
-    quote: An experiment where <strong>AI becomes a creative partner</strong> in the
-      development process - exploring new ways to create digital products.
+    quote: "What happens when AI evolves beyond just being a helper to become a true co-creator of digital products? That's what I set out to discover with Kyrk.org."
     sections:
+      background_purpose:
+        title: Project Overview
+        content: "<p>In recent years, AI has transformed from an academic research field into an everyday tool for professionals across industries – developers, designers, lawyers, editors, and many more. Tools like ChatGPT, Claude, and code assistants like Copilot and Cursor are revolutionizing our creative and development processes.</p>
+
+          <p>However, this rapid evolution raises important questions for organizations and individuals:<br>
+          <em>How can we integrate AI into our workflows while maintaining appropriate oversight?</em><br>
+          <em>What happens to human creativity when algorithms become active collaborators?</em><br>
+          <em>How do we balance AI capabilities with human judgment in development processes?</em></p>
+
+          <p>This project offers a practical response to these questions. I wanted to explore firsthand how AI tools could help build a personal website from the ground up – not just using AI as a passive tool, but actively collaborating with it, orchestrating a blend of human creativity and computational efficiency.</p>"
+        
+        bold_statement: "This project serves as a practical experiment in how AI-augmented work might evolve in the near future."
+        conclusion: "The results demonstrate that AI doesn't just save time – it can fundamentally transform our approach to thinking, organizing, and creating."
+      
       goals_approach:
-        approach: My hypothesis was that an iterative interplay between human and
-          AI could shorten development time, improve code quality, and unleash creativity.
-        goals: I wanted to build a modern, responsive, and aesthetically pleasing
-          personal website from concept to production, while documenting the process,
-          costs, and learnings to evaluate the return on investment.
-        title: Project Goals & Approach
-      lessons:
-        list:
-        - "<strong>Increased efficiency</strong> – Development time decreased with
-          AI assistance"
-        - "<strong>New skills</strong> – Developed novel approaches to working with
-          AI"
-        - "<strong>Human-machine balance</strong> – Human judgment remains critical"
-        - "<strong>Rapid feedback loop</strong> – Switching between ChatGPT and Cursor
-          created short idea-to-code cycles"
-        - "<strong>AI ≠ autopilot</strong> – Human context and quality assurance are
-          crucial"
-        - "<strong>Scalable workflow</strong> – The structure resembles traditional
-          project management; AI enhances rather than replaces"
-        title: Key Lessons Learned
-      overview_background:
-        background1: In an era when AI tools are revolutionizing how we work, I wanted
-          to explore how these tools can enhance the web development process. My goal
-          was to create a personal website while exploring a new workflow where I
-          act as an orchestrator between human creativity and AI capabilities.
-        background2: I aimed to build a responsive, modern website with high quality,
-          while gaining insights into AI-assisted development.
-        content: This project represents an experiment in future ways of working,
-          where I explore how AI tools can be integrated into the development process
-          to build a personal website that is both functional and aesthetically pleasing.
-        title: Project Overview & Background
+        title: Goals & Approach
+        goals_title: Goals
+        approach_title: Approach
+        goals: "The goal was to build a modern, responsive, and aesthetically pleasing website – from concept to deployed product. At the same time, I wanted to document the process, costs, and key learnings to assess the return on investment."
+        approach: "I wanted to test a hypothesis: that an iterative interplay between human and AI could shorten development time, improve code quality, and unleash creativity. By combining my own decisions with AI support in both planning and code generation, I was able to evaluate the effect of this interaction in practice."
+      
+      tools_services:
+        title: Technical Solution & Costs
+        content: "I chose a modern and cost-effective technical stack for the project. Here's what you need to get started with a similar project."
+        tech_description: "<p>When selecting technologies, I focused on combining tools I'm comfortable with alongside modern AI solutions that could streamline development.</p>
+
+          <p>Ruby on Rails was chosen for its rapid setup and solid structure for smaller projects. TailwindCSS provided design flexibility without having to manage heavy stylesheets. Git Bash was used for version control in a terminal-based workflow.</p>
+          
+          <p>On the AI side, Cursor with Claude 3.7 served as an executing assistant in the coding work, while ChatGPT Plus functioned as a sounding board and planning support throughout the process.</p>"
+        development_stack: Development Stack
+        stack_list:
+        - Ruby on Rails
+        - TailwindCSS
+        - HTML & ERB
+        - Git Bash
+        ai_tools: AI Tools
+        ai_list:
+        - Cursor (Pro) with Claude 3.7 Sonnet
+        - ChatGPT Plus
+        services_title: Services & Costs
+        services:
+        - "<strong>Namecheap</strong> – $7.50/year – Identity and DNS"
+        - "<strong>Render</strong> – $7/month – 24/7 hosting"
+        - "<strong>Cursor</strong> – $20/month* – Code editor with Claude 3.7 & GPT-4o"
+        - "<strong>ChatGPT</strong> – $20/month* – Planning & explanation support"
+        cost_note: "* Cursor and ChatGPT are used for multiple purposes and projects, beyond this project."
+        total: 'Total cost: <strong>~$47/month</strong> or <strong>~$571 for the first year</strong>'
+        brief_results_title: Key Results
+      
       results:
+        title: Results & Reflection
+        intro: "<p>This project wasn't characterized by a linear process but by a dynamic and educational workflow. Ideas evolved into plans, which became code, which was tested – and each iteration became a lesson in itself. It was a continuous shifting between thinking, creating, reflecting, and adjusting.</p>
+
+        <p><strong>ChatGPT Plus</strong> served as a sounding board in the thinking phase – a place to ask questions, test reasoning, and structure thoughts. When something was unclear, such as a method's function or choice of approach, the model functioned as a discussion partner in planning and analysis.</p>
+        
+        <p><strong>Cursor with Claude 3.7</strong> took over in the execution stage. The tool delivered code directly in the editor, suggested how tasks could be broken down, and recommended commands in the terminal. As a technical assistant, it was fast, precise, and context-aware.</p>
+        
+        <p>What made the approach particularly powerful was the functionalization of AI tools. By using different models with clear roles – rather than relying on a single general solution – it became easier to maintain structure, overview, and momentum. The human served as a node between systems, and it was in the transitions between analysis, execution, and review that direction, prioritization, and creative responsibility took shape.</p>
+        
+        <p>The project was completed in a total of <strong>30 hours</strong>, from initial idea to finished and launched website. But the real result lay in the working method – a model for how AI tools and human judgment together can create something greater than the sum of its parts.</p>
+        
+        <p>This can be seen as a precursor to broader development. Working methods, professional roles, and workflows face potential transformation – where more people will work independently with support from multiple AI systems. Humans will continue to set the direction, but the tools at our disposal have become exponentially more powerful. This project points not only to what is possible today – but also to the direction we are moving toward tomorrow.</p>"
+        
+        time_content: By using an AI-driven workflow, I was able to keep the working time to just 30 hours total, from initial concept to launched website.
+        brief_results:
+        - "30 working hours total – from initial concept to launched website"
+        - "24/7 hosting at low cost via Render"
+        - "~$47/month total cost, including hosting, AI tools, and domain"
+        - "Better focus and flow thanks to clear role distribution between me and the AI"
+        - "A workflow that is scalable and applicable to other projects"
         commits:
         - "<strong>Apr 24</strong> – 6 commits, 2 hours"
         - "<strong>May 6</strong> – 7 commits, 2.5 hours"
         - "<strong>May 7</strong> – 4 commits, 1.5 hours"
         - "<strong>May 8</strong> – 11 commits, 4 hours"
         - "<strong>May 9</strong> – 16 commits, 5 hours"
-        time_content: By using an AI-driven workflow, I was able to keep the working
-          time to just 15 hours total.
-        title: Results & Time Spent
-        total: 'Total: <strong>15 hours</strong>'
-      tools_stack:
-        ai_list:
-        - Cursor (Pro) with Claude 3.7 Sonnet
-        - ChatGPT Plus
-        ai_tools: AI Tools
-        content: I chose a modern and cost-effective technical stack for the project.
-          Here's what you need to get started with a similar project.
-        cost_note: "* Cursor and ChatGPT are used for multiple purposes and projects,
-          beyond this project."
-        development_stack: Development Stack
-        services:
-        - "<strong>Namecheap</strong> – $7.50/year – Identity and DNS"
-        - "<strong>Render</strong> – $7/month – 24/7 hosting"
-        - "<strong>Cursor</strong> – $20/month* – Code editor with Claude 3.7 & GPT-4o"
-        - "<strong>ChatGPT</strong> – $20/month* – Planning & explanation support"
-        services_title: Services & Costs
-        stack_list:
-        - Ruby on Rails
-        - TailwindCSS
-        - HTML & ERB
-        - Git Bash
-        title: Tools & Technical Stack
-        total: 'Total cost: <strong>~$47/month</strong> or <strong>~$571 for the first
-          year</strong>'
-      workflow:
-        cycles:
-        - I formulated clear goals and requirements for each component
-        - AI assistants generated code and solution proposals
-        - I reviewed, tested, and refined the code
-        cycles_title: Development Cycles
-        intro: One of the most fascinating aspects of this project was my role as
-          an orchestrator between different AI tools and technical solutions.
-        roles:
-        - "<strong>Ideation</strong> – ChatGPT Plus as a strategic sounding board
-          for stack choices and UX flows"
-        - "<strong>Implementation</strong> – Cursor with Claude 3.7 as an executing
-          agent for controllers, Tailwind CSS, and tests"
-        - "<strong>Debugging</strong> – Cursor as a debugging partner for patch suggestions
-          on stack traces"
-        - "<strong>Quality Gate</strong> – Me as the conductor and QA for prioritization
-          and code review"
-        roles_title: Roles in the Workflow
-        title: Workflow & Roles
+        total: 'Total: <strong>30 hours</strong>'
+      
+      lessons:
+        title: Key Lessons Learned
+        list:
+        - "<strong>Increased efficiency</strong> – Development time decreased with AI assistance"
+        - "<strong>New skills</strong> – Developed novel approaches to working with AI"
+        - "<strong>Human-machine balance</strong> – Human judgment remains critical"
+        - "<strong>Rapid feedback loop</strong> – Switching between ChatGPT and Cursor created short idea-to-code cycles"
+        - "<strong>AI ≠ autopilot</strong> – Human context and quality assurance are crucial"
+        - "<strong>Scalable workflow</strong> – The structure resembles traditional project management; AI enhances rather than replaces"
+    
     status: Ongoing
     timeline: 2025-04-24 to 2025-05-09
     title: Kyrk.org

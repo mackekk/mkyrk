@@ -194,94 +194,96 @@ sv:
   project0:
     back_to_projects: Tillbaka till projekt
     contact_me: Kontakta mig
-    quote: Ett experiment där <strong>AI blir en kreativ partner</strong> i utvecklingsprocessen
-      - ett utforskande av nya sätt att skapa digitala produkter.
+    quote: "Vad händer när AI inte bara hjälper – utan blir en medskapare i hur digitala produkter formas? Det ville jag ta reda på med Kyrk.org."
     sections:
+      background_purpose:
+        title: Projektöversikt
+        content: "<p>Under de senaste åren har AI gått från att vara ett forskningsområde till att bli en del av vardagen för allt fler yrkesgrupper – från utvecklare och formgivare till jurister och redaktörer. Verktyg som ChatGPT, Claude och kodassistenter som Copilot och Cursor förändrar nu hur vi tänker, skapar och bygger.</p>
+
+          <p>Samtidigt står många organisationer och individer inför frågor som:<br>
+          <em>Hur kan AI integreras i det dagliga arbetet utan att tappa kontroll?</em><br>
+          <em>Vad händer med kreativiteten när algoritmer är medskapare?</em><br>
+          <em>Vilken roll spelar det mänskliga omdömet i en AI-driven utvecklingsprocess?</em></p>
+
+          <p>Detta projekt representerar ett svar – eller snarare ett experiment – i just dessa frågor. Jag ville utforska hur AI-verktyg konkret kan användas för att bygga en personlig webbplats från grunden, där jag inte bara är användare av AI, utan även fungerar som samordnare i ett samspel mellan mänsklig kreativitet och maskinell snabbhet.</p>"
+        
+        bold_statement: "Detta projekt var ett praktiskt experiment i framtidens AI-stödda arbetssätt."
+        conclusion: "Det här projektet visar att AI inte bara kan spara tid, utan också förändra hur vi tänker, organiserar och skapar – på riktigt."
+      
       goals_approach:
-        approach: Min hypotes var att ett iterativt samspel mellan människa och AI
-          kunde korta utvecklingstiden, höja kodkvaliteten och frigöra kreativitet.
-        goals: Jag ville bygga en modern, responsiv och estetiskt tilltalande hemsida
-          från idé till drift, samtidigt som jag dokumenterade processen, kostnaderna
-          och lärdomarna för att kunna värdera avkastningen på investeringen.
-        title: Projektmål & angreppssätt
-      lessons:
-        list:
-        - "<strong>Ökad effektivitet</strong> – Utvecklingstiden minskade med AI-assistans"
-        - "<strong>Nya färdigheter</strong> – Utvecklade nya arbetssätt med AI"
-        - "<strong>Balans människa-maskin</strong> – Mänskligt omdöme är kritiskt"
-        - "<strong>Snabb feedback-loop</strong> – Växlingen mellan ChatGPT och Cursor
-          gav korta idé-till-kod-cykler"
-        - "<strong>AI ≠ autopilot</strong> – Mänsklig kontext och kvalitetssäkring
-          är avgörande"
-        - "<strong>Skalbart arbetssätt</strong> – Strukturen liknar traditionell projektledning;
-          AI förstärker snarare än ersätter"
-        title: Viktiga lärdomar
-      overview_background:
-        background1: I en tid när AI-verktyg revolutionerar hur vi arbetar ville jag
-          utforska hur dessa verktyg kan användas för att förbättra webbutvecklingsprocessen.
-          Syftet var att skapa en personlig webbplats och samtidigt utforska ett nytt
-          arbetssätt där jag fungerade som orkestrator mellan människa och AI.
-        background2: Målet var att bygga en responsiv, modern webbplats med hög kvalitet,
-          samtidigt som jag lärde mig mer om AI-assisterad utveckling.
-        content: Detta projekt representerar ett experiment i framtidens arbetssätt,
-          där jag utforskar hur AI-verktyg kan integreras i utvecklingsprocessen för
-          att bygga en personlig webbplats som är både funktionell och estetiskt tilltalande.
-        title: Projektöversikt & bakgrund
+        title: Mål & arbetssätt
+        goals_title: Mål
+        approach_title: Arbetssätt
+        goals: "Målet var att bygga en modern, responsiv och estetiskt tilltalande hemsida – från idé till driftsatt produkt. Samtidigt ville jag dokumentera processen, kostnaderna och de viktigaste lärdomarna för att kunna bedöma avkastningen på investeringen."
+        approach: "Jag ville testa en hypotes: att ett iterativt samspel mellan människa och AI kan korta utvecklingstiden, höja kodkvaliteten och frigöra kreativitet. Genom att kombinera mina egna beslut med AI-stöd i både planering och kodgenerering kunde jag utvärdera effekten av detta samspel i praktiken."
+      
+      tools_services:
+        title: Teknisk lösning & kostnader
+        content: "Jag valde en modern och kostnadseffektiv teknisk stack för projektet. Här är vad du behöver för att komma igång med ett liknande projekt."
+        tech_description: "<p>I valet av teknik fokuserade jag på att kombinera verktyg jag är bekväm med med moderna AI-lösningar som kunde effektivisera utvecklingen.</p>
+
+          <p>Ruby on Rails valdes för sin snabba uppsättning och goda struktur för mindre projekt. TailwindCSS gav mig flexibilitet i design utan att behöva hantera tunga stilmallar. Git Bash användes för versionshantering i ett terminalbaserat flöde.</p>
+          
+          <p>På AI-sidan användes Cursor med Claude 3.7 som en exekverande assistent i kodarbetet, medan ChatGPT Plus fungerade som bollplank och planeringsstöd under hela processen.</p>"
+        development_stack: Utvecklingsstack
+        stack_list:
+        - Ruby on Rails
+        - TailwindCSS
+        - HTML & ERB
+        - Git Bash
+        ai_tools: AI-verktyg
+        ai_list:
+        - Cursor (Pro) med Claude 3.7 Sonnet
+        - ChatGPT Plus
+        services_title: Tjänster & kostnader
+        services:
+        - "<strong>Namecheap</strong> – 80 SEK/år – Identitet och DNS"
+        - "<strong>Render</strong> – 75 SEK/mån – Dygnet-runt-hosting"
+        - "<strong>Cursor</strong> – 215 SEK/mån* – Kodredigerare med Claude 3.7 & GPT-4o"
+        - "<strong>ChatGPT</strong> – 215 SEK/mån* – Planerings- & förklaringsstöd"
+        cost_note: "* Cursor och ChatGPT används för flera ändamål och projekt, utanför detta projekt."
+        total: 'Totalkostnad: <strong>~505 SEK/månad</strong> eller <strong>~6 140 SEK för första året</strong>'
+        brief_results_title: Nyckelresultat
+      
       results:
+        title: Resultat & reflektion
+        intro: "<p>Det här projektet präglades inte av en linjär process utan av ett dynamiskt och lärorikt arbetsflöde. Idéer växte fram till planer, som blev till kod, som testades – och varje iteration blev en lektion i sig. Det var ett kontinuerligt växlande mellan att tänka, skapa, reflektera och justera.</p>
+
+        <p><strong>ChatGPT Plus</strong> fungerade som ett bollplank i den tänkande fasen – en plats för att ställa frågor, pröva resonemang och strukturera tankar. När något var oklart, som metodens funktion eller val av angreppssätt, fungerade modellen som en diskussionspartner i planering och analys.</p>
+        
+        <p><strong>Cursor med Claude 3.7</strong> tog vid i det exekverande skedet. Verktyget levererade kod direkt i editorn, föreslog hur uppgifter kunde brytas ner och rekommenderade kommandon i terminalen. Som teknisk assistent var det snabbt, precist och kontextmedvetet.</p>
+        
+        <p>Det som gjorde arbetssättet särskilt kraftfullt var funktionaliseringen av AI-verktygen. Genom att använda olika modeller med tydliga roller – snarare än att förlita sig på en enda allmänlösning – blev det lättare att upprätthålla struktur, överblick och tempo. Människan fungerade som nod mellan systemen, och det var i övergångarna mellan analys, exekvering och granskning som riktning, prioritering och kreativt ansvar tog form.</p>
+        
+        <p>Projektet genomfördes på totalt <strong>30 timmar</strong>, från första idé till färdig och lanserad webbplats. Men det verkliga resultatet låg i arbetssättet – en modell för hur AI-verktyg och mänskligt omdöme tillsammans kan skapa något mer än summan av delarna.</p>
+        
+        <p>Detta kan ses som ett förstadium till en bredare utveckling. Arbetssätt, yrkesroller och arbetsflöden står inför en möjlig omdaning – där fler kommer att arbeta självständigt med stöd av flera AI-system. Människan kommer fortsatt att sätta riktningen, men de verktyg vi har till vårt förfogande har blivit exponentiellt kraftfullare. Det här projektet pekar inte bara på vad som är möjligt idag – utan också på vilken riktning vi rör oss mot i morgon.</p>"
+        
+        time_content: Genom att använda AI-drivet arbetssätt kunde jag hålla arbetstiden nere till bara 30 timmar totalt, från första idé till lanserad hemsida.
+        brief_results:
+        - "30 arbetstimmar totalt – från första idé till lanserad hemsida"
+        - "24/7-drift till låg kostnad via Render"
+        - "~505 kr/månad i kostnad, inklusive hosting, AI-verktyg och domän"
+        - "Bättre fokus och flöde tack vare tydlig rollfördelning mellan mig och AI:n"
+        - "Ett arbetssätt som är skalbart och applicerbart i andra projekt"
         commits:
         - "<strong>24 apr</strong> – 6 commits, 2 timmar"
         - "<strong>6 maj</strong> – 7 commits, 2,5 timmar"
         - "<strong>7 maj</strong> – 4 commits, 1,5 timmar"
         - "<strong>8 maj</strong> – 11 commits, 4 timmar"
         - "<strong>9 maj</strong> – 16 commits, 5 timmar"
-        time_content: Genom att använda AI-drivet arbetssätt kunde jag hålla arbetstiden
-          nere till bara 15 timmar totalt.
-        title: Resultat & tidsåtgång
-        total: 'Totalt: <strong>15 timmar</strong>'
-      tools_stack:
-        ai_list:
-        - Cursor (Pro) med Claude 3.7 Sonnet
-        - ChatGPT Plus
-        ai_tools: AI-verktyg
-        content: Jag valde en modern och kostnadseffektiv teknisk stack för projektet.
-          Här är vad du behöver för att komma igång med ett liknande projekt.
-        cost_note: "* Cursor och ChatGPT används för flera ändamål och projekt, utanför
-          detta projekt."
-        development_stack: Utvecklingsstack
-        services:
-        - "<strong>Namecheap</strong> – 80 SEK/år – Identitet och DNS"
-        - "<strong>Render</strong> – 75 SEK/mån – Dygnet-runt-hosting"
-        - "<strong>Cursor</strong> – 215 SEK/mån* – Kodredigerare med Claude 3.7 &
-          GPT-4o"
-        - "<strong>ChatGPT</strong> – 215 SEK/mån* – Planerings- & förklaringsstöd"
-        services_title: Tjänster & kostnader
-        stack_list:
-        - Ruby on Rails
-        - TailwindCSS
-        - HTML & ERB
-        - Git Bash
-        title: Verktyg & teknisk stack
-        total: 'Totalkostnad: <strong>~505 SEK/månad</strong> eller <strong>~6 140
-          SEK för första året</strong>'
-      workflow:
-        cycles:
-        - Jag formulerade tydliga mål och krav för varje del
-        - AI-assistenterna genererade kod och lösningsförslag
-        - Jag granskade, testade och anpassade koden
-        cycles_title: Utvecklingscykler
-        intro: En av de mest intressanta aspekterna av detta projekt var min roll
-          som samordnare mellan olika AI-verktyg och tekniska lösningar.
-        roles:
-        - "<strong>Idéfas</strong> – ChatGPT Plus som strategiskt bollplank för gem-val
-          och UX-flöden"
-        - "<strong>Implementering</strong> – Cursor med Claude 3.7 som exekverande
-          agent för controllers, Tailwind-CSS och tester"
-        - "<strong>Felsökning</strong> – Cursor som felsökningspartner för patchförslag
-          på stack-trace"
-        - "<strong>Kvalitetskontroll</strong> – Jag som dirigent och QA för prioritering
-          och kodgranskning"
-        roles_title: Roller i arbetsflödet
-        title: Arbetsflöde & roller
+        total: 'Totalt: <strong>30 timmar</strong>'
+      
+      lessons:
+        title: Viktiga lärdomar
+        list:
+        - "<strong>Ökad effektivitet</strong> – Utvecklingstiden minskade med AI-assistans"
+        - "<strong>Nya färdigheter</strong> – Utvecklade nya arbetssätt med AI"
+        - "<strong>Balans människa-maskin</strong> – Mänskligt omdöme är kritiskt"
+        - "<strong>Snabb feedback-loop</strong> – Växlingen mellan ChatGPT och Cursor gav korta idé-till-kod-cykler"
+        - "<strong>AI ≠ autopilot</strong> – Mänsklig kontext och kvalitetssäkring är avgörande"
+        - "<strong>Skalbart arbetssätt</strong> – Strukturen liknar traditionell projektledning; AI förstärker snarare än ersätter"
+    
     status: Pågående
     timeline: 2025-04-24 till 2025-05-09
     title: Kyrk.org

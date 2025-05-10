@@ -45,7 +45,7 @@
     <div class="max-w-4xl mx-auto mt-8">
       <div class="grid grid-cols-1 gap-8">
         
-        <!-- Overview & Background Section -->
+        <!-- Background & Purpose Section -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
@@ -54,66 +54,71 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.overview_background.title') %></h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.background_purpose.title') %></h2>
             </div>
             
             <div class="space-y-5">
-              <p class="text-gray-800 text-lg">
-                <%= t('project0.sections.overview_background.content') %>
-              </p>
+              <div class="text-gray-800 space-y-6">
+                <%= raw(t('project0.sections.background_purpose.content')) %>
+                <p class="mb-6 font-bold"><%= raw(t('project0.sections.background_purpose.bold_statement')) %></p>
+              </div>
               
-              <div class="bg-gray-50 p-4 rounded-lg">
-                <p class="text-gray-800">
-                  <%= t('project0.sections.overview_background.background1') %>
-                </p>
-                <p class="text-gray-800 mt-3">
-                  <%= t('project0.sections.overview_background.background2') %>
+              <!-- Merged Goals & Approach -->
+              <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <div class="border-b md:border-b-0 md:border-r border-gray-200 pb-5 md:pb-0 md:pr-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <%= t('project0.sections.goals_approach.goals_title', default: 'Goals') %>
+                    </h3>
+                    <p class="text-gray-800">
+                      <%= t('project0.sections.goals_approach.goals') %>
+                    </p>
+                  </div>
+                  <div class="pt-5 md:pt-0 md:pl-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <%= t('project0.sections.goals_approach.approach_title', default: 'Approach') %>
+                    </h3>
+                    <p class="text-gray-800">
+                      <%= t('project0.sections.goals_approach.approach') %>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Brief Results -->
+              <div class="mt-8 bg-gray-50 p-5 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                  <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <%= t('project0.sections.tools_services.brief_results_title') %>
+                </h3>
+                <ul class="space-y-3 text-gray-800">
+                  <% t('project0.sections.results.brief_results').each do |result| %>
+                    <li class="flex items-start">
+                      <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      <span><%= raw(result) %></span>
+                    </li>
+                  <% end %>
+                </ul>
+                
+                <p class="mt-6 text-gray-800 italic">
+                  <%= raw(t('project0.sections.background_purpose.conclusion')) %>
                 </p>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Goals & Approach Section -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <div class="px-6 py-8">
-            <div class="flex items-center mb-6">
-              <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
-                <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.goals_approach.title') %></h2>
-            </div>
-            
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div class="border-b md:border-b-0 md:border-r border-gray-200 pb-5 md:pb-0 md:pr-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <%= t('project0.sections.goals_approach.title').split('&')[0] %>
-                </h3>
-                <p class="text-gray-800">
-                  <%= t('project0.sections.goals_approach.goals') %>
-                </p>
-              </div>
-              <div class="pt-5 md:pt-0 md:pl-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
-                  <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  <%= t('project0.sections.goals_approach.title').split('&')[1] %>
-                </h3>
-                <p class="text-gray-800">
-                  <%= t('project0.sections.goals_approach.approach') %>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Tools & Technical Stack Section -->
+        <!-- Technical Solution & Costs Section -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
@@ -123,13 +128,17 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.tools_stack.title') %></h2>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.tools_services.title') %></h2>
             </div>
             
             <div>
               <p class="text-gray-800 mb-6">
-                <%= t('project0.sections.tools_stack.content') %>
+                <%= t('project0.sections.tools_services.content') %>
               </p>
+              
+              <div class="text-gray-800 mb-6 space-y-4">
+                <%= raw(t('project0.sections.tools_services.tech_description')) %>
+              </div>
               
               <!-- Development & AI Tools -->
               <div class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
@@ -138,10 +147,10 @@
                     <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
                     </svg>
-                    <%= t('project0.sections.tools_stack.development_stack') %>
+                    <%= t('project0.sections.tools_services.development_stack') %>
                   </h3>
                   <ul class="space-y-2 text-gray-800">
-                    <% t('project0.sections.tools_stack.stack_list').each_with_index do |tool, index| %>
+                    <% t('project0.sections.tools_services.stack_list').each_with_index do |tool, index| %>
                       <li class="flex items-center">
                         <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
@@ -165,10 +174,10 @@
                     <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
                     </svg>
-                    <%= t('project0.sections.tools_stack.ai_tools') %>
+                    <%= t('project0.sections.tools_services.ai_tools') %>
                   </h3>
                   <ul class="space-y-2 text-gray-800">
-                    <% t('project0.sections.tools_stack.ai_list').each_with_index do |tool, index| %>
+                    <% t('project0.sections.tools_services.ai_list').each_with_index do |tool, index| %>
                       <li class="flex items-center">
                         <svg class="h-5 w-5 mr-2 text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
@@ -189,9 +198,9 @@
               
               <!-- Services & Costs -->
               <div class="bg-gray-50 p-4 rounded-lg">
-                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools_stack.services_title') %></h3>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('project0.sections.tools_services.services_title') %></h3>
                 <ul class="space-y-3 text-gray-800">
-                  <% t('project0.sections.tools_stack.services').each_with_index do |service, index| %>
+                  <% t('project0.sections.tools_services.services').each_with_index do |service, index| %>
                     <li class="flex items-start">
                       <% case index %>
                       <% when 0 # Namecheap %>
@@ -237,71 +246,17 @@
                   <% end %>
                 </ul>
                 
-                <p class="text-gray-600 italic text-sm mt-2"><%= t('project0.sections.tools_stack.cost_note') %></p>
+                <p class="text-gray-600 italic text-sm mt-2"><%= t('project0.sections.tools_services.cost_note') %></p>
                 
                 <div class="mt-4 px-4 py-3 bg-indigo-50 rounded-lg border border-indigo-100">
-                  <p class="text-gray-800 font-medium"><%= raw(t('project0.sections.tools_stack.total')) %></p>
+                  <p class="text-gray-800 font-medium"><%= raw(t('project0.sections.tools_services.total')) %></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Workflow & Roles Section -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <div class="px-6 py-8">
-            <div class="flex items-center mb-6">
-              <div class="flex-shrink-0 bg-indigo-100 rounded-md p-3">
-                <svg class="h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('project0.sections.workflow.title') %></h2>
-            </div>
-            
-            <div>
-              <p class="text-gray-800 mb-6 text-lg">
-                <%= t('project0.sections.workflow.intro') %>
-              </p>
-              
-              <div class="md:grid md:grid-cols-2 md:gap-8">
-                <div class="mb-6 md:mb-0">
-                  <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b border-gray-200">
-                    <%= t('project0.sections.workflow.roles_title') %>
-                  </h3>
-                  <ul class="space-y-3 text-gray-800">
-                    <% t('project0.sections.workflow.roles').each do |role| %>
-                      <li class="flex items-start">
-                        <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
-                        <span><%= raw(role) %></span>
-                      </li>
-                    <% end %>
-                  </ul>
-                </div>
-                
-                <div class="bg-gray-50 p-4 rounded-lg">
-                  <h3 class="text-lg font-bold text-gray-800 mb-4">
-                    <%= t('project0.sections.workflow.cycles_title') %>
-                  </h3>
-                  <ul class="space-y-3 text-gray-800">
-                    <% t('project0.sections.workflow.cycles').each do |cycle| %>
-                      <li class="flex items-start">
-                        <svg class="h-5 w-5 mr-2 text-indigo-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
-                        <span><%= cycle %></span>
-                      </li>
-                    <% end %>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Results & Time Spent Section -->
+        <!-- Results & Reflection Section -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="px-6 py-8">
             <div class="flex items-center mb-6">
@@ -314,7 +269,11 @@
             </div>
             
             <div>
-              <p class="text-gray-800 mb-6 text-lg">
+              <div class="text-gray-800 mb-6 space-y-4">
+                <%= raw(t('project0.sections.results.intro')) %>
+              </div>
+              
+              <p class="text-gray-800 mb-6">
                 <%= t('project0.sections.results.time_content') %>
               </p>
               
