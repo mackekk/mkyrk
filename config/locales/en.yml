@@ -349,7 +349,16 @@ en:
             <p>The solution was developed in collaboration with an external system provider and included everything from data migration and functionality testing to training initiatives and implementation in operations.</p>
             <h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">But what is "samplanering"?</h4>
             <p>"Samplanering" (co-planning) is a structured form of dialogue between the forestry industry and reindeer husbandry, where parties jointly plan forestry measures in reindeer herding areas. The purpose is to create mutual understanding, facilitate consultation, and make more well-founded decisions.</p>
+            
+            <div class="mt-6"></div>
+            <p>The project was conducted in close collaboration between business operations, IT, and external suppliers. We worked in an agile and goal-oriented manner, focusing on quality, user needs, and timeframes.</p>
+          
           bold_statement: Digital collaboration with Sami villages – a project in change management and digitalization.
+          
+          services:
+            - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
+            - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
+            - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"
         tools_services:
           title: Project Overview
           stack_title: Goals
@@ -359,7 +368,6 @@ en:
             - Secure a long-term maintainable system with good technical stability
           services_title: Approach
           services:
-            - "The project was conducted in close collaboration between business operations, IT, and external suppliers. We worked in an agile and goal-oriented manner, focusing on quality, user needs, and timeframes."
             - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
             - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
             - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"

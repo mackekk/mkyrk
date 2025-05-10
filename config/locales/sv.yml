@@ -342,7 +342,16 @@ sv:
             <p>Lösningen togs fram i samarbete med en extern systemleverantör och omfattade allt från datamigrering och funktionstestning till utbildningsinsatser och införande i verksamheten.</p>
             <h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">Men vad är samplanering?</h4>
             <p>Samplanering är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
+            
+            <div class="mt-6"></div>
+            <p>Projektet bedrevs i tätt samarbete mellan verksamhet, IT och externa leverantörer. Vi arbetade agilt och målstyrt, med fokus på kvalitet, användarbehov och tidsramar.</p>
+          
           bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering.
+          
+          services:
+            - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
+            - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
+            - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande av långsiktig hållbarhet"
         tools_services:
           title: Projektöversikt
           stack_title: Mål
@@ -352,7 +361,6 @@ sv:
             - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
           services_title: Arbetssätt
           services:
-            - "Projektet bedrevs i tätt samarbete mellan verksamhet, IT och externa leverantörer. Vi arbetade agilt och målstyrt, med fokus på kvalitet, användarbehov och tidsramar."
             - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
             - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
             - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande av långsiktig hållbarhet"
