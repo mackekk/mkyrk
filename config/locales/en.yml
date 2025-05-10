@@ -217,17 +217,17 @@ en:
         title: Goals & Approach
         goals_title: Goals
         approach_title: Approach
-        goals: "The goal was to build a modern, responsive, and aesthetically pleasing website – from concept to deployed product. At the same time, I wanted to document the process, costs, and key learnings to assess the return on investment."
-        approach: "I wanted to test a hypothesis: that an iterative interplay between human and AI could shorten development time, improve code quality, and unleash creativity. By combining my own decisions with AI support in both planning and code generation, I was able to evaluate the effect of this interaction in practice."
+        goals: "I wanted to build a beautiful, user-friendly website from start to finish. At the same time, I wanted to track time, costs, and lessons learned to see if it was truly worth the effort."
+        approach: "My idea was simple: could collaboration between humans and AI make development faster and better? By letting AI support me in both planning and coding, I could test this in practice."
       
       tools_services:
         title: Technical Solution & Costs
-        content: "I chose a modern and cost-effective technical stack for the project. Here's what you need to get started with a similar project."
-        tech_description: "<p>When selecting technologies, I focused on combining tools I'm comfortable with alongside modern AI solutions that could streamline development.</p>
+        content: "I chose a modern and cost-effective technical stack for the project. Here's what you need if you want to build something similar."
+        tech_description: "<p>When choosing technologies, I went with tools I'm comfortable with, combined with AI solutions that could speed up the work.</p>
 
-          <p>Ruby on Rails was chosen for its rapid setup and solid structure for smaller projects. TailwindCSS provided design flexibility without having to manage heavy stylesheets. Git Bash was used for version control in a terminal-based workflow.</p>
+          <p>I used Ruby on Rails because it's quick to set up and works well for smaller projects. TailwindCSS made design work easy without complicated stylesheets. Git Bash helped me manage versions through the terminal.</p>
           
-          <p>On the AI side, Cursor with Claude 3.7 served as an executing assistant in the coding work, while ChatGPT Plus functioned as a sounding board and planning support throughout the process.</p>"
+          <p>On the AI side, Cursor with Claude 3.7 was my coding partner, while ChatGPT Plus served as an idea generator and planning assistant.</p>"
         development_stack: Development Stack
         stack_list:
         - Ruby on Rails
@@ -250,19 +250,21 @@ en:
       
       results:
         title: Results & Reflection
-        intro: "<p>This project wasn't characterized by a linear process but by a dynamic and educational workflow. Ideas evolved into plans, which became code, which was tested – and each iteration became a lesson in itself. It was a continuous shifting between thinking, creating, reflecting, and adjusting.</p>
+        intro: "<p>This project didn't follow a straight line. Instead, it was a living process where ideas became plans, which became code, which was tested – and each step taught me something new. I was constantly jumping between thinking, creating, reflecting, and adjusting.</p>
 
-        <p><strong>ChatGPT Plus</strong> served as a sounding board in the thinking phase – a place to ask questions, test reasoning, and structure thoughts. When something was unclear, such as a method's function or choice of approach, the model functioned as a discussion partner in planning and analysis.</p>
+        <p><strong>ChatGPT Plus</strong> was my thinking partner – someone to bounce ideas off, test reasoning, and structure thoughts. When I got stuck or needed to discuss different approaches, it functioned as a conversation partner.</p>
         
-        <p><strong>Cursor with Claude 3.7</strong> took over in the execution stage. The tool delivered code directly in the editor, suggested how tasks could be broken down, and recommended commands in the terminal. As a technical assistant, it was fast, precise, and context-aware.</p>
+        <p><strong>Cursor with Claude 3.7</strong> was my practical helper. It delivered code directly in the editor, helped me break down tasks, and suggested terminal commands. A fast, precise, and responsive sidekick.</p>
         
-        <p>What made the approach particularly powerful was the functionalization of AI tools. By using different models with clear roles – rather than relying on a single general solution – it became easier to maintain structure, overview, and momentum. The human served as a node between systems, and it was in the transitions between analysis, execution, and review that direction, prioritization, and creative responsibility took shape.</p>
+        <p>The clever part of this setup was that each AI tool had its own role. Instead of one AI trying to do everything, I used specialized tools for different tasks. As the conductor between systems, I could steer direction and priorities, while creative solutions emerged from the interaction.</p>
         
-        <p>The project was completed in a total of <strong>30 hours</strong>, from initial idea to finished and launched website. But the real result lay in the working method – a model for how AI tools and human judgment together can create something greater than the sum of its parts.</p>
+        <p>The entire project took just <strong>30 hours</strong> from initial idea to launched site. But the most important result was the workflow itself – a model where AI and human together create something better than what we could accomplish separately.</p>
         
-        <p>This can be seen as a precursor to broader development. Working methods, professional roles, and workflows face potential transformation – where more people will work independently with support from multiple AI systems. Humans will continue to set the direction, but the tools at our disposal have become exponentially more powerful. This project points not only to what is possible today – but also to the direction we are moving toward tomorrow.</p>"
+        <p>This is just the beginning of something bigger. Tomorrow's workplaces will likely look different, with more people working independently with support from various AI systems. We humans will still set the course, but the tools have become incredibly more powerful. This project doesn't just show what's possible today – but also how tomorrow's way of working might look.</p>
         
-        time_content: By using an AI-driven workflow, I was able to keep the working time to just 30 hours total, from initial concept to launched website.
+        <p>If one person can build all this in 30 hours with two AI tools, what could a small team achieve in just a week?</p>"
+        
+        time_content: "With the help of AI, I went from idea to finished website in just 30 hours."
         brief_results:
         - "30 working hours total – from initial concept to launched website"
         - "24/7 hosting at low cost via Render"
@@ -270,11 +272,11 @@ en:
         - "Better focus and flow thanks to clear role distribution between me and the AI"
         - "A workflow that is scalable and applicable to other projects"
         commits:
-        - "<strong>Apr 24</strong> – 5 commits, 7 hours"
-        - "<strong>May 6</strong> – 7 commits, 8 hours"
-        - "<strong>May 7</strong> – 8 commits, 5 hours"
-        - "<strong>May 8</strong> – 10 commits, 6 hours"
-        - "<strong>May 9</strong> – 14 commits, 4 hours"
+        - "<strong>24</strong> Apr – 5 commits, 7 hours"
+        - "<strong>8</strong> May – 7 commits, 6 hours"
+        - "<strong>6</strong> May – 8 commits, 8 hours"
+        - "<strong>9</strong> May – 10 commits, 4 hours"
+        - "<strong>7</strong> May – 14 commits, 5 hours"
         total: 'Total: <strong>30 hours</strong>'
       
       lessons:

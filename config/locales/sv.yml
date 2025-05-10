@@ -214,17 +214,17 @@ sv:
         title: Mål & arbetssätt
         goals_title: Mål
         approach_title: Arbetssätt
-        goals: "Målet var att bygga en modern, responsiv och estetiskt tilltalande hemsida – från idé till driftsatt produkt. Samtidigt ville jag dokumentera processen, kostnaderna och de viktigaste lärdomarna för att kunna bedöma avkastningen på investeringen."
-        approach: "Jag ville testa en hypotes: att ett iterativt samspel mellan människa och AI kan korta utvecklingstiden, höja kodkvaliteten och frigöra kreativitet. Genom att kombinera mina egna beslut med AI-stöd i både planering och kodgenerering kunde jag utvärdera effekten av detta samspel i praktiken."
+        goals: "Jag ville bygga en snygg och användarvänlig hemsida från början till slut. Samtidigt ville jag hålla koll på tid, kostnader och lärdomar för att se om det verkligen var värt insatsen."
+        approach: "Min tanke var enkel: kan samarbete mellan människa och AI göra utvecklingen snabbare och bättre? Genom att låta AI stötta mig i både planering och kodning, kunde jag testa detta i praktiken."
       
       tools_services:
         title: Teknisk lösning & kostnader
-        content: "Jag valde en modern och kostnadseffektiv teknisk stack för projektet. Här är vad du behöver för att komma igång med ett liknande projekt."
-        tech_description: "<p>I valet av teknik fokuserade jag på att kombinera verktyg jag är bekväm med med moderna AI-lösningar som kunde effektivisera utvecklingen.</p>
+        content: "Jag valde en modern och kostnadseffektiv teknisk stack för projektet. Här är vad du behöver om du vill göra något liknande."
+        tech_description: "<p>När jag valde teknik utgick jag från verktyg jag känner mig bekväm med, kombinerat med AI-lösningar som kunde snabba upp arbetet.</p>
 
-          <p>Ruby on Rails valdes för sin snabba uppsättning och goda struktur för mindre projekt. TailwindCSS gav mig flexibilitet i design utan att behöva hantera tunga stilmallar. Git Bash användes för versionshantering i ett terminalbaserat flöde.</p>
+          <p>Jag använde Ruby on Rails eftersom det är snabbt att komma igång med och fungerar bra för mindre projekt. TailwindCSS gjorde designarbetet enkelt utan krångliga stilmallar. Git Bash hjälpte mig hantera versioner via terminalen.</p>
           
-          <p>På AI-sidan användes Cursor med Claude 3.7 som en exekverande assistent i kodarbetet, medan ChatGPT Plus fungerade som bollplank och planeringsstöd under hela processen.</p>"
+          <p>På AI-sidan var Cursor med Claude 3.7 min kodpartner, medan ChatGPT Plus fungerade som idéspruta och planeringshjälp.</p>"
         development_stack: Utvecklingsstack
         stack_list:
         - Ruby on Rails
@@ -247,19 +247,21 @@ sv:
       
       results:
         title: Resultat & reflektion
-        intro: "<p>Det här projektet präglades inte av en linjär process utan av ett dynamiskt och lärorikt arbetsflöde. Idéer växte fram till planer, som blev till kod, som testades – och varje iteration blev en lektion i sig. Det var ett kontinuerligt växlande mellan att tänka, skapa, reflektera och justera.</p>
+        intro: "<p>Det här projektet följde ingen rak linje. Istället var det en levande process där idéer blev till planer, som sedan blev kod, som testades – och varje steg lärde mig något nytt. Jag hoppade ständigt mellan att tänka, skapa, reflektera och justera.</p>
 
-        <p><strong>ChatGPT Plus</strong> fungerade som ett bollplank i den tänkande fasen – en plats för att ställa frågor, pröva resonemang och strukturera tankar. När något var oklart, som metodens funktion eller val av angreppssätt, fungerade modellen som en diskussionspartner i planering och analys.</p>
+        <p><strong>ChatGPT Plus</strong> var min tankepartner – någon att bolla idéer med, testa resonemang och strukturera tankar. När jag körde fast eller behövde diskutera olika angreppssätt, fungerade det som en samtalspartner.</p>
         
-        <p><strong>Cursor med Claude 3.7</strong> tog vid i det exekverande skedet. Verktyget levererade kod direkt i editorn, föreslog hur uppgifter kunde brytas ner och rekommenderade kommandon i terminalen. Som teknisk assistent var det snabbt, precist och kontextmedvetet.</p>
+        <p><strong>Cursor med Claude 3.7</strong> var min praktiska hjälpreda. Det levererade kod direkt i editorn, hjälpte mig bryta ner uppgifter och föreslog terminalkommandon. En snabb, precis och lyhörd sidekick.</p>
         
-        <p>Det som gjorde arbetssättet särskilt kraftfullt var funktionaliseringen av AI-verktygen. Genom att använda olika modeller med tydliga roller – snarare än att förlita sig på en enda allmänlösning – blev det lättare att upprätthålla struktur, överblick och tempo. Människan fungerade som nod mellan systemen, och det var i övergångarna mellan analys, exekvering och granskning som riktning, prioritering och kreativt ansvar tog form.</p>
+        <p>Det smarta med upplägget var att varje AI-verktyg hade sin egen roll. Istället för en AI som skulle göra allt, använde jag specialiserade verktyg för olika uppgifter. Som dirigent mellan systemen kunde jag styra riktning och prioriteringar, medan de kreativa lösningarna växte fram i samspelet.</p>
         
-        <p>Projektet genomfördes på totalt <strong>30 timmar</strong>, från första idé till färdig och lanserad webbplats. Men det verkliga resultatet låg i arbetssättet – en modell för hur AI-verktyg och mänskligt omdöme tillsammans kan skapa något mer än summan av delarna.</p>
+        <p>Hela projektet tog bara <strong>30 timmar</strong> från första idé till lanserad sajt. Men det viktigaste resultatet var själva arbetssättet – en modell där AI och människa tillsammans skapar något bättre än vad vi kan åstadkomma var för sig.</p>
         
-        <p>Detta kan ses som ett förstadium till en bredare utveckling. Arbetssätt, yrkesroller och arbetsflöden står inför en möjlig omdaning – där fler kommer att arbeta självständigt med stöd av flera AI-system. Människan kommer fortsatt att sätta riktningen, men de verktyg vi har till vårt förfogande har blivit exponentiellt kraftfullare. Det här projektet pekar inte bara på vad som är möjligt idag – utan också på vilken riktning vi rör oss mot i morgon.</p>"
+        <p>Detta är bara början på något större. Framtidens arbetsplatser kommer troligen se annorlunda ut, med fler som jobbar självständigt med stöd av olika AI-system. Vi människor kommer fortfarande sätta kursen, men verktygen har blivit otroligt mycket kraftfullare. Det här projektet visar inte bara vad som går att göra idag – utan också hur morgondagens arbetssätt kan se ut.</p>
         
-        time_content: Genom att använda AI-drivet arbetssätt kunde jag hålla arbetstiden nere till bara 30 timmar totalt, från första idé till lanserad hemsida.
+        <p>Om en person kan bygga allt detta på 30 timmar med två AI-verktyg, vad skulle ett litet team kunna åstadkomma på bara en vecka?</p>"
+        
+        time_content: "Med hjälp av AI kunde jag gå från idé till färdig webbplats på bara 30 timmar."
         brief_results:
         - "30 arbetstimmar totalt – från första idé till lanserad hemsida"
         - "24/7-drift till låg kostnad via Render"
@@ -267,11 +269,11 @@ sv:
         - "Bättre fokus och flöde tack vare tydlig rollfördelning mellan mig och AI:n"
         - "Ett arbetssätt som är skalbart och applicerbart i andra projekt"
         commits:
-        - "<strong>24 apr</strong> – 5 commits, 7 timmar"
-        - "<strong>6 maj</strong> – 7 commits, 8 timmar"
-        - "<strong>7 maj</strong> – 8 commits, 5 timmar"
-        - "<strong>8 maj</strong> – 10 commits, 6 timmar"
-        - "<strong>9 maj</strong> – 14 commits, 4 timmar"
+        - "<strong>24</strong> apr – 5 commits, 7 timmar"
+        - "<strong>8</strong> maj – 7 commits, 6 timmar"
+        - "<strong>6</strong> maj – 8 commits, 8 timmar"
+        - "<strong>9</strong> maj – 10 commits, 4 timmar"
+        - "<strong>7</strong> maj – 14 commits, 5 timmar"
         total: 'Totalt: <strong>30 timmar</strong>'
       
       lessons:
