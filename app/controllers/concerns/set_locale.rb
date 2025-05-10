@@ -14,7 +14,7 @@ module SetLocale
   def extract_locale
     # Get locale from URL params (/en/projects)
     parsed_locale = params[:locale]
-    
+
     # Validate that the locale is available
     I18n.available_locales.map(&:to_s).include?(parsed_locale) ? parsed_locale : nil
   end
@@ -23,4 +23,4 @@ module SetLocale
   def default_url_options
     { locale: I18n.locale }
   end
-end 
+end
