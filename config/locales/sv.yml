@@ -378,3 +378,9 @@ sv:
             - "Vikten av en tydlig rollfördelning mellan verksamhet, IT och leverantörer."
             - "Betydelsen av tidig involvering av förvaltning."
             - "Värdet av lyhördhet inför olika användargruppers behov."
+        section_headings:
+          project_overview: "Projektöversikt"
+          technologies_used: "Använd teknik"
+          my_role: "Min roll"
+          results: "Resultat"
+          lessons_learned: "Lärdomar"

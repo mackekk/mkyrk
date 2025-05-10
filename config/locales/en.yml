@@ -385,3 +385,9 @@ en:
             - "The importance of a clear division of roles between operations, IT, and suppliers."
             - "The significance of early involvement of maintenance and operations teams."
             - "The value of responsiveness to the needs of different user groups."
+        section_headings:
+          project_overview: "Project Overview"
+          technologies_used: "Technologies Used"
+          my_role: "My Role"
+          results: "Results"
+          lessons_learned: "Lessons Learned"
