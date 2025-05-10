@@ -332,3 +332,51 @@ sv:
       tech_list: Enterprise Stack, Dataanalys, AI-integration
       technologies: 'Tekniker använda:'
       title: Exempel på Arbetsprojekt
+      timeline: "2022 - Pågående"
+      quote: "Detta företagsprojekt kombinerar digital transformation med AI-integration för att skapa verkligt affärsvärde."
+      sections:
+        background_purpose:
+          title: Projektbakgrund & Syfte
+          content: |-
+            <p>Detta företagsprojekt uppstod ur en organisations behov av att transformera sina äldre system och processer. Med ökande marknadskonkurrens och förändrade kundförväntningar behövde företaget modernisera sin verksamhet.</p>
+            <p>Jag tog mig an utmaningen att leda detta digitala transformationsinitiativ, med fokus på:</p>
+            <ul class="list-disc pl-5 space-y-2 mt-3">
+              <li>Effektivisering av interna arbetsflöden för att minska driftskostnader</li>
+              <li>Integrering av AI-teknologier för att förbättra beslutsprocesser</li>
+              <li>Skapande av nya digitala kanaler för kundengagemang</li>
+              <li>Bygga en datadriven kultur över avdelningsgränserna</li>
+            </ul>
+          bold_statement: Detta projekt står som ett bevis på hur teknologi, när den implementeras korrekt, kan driva betydande affärstransformation.
+        tools_services:
+          title: Teknologier & Tillvägagångssätt
+          stack_title: Teknisk Stack
+          stack_list:
+            - Enterprise Java-ekosystem
+            - Microsoft Power Platform
+            - Dataanalyssvit
+            - Skräddarsydda AI-modeller
+            - CI/CD-automation
+          services_title: Viktiga Tjänster & Metoder
+          services:
+            - "<strong>Agil Skalning</strong>: Implementering av SAFe (Scaled Agile Framework) över flera team"
+            - "<strong>DevOps Excellence</strong>: Bygga automatiserade test- och driftsättningspipelines"
+            - "<strong>Förändringsledning</strong>: Strukturerad metod för organisationsförändring"
+            - "<strong>Datastyrning</strong>: Etablering av robusta datahanteringsprinciper"
+        results:
+          title: Resultat & Påverkan
+          intro: |-
+            <p>Projektet levererade betydande affärsvärde genom att transformera hur organisationen arbetar och interagerar med sina kunder. Här är några av de mätbara resultaten:</p>
+          outcomes:
+            - "30% minskning av driftskostnader genom automatiserade arbetsflöden"
+            - "45% förbättring i time-to-market för nya funktioner"
+            - "20% ökning i kundnöjdhetspoäng"
+            - "Datadrivet beslutsfattande över 80% av avdelningarna"
+            - "Framgångsrik migrering av 95% av äldre system"
+            - "Implementerad prediktiv analys för affärsprognoser"
+        lessons:
+          title: Viktiga Lärdomar
+          list:
+            - "Betydelsen av ledningsstöd kan inte överskattas. Att ha tydligt ledarskap var avgörande för att hantera organisationsmotstånd."
+            - "Att balansera teknisk skuld med utveckling av nya funktioner kräver ständig uppmärksamhet. Vi etablerade en 70/30-uppdelning mellan nya funktioner och systemförbättringar."
+            - "Att bygga tvärfunktionella team med både teknisk och domänexpertis påskyndade våra leveransmöjligheter avsevärt."
+            - "AI-integration är mest framgångsrik när den förstärker mänskliga förmågor snarare än att försöka ersätta dem helt."

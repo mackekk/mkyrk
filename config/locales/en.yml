@@ -338,3 +338,51 @@ en:
       tech_list: Enterprise Stack, Data Analysis, AI Integration
       technologies: 'Technologies used:'
       title: Work Project Example
+      timeline: "2022 - Present"
+      quote: "This enterprise project combines digital transformation with AI integration to deliver real business value."
+      sections:
+        background_purpose:
+          title: Project Background & Purpose
+          content: |-
+            <p>This enterprise-level project emerged from an organization's need to transform their legacy systems and processes. Faced with increasing market competition and changing customer expectations, the company needed to modernize their operations.</p>
+            <p>I took on the challenge of leading this digital transformation initiative, focusing on:</p>
+            <ul class="list-disc pl-5 space-y-2 mt-3">
+              <li>Streamlining internal workflows to reduce operational overhead</li>
+              <li>Integrating AI technologies to enhance decision-making capabilities</li>
+              <li>Creating new digital channels for customer engagement</li>
+              <li>Building a data-driven culture across departments</li>
+            </ul>
+          bold_statement: This project stands as a testament to how technology, when properly implemented, can drive significant business transformation.
+        tools_services:
+          title: Technologies & Approach
+          stack_title: Technology Stack
+          stack_list:
+            - Enterprise Java ecosystem
+            - Microsoft Power Platform
+            - Data analytics suite
+            - Custom AI models
+            - CI/CD automation
+          services_title: Key Services & Methodologies
+          services:
+            - "<strong>Agile at Scale</strong>: Implementing SAFe (Scaled Agile Framework) practices across multiple teams"
+            - "<strong>DevOps Excellence</strong>: Building automated testing and deployment pipelines"
+            - "<strong>Change Management</strong>: Structured approach to organizational change"
+            - "<strong>Data Governance</strong>: Establishing robust data management practices"
+        results:
+          title: Results & Impact
+          intro: |-
+            <p>The project delivered substantial business value by transforming how the organization operated and engaged with its customers. Here are some of the measurable outcomes:</p>
+          outcomes:
+            - "30% reduction in operational costs through automated workflows"
+            - "45% improvement in time-to-market for new features"
+            - "20% increase in customer satisfaction scores"
+            - "Data-driven decision making across 80% of departments"
+            - "Successful migration of 95% of legacy systems"
+            - "Implemented predictive analytics for business forecasting"
+        lessons:
+          title: Key Learnings
+          list:
+            - "The importance of executive sponsorship cannot be overstated. Having clear leadership support was crucial for navigating organizational resistance."
+            - "Balancing technical debt with new feature development requires constant attention. We established a 70/30 split between new features and system improvements."
+            - "Building cross-functional teams with both technical and domain expertise significantly accelerated our delivery capabilities."
+            - "AI integration is most successful when it augments human capabilities rather than trying to replace them entirely."

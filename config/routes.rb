@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
     # Route for individual project pages
     get "/project0", to: "home#project0", as: :localized_project0
+    get "/projectW1", to: "home#projectW1", as: :localized_projectW1
 
     # Route for the CV page
     get "/cv", to: "home#cv", as: :localized_cv
@@ -40,6 +41,7 @@ Rails.application.routes.draw do
 
   # Route for individual project pages
   get "/project0", to: "home#project0"
+  get "/projectW1", to: "home#projectW1"
 
   # Route for the CV page
   get "/cv", to: "home#cv"
