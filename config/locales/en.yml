@@ -377,8 +377,6 @@ In the Samplanering.se project, as a project manager I led work where technical 
           results:
             title: Results
             intro: |-
-              <p>The project delivered several significant results that had a positive impact on the collaboration between Holmen and the Sami villages:</p>
-
               <div class="mt-6"></div>
 
               <p>The project resulted in a stable and functional platform that is used today in the daily co-planning work between Holmen and affected Sami villages. We achieved our goal – and most importantly, the tool is being used for real.</p>
@@ -392,10 +390,11 @@ In the Samplanering.se project, as a project manager I led work where technical 
               - "Model for future digitalization initiatives where different actors collaborate"
           lessons:
             title: Key Learnings
+            intro: "Leading a digital project in collaboration with operations, IT, and an external supplier provided several concrete learnings:"
             list:
-              - "The importance of a clear division of roles between operations, IT, and suppliers."
-              - "The significance of early involvement of maintenance and operations teams."
-              - "The value of responsiveness to the needs of different user groups."
+              - "Clear role distribution and shared expectations from the start made the work smoother and reduced friction in decision pathways"
+              - "When maintenance teams are involved early, the transition from project to operation becomes significantly easier and more sustainable"
+              - "Different users have different needs – being responsive to those needs, even when they're not part of the project team, has a major impact on how well a solution is received"
           section_headings:
             project_overview: "Project Overview"
             technologies_used: "Technologies Used"

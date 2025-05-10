@@ -370,8 +370,6 @@ I projektet Samplanering.se fick jag som projektledare leda ett arbete där tekn
         results:
           title: Resultat
           intro: |-
-            <p>Projektet levererade flera betydande resultat som fick positiv inverkan på samarbetet mellan Holmen och samebyarna:</p>
-
             <div class="mt-6"></div>
 
             <p>Projektet resulterade i en stabil och fungerande plattform som idag används i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar. Vi nådde vårt mål – och viktigast av allt, verktyget används på riktigt.</p>
@@ -385,10 +383,11 @@ I projektet Samplanering.se fick jag som projektledare leda ett arbete där tekn
             - "Modell för framtida digitaliseringsinitiativ där olika aktörer samverkar"
         lessons:
           title: Lärdomar
+          intro: "Att driva ett digitalt projekt i samverkan med både verksamhet, IT och en extern leverantör gav flera konkreta lärdomar:"
           list:
-            - "Vikten av en tydlig rollfördelning mellan verksamhet, IT och leverantörer."
-            - "Betydelsen av tidig involvering av förvaltning."
-            - "Värdet av lyhördhet inför olika användargruppers behov."
+            - "Tydlig rollfördelning och gemensamma förväntningar från start gjorde arbetet smidigare och minskade friktion i beslutsvägarna"
+            - "När förvaltningen kopplas in tidigt, blir övergången från projekt till drift betydligt enklare och mer hållbar"
+            - "Olika användare har olika behov – att vara lyhörd för det, även när de inte sitter med i projektgruppen, har stor påverkan på hur väl en lösning tas emot"
         section_headings:
           project_overview: "Projektöversikt"
           technologies_used: "Använd teknik"
