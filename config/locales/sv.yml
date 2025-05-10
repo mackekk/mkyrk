@@ -327,56 +327,44 @@ sv:
       title: The Social Chef
     title: Mina projekt
     work_example:
-      description: Detta är ett exempel på ett arbetsprojekt för att demonstrera filtreringsfunktionen.
-        När du klickar på 'Arbetsprojekt' i filtret ovan, visas endast detta kort.
-      tech_list: Enterprise Stack, Dataanalys, AI-integration
+      description: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering. 
+        När teknik används för att bygga broar mellan verksamheter, kulturer och geografier.
+      tech_list: Samplaneringsplattform, Digital samrådsprocess, Förändringsledning
       technologies: 'Tekniker använda:'
-      title: Exempel på Arbetsprojekt
-      timeline: "2022 - Pågående"
-      quote: "Detta företagsprojekt kombinerar digital transformation med AI-integration för att skapa verkligt affärsvärde."
+      title: Digital samverkan med samebyar
+      timeline: "2022 - 2023"
+      quote: "Vad händer när teknik används för att bygga broar mellan verksamheter, kulturer och geografier? Med projektet Samplanering.se fick jag möjlighet att som projektledare driva ett arbete där teknisk implementation och mellanmänsklig dialog gick hand i hand."
       sections:
         background_purpose:
-          title: Projektbakgrund & Syfte
+          title: Projektöversikt
           content: |-
-            <p>Detta företagsprojekt uppstod ur en organisations behov av att transformera sina äldre system och processer. Med ökande marknadskonkurrens och förändrade kundförväntningar behövde företaget modernisera sin verksamhet.</p>
-            <p>Jag tog mig an utmaningen att leda detta digitala transformationsinitiativ, med fokus på:</p>
-            <ul class="list-disc pl-5 space-y-2 mt-3">
-              <li>Effektivisering av interna arbetsflöden för att minska driftskostnader</li>
-              <li>Integrering av AI-teknologier för att förbättra beslutsprocesser</li>
-              <li>Skapande av nya digitala kanaler för kundengagemang</li>
-              <li>Bygga en datadriven kultur över avdelningsgränserna</li>
-            </ul>
-          bold_statement: Detta projekt står som ett bevis på hur teknologi, när den implementeras korrekt, kan driva betydande affärstransformation.
+            <p>Projektet syftade till att införa ett nytt digitalt verktyg som stödjer samplaneringsprocessen mellan Holmen och berörda samebyar. Lösningen byggdes i samarbete med en extern utvecklingspartner och inkluderade allt från datamigrering och funktionalitetstestning till utbildningsinsatser och införande i verksamheten.</p>
+            <p>Plattformen förbättrar datautbyte och kommunikation i planeringsarbetet och skapar bättre förutsättningar för samråd och ömsesidig förståelse.</p>
+          bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering.
         tools_services:
-          title: Teknologier & Tillvägagångssätt
-          stack_title: Teknisk Stack
+          title: Mål & Arbetssätt
+          stack_title: Mål
           stack_list:
-            - Enterprise Java-ekosystem
-            - Microsoft Power Platform
-            - Dataanalyssvit
-            - Skräddarsydda AI-modeller
-            - CI/CD-automation
-          services_title: Viktiga Tjänster & Metoder
+            - Införa ett nytt digitalt verktyg för samplanering i tid inför nästa verksamhetssäsong
+            - Skapa en användarvänlig upplevelse för alla parter
+            - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
+          services_title: Arbetssätt
           services:
-            - "<strong>Agil Skalning</strong>: Implementering av SAFe (Scaled Agile Framework) över flera team"
-            - "<strong>DevOps Excellence</strong>: Bygga automatiserade test- och driftsättningspipelines"
-            - "<strong>Förändringsledning</strong>: Strukturerad metod för organisationsförändring"
-            - "<strong>Datastyrning</strong>: Etablering av robusta datahanteringsprinciper"
+            - "Projektet bedrevs i tätt samarbete mellan verksamhet, IT och externa leverantörer. Vi arbetade agilt och målstyrt, med fokus på kvalitet, användarbehov och tidsramar."
+            - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
+            - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
+            - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande av långsiktig hållbarhet"
         results:
-          title: Resultat & Påverkan
+          title: Resultat
           intro: |-
-            <p>Projektet levererade betydande affärsvärde genom att transformera hur organisationen arbetar och interagerar med sina kunder. Här är några av de mätbara resultaten:</p>
+            <p>Projektet levererade flera betydande resultat som fick positiv inverkan på samarbetet mellan Holmen och samebyarna:</p>
           outcomes:
-            - "30% minskning av driftskostnader genom automatiserade arbetsflöden"
-            - "45% förbättring i time-to-market för nya funktioner"
-            - "20% ökning i kundnöjdhetspoäng"
-            - "Datadrivet beslutsfattande över 80% av avdelningarna"
-            - "Framgångsrik migrering av 95% av äldre system"
-            - "Implementerad prediktiv analys för affärsprognoser"
+            - "Systemet togs i drift enligt plan och används idag som ett stöd för samrådsprocesser"
+            - "Effektivisering av interna arbetssätt och förbättrad tillgänglighet till digitala underlag"
+            - "Modell för framtida digitaliseringsinitiativ där olika aktörer samverkar"
         lessons:
-          title: Viktiga Lärdomar
+          title: Lärdomar
           list:
-            - "Betydelsen av ledningsstöd kan inte överskattas. Att ha tydligt ledarskap var avgörande för att hantera organisationsmotstånd."
-            - "Att balansera teknisk skuld med utveckling av nya funktioner kräver ständig uppmärksamhet. Vi etablerade en 70/30-uppdelning mellan nya funktioner och systemförbättringar."
-            - "Att bygga tvärfunktionella team med både teknisk och domänexpertis påskyndade våra leveransmöjligheter avsevärt."
-            - "AI-integration är mest framgångsrik när den förstärker mänskliga förmågor snarare än att försöka ersätta dem helt."
+            - "Vikten av en tydlig rollfördelning mellan verksamhet, IT och leverantörer."
+            - "Betydelsen av tidig involvering av framtida förvaltning."
+            - "Värdet av lyhördhet inför olika användargruppers behov."

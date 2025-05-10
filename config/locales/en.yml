@@ -332,57 +332,44 @@ en:
       title: The Social Chef
     title: My Projects
     work_example:
-      description: This is a sample work project to demonstrate the filtering functionality.
-        When you click on 'Work Projects' in the filter above, only this card will
-        be shown.
-      tech_list: Enterprise Stack, Data Analysis, AI Integration
+      description: Digital collaboration with Sami villages – a project in change management
+        and digitalization. When technology is used to build bridges between operations, cultures, and geographies.
+      tech_list: Collaboration platform, Digital consultation process, Change management
       technologies: 'Technologies used:'
-      title: Work Project Example
-      timeline: "2022 - Present"
-      quote: "This enterprise project combines digital transformation with AI integration to deliver real business value."
+      title: Digital Collaboration with Sami Villages
+      timeline: "2022 - 2023"
+      quote: "What happens when technology is used to build bridges between operations, cultures, and geographies? With the Samplanering.se project, I had the opportunity as a project manager to lead work where technical implementation and interpersonal dialogue went hand in hand."
       sections:
         background_purpose:
-          title: Project Background & Purpose
+          title: Project Overview
           content: |-
-            <p>This enterprise-level project emerged from an organization's need to transform their legacy systems and processes. Faced with increasing market competition and changing customer expectations, the company needed to modernize their operations.</p>
-            <p>I took on the challenge of leading this digital transformation initiative, focusing on:</p>
-            <ul class="list-disc pl-5 space-y-2 mt-3">
-              <li>Streamlining internal workflows to reduce operational overhead</li>
-              <li>Integrating AI technologies to enhance decision-making capabilities</li>
-              <li>Creating new digital channels for customer engagement</li>
-              <li>Building a data-driven culture across departments</li>
-            </ul>
-          bold_statement: This project stands as a testament to how technology, when properly implemented, can drive significant business transformation.
+            <p>The project aimed to implement a new digital tool that supports the co-planning process between Holmen and affected Sami villages. The solution was built in collaboration with an external development partner and included everything from data migration and functionality testing to training initiatives and implementation in operations.</p>
+            <p>The platform improves data exchange and communication in the planning work and creates better conditions for consultation and mutual understanding.</p>
+          bold_statement: Digital collaboration with Sami villages – a project in change management and digitalization.
         tools_services:
-          title: Technologies & Approach
-          stack_title: Technology Stack
+          title: Goals & Approach
+          stack_title: Goals
           stack_list:
-            - Enterprise Java ecosystem
-            - Microsoft Power Platform
-            - Data analytics suite
-            - Custom AI models
-            - CI/CD automation
-          services_title: Key Services & Methodologies
+            - Implement a new digital tool for co-planning in time for the next operational season
+            - Create a user-friendly experience for all parties
+            - Secure a long-term maintainable system with good technical stability
+          services_title: Approach
           services:
-            - "<strong>Agile at Scale</strong>: Implementing SAFe (Scaled Agile Framework) practices across multiple teams"
-            - "<strong>DevOps Excellence</strong>: Building automated testing and deployment pipelines"
-            - "<strong>Change Management</strong>: Structured approach to organizational change"
-            - "<strong>Data Governance</strong>: Establishing robust data management practices"
+            - "The project was conducted in close collaboration between business operations, IT, and external suppliers. We worked in an agile and goal-oriented manner, focusing on quality, user needs, and timeframes."
+            - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
+            - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
+            - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"
         results:
-          title: Results & Impact
+          title: Results
           intro: |-
-            <p>The project delivered substantial business value by transforming how the organization operated and engaged with its customers. Here are some of the measurable outcomes:</p>
+            <p>The project delivered several significant results that had a positive impact on the collaboration between Holmen and the Sami villages:</p>
           outcomes:
-            - "30% reduction in operational costs through automated workflows"
-            - "45% improvement in time-to-market for new features"
-            - "20% increase in customer satisfaction scores"
-            - "Data-driven decision making across 80% of departments"
-            - "Successful migration of 95% of legacy systems"
-            - "Implemented predictive analytics for business forecasting"
+            - "The system was put into operation according to plan and is used today as a support for consultation processes"
+            - "Streamlining of internal working methods and improved accessibility to digital materials"
+            - "Model for future digitalization initiatives where different actors collaborate"
         lessons:
           title: Key Learnings
           list:
-            - "The importance of executive sponsorship cannot be overstated. Having clear leadership support was crucial for navigating organizational resistance."
-            - "Balancing technical debt with new feature development requires constant attention. We established a 70/30 split between new features and system improvements."
-            - "Building cross-functional teams with both technical and domain expertise significantly accelerated our delivery capabilities."
-            - "AI integration is most successful when it augments human capabilities rather than trying to replace them entirely."
+            - "The importance of a clear division of roles between operations, IT, and suppliers."
+            - "The significance of early involvement of future maintenance and operations teams."
+            - "The value of responsiveness to the needs of different user groups."
