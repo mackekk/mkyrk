@@ -28,5 +28,16 @@ module Mkyrk
     config.i18n.available_locales = [ :sv, :en ]
     config.i18n.default_locale = :sv
     config.i18n.fallbacks = [ :en ]
+    
+    # PROBLEM:
+    # - Rails' content negotiation strictly matches Accept headers against supported formats
+    # - Chrome DevTools mobile emulation sends Accept headers with application/xhtml+xml
+    # - This causes 406 Not Acceptable errors when controllers only define respond_to format.html
+    #
+    # SOLUTION:
+    # - Register our custom middleware early in the stack to modify problematic Accept headers
+    # - This provides a global solution instead of modifying every controller
+    # Add custom middleware for handling content negotiation
+    config.middleware.insert_before ActionDispatch::Static, Middleware::ContentNegotiationMiddleware
   end
 end
