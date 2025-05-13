@@ -1,6 +1,6 @@
 module Middleware
   # ContentNegotiationMiddleware addresses the 406 Not Acceptable errors in mobile view
-  # 
+  #
   # PROBLEM:
   # - Chrome DevTools mobile emulation sends Accept headers containing application/xhtml+xml format
   # - Rails' strict content negotiation sees this format isn't explicitly supported (only HTML is defined in controllers)
@@ -25,4 +25,4 @@ module Middleware
       @app.call(env)
     end
   end
-end 
+end

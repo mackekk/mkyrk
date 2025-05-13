@@ -52,7 +52,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  
+
   # PROBLEM:
   # - Chrome DevTools mobile emulation sends Accept headers with application/xhtml+xml format
   # - Rails strictly requires controllers to explicitly support each format
@@ -65,7 +65,7 @@ Rails.application.routes.draw do
   # Special route for handling Chrome DevTools mobile emulation requests
   # This needs to be at the end to avoid blocking other routes
   if Rails.env.development?
-    match '*path', to: 'rails/application#redirect_to_same_path', via: :all, constraints: lambda { |request|
+    match "*path", to: "rails/application#redirect_to_same_path", via: :all, constraints: lambda { |request|
       request.headers["HTTP_ACCEPT"]&.include?("application/xhtml+xml")
     }
   end

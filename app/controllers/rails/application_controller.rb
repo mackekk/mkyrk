@@ -4,7 +4,7 @@ module Rails
   # PROBLEM:
   # - Chrome DevTools mobile emulation sends Accept headers with application/xhtml+xml
   # - Regular controllers only define respond_to format.html, causing 406 Not Acceptable errors
-  # 
+  #
   # SOLUTION:
   # - This controller acts as a catch-all for requests with application/xhtml+xml in Accept header
   # - It explicitly forces HTML format when redirecting back to the same path
@@ -16,4 +16,4 @@ module Rails
       redirect_to request.path, format: :html
     end
   end
-end 
+end

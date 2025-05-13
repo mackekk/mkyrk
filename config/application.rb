@@ -28,7 +28,7 @@ module Mkyrk
     config.i18n.available_locales = [ :sv, :en ]
     config.i18n.default_locale = :sv
     config.i18n.fallbacks = [ :en ]
-    
+
     # PROBLEM:
     # - Rails' content negotiation strictly matches Accept headers against supported formats
     # - Chrome DevTools mobile emulation sends Accept headers with application/xhtml+xml
