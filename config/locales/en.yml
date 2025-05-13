@@ -300,6 +300,7 @@ en:
       title: Filter Projects
       work: Work Projects
     intro: Here are some of the projects I have worked on.
+    keyword_label: Keywords
     mkyrk:
       description: Personal website built with modern tools and AI-assisted development.
         A project to explore the future of work.
@@ -333,9 +334,98 @@ en:
       title: The Social Chef
     title: My Projects
     work_example:
-      description: This is a sample work project to demonstrate the filtering functionality.
-        When you click on 'Work Projects' in the filter above, only this card will
-        be shown.
-      tech_list: Enterprise Stack, Data Analysis, AI Integration
+      card_description: Strategic digital initiative to enhance coordination between
+        forestry and reindeer husbandry sectors. As project manager, I led the integration
+        between business operations, IT teams, and technology partners – prioritizing
+        user experience, technical quality, and sustainable implementation.
+      card_title: A digital step towards structured dialogue
+      description: Digital transformation in forestry collaboration – a project combining
+        change management and technology solutions to bridge operations across diverse
+        stakeholders and landscapes.
+      keywords: Project Management, Digitalization, IT Collaboration, System Implementation
+      quote: "<strong>How can digital technology support collaboration between forestry
+        and reindeer husbandry?</strong> As project manager for Samplanering.se, I
+        led an initiative where technical solutions, business requirements, and close
+        stakeholder partnerships needed to work in perfect harmony."
+      sections:
+        background_purpose:
+          bold_statement: A digital transformation initiative bridging forestry operations
+            and indigenous land use through technology and collaborative planning.
+          content: |-
+            <p>With Samplanering.se, I led the implementation of a digital platform designed to enhance communication and information exchange between Holmen and the sami villages. Streamlining planning processes and creating better foundations for meaningful consultation.</p>
+
+            <div class="mt-6"></div>
+            <p>We developed the solution in partnership with a specialized technology provider, covering everything from data migration and functionality testing to training programs and operational implementation.</p>
+
+            <div class="mt-6"></div>
+            <p>For context: <strong>samplanering</strong> (co-planning) represents a structured dialogue framework between forestry companies and reindeer herders, enabling collaborative planning for forestry activities in shared territories. The goal is to foster mutual understanding, facilitate effective consultation, and support better-informed decision making.</p>
+
+            <div class="mt-6"></div>
+            <p>The project featured close collaboration between business stakeholders, IT specialists, and external technology partners. We embraced agile methodologies with a strong focus on quality, user experience, and timeline management.</p>
+          services:
+          - "<strong>Testing environment and functionality validation</strong>: Comprehensive
+            testing protocols to ensure robust performance and feature integrity"
+          - "<strong>Technology partner engagement</strong>: Ongoing collaboration
+            and dialogue with development teams"
+          - "<strong>Operational readiness planning</strong>: Ensuring long-term sustainability
+            through proper transition and maintenance strategies"
+          title: About the Project
+        lessons:
+          intro: 'Leading this collaborative digital initiative across business units,
+            IT teams, and external partners yielded valuable lessons:'
+          list:
+          - Clear role definition and aligned expectations from project inception
+            dramatically reduced friction in decision processes and accelerated implementation
+          - Early involvement of maintenance and operations teams significantly eased
+            the transition from project development to production deployment
+          - Addressing diverse user requirements – even for stakeholders not directly
+            represented in project teams – proved essential for adoption and satisfaction
+          title: Key Insights
+        results:
+          intro: |-
+            <div class="mt-6"></div>
+
+            <p>The project delivered a stable, functional platform now actively used in daily planning activities between Holmen and sami villages. We achieved our objectives – and most importantly, created a solution that's become integral to actual operations.</p>
+
+            <div class="mt-6"></div>
+
+            <p>A key strategic benefit is that ongoing development now happens collaboratively with other forestry companies and the platform provider. This ensures consistent user experience for reindeer herders regardless of which company initiates consultation – significantly lowering barriers to digital participation.</p>
+          outcomes:
+          - The system was successfully deployed according to plan and now serves
+            as a core tool supporting consultation processes
+          - Significant improvements in internal workflow efficiency and enhanced
+            accessibility to critical digital resources
+          - Created a replicable model for future digital initiatives requiring multi-stakeholder
+            collaboration
+          title: Results
+        section_headings:
+          lessons_learned: Key Insights
+          my_role: My Role
+          project_overview: Project Overview
+          results: Results
+          technologies_used: Technologies Used
+        tools_services:
+          services:
+          - "<strong>Testing environment and functionality validation</strong>: Comprehensive
+            testing protocols to ensure robust performance and feature integrity"
+          - "<strong>Technology partner engagement</strong>: Ongoing collaboration
+            and dialogue with development teams"
+          - "<strong>Operational readiness planning</strong>: Ensuring long-term sustainability
+            through proper transition and maintenance strategies"
+          services_intro: 'We drove the project through close partnerships between
+            business units, IT teams, and technology providers, with unwavering focus
+            on quality, implementation pace, and future sustainability. Key components
+            included:'
+          services_title: Approach
+          stack_list:
+          - Implement an effective digital platform to enhance collaborative planning
+          - Create an intuitive, accessible user experience for all stakeholders
+          - Establish a sustainable system with strong technical foundations and maintenance
+            pathways
+          stack_title: Goals
+          title: Project Overview
+      status: Completed
+      tech_list: Collaboration platform, Digital consultation process, Change management
       technologies: 'Technologies used:'
-      title: Work Project Example
+      timeline: May - December 2023
+      title: Digital Collaboration Platform

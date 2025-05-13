@@ -28,7 +28,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col md:flex-row md:items-center h-auto py-3 md:h-16 md:py-0">
             <div class="flex items-center">
-              <%= link_to params[:locale] ? localized_root_path : root_path do %>
+              <%= link_to localized_root_path do %>
                 <%= image_tag 'kyrk-logo.png', class: 'h-10 w-auto md:h-15' %>
               <% end %>
             </div>
@@ -38,10 +38,10 @@
                 <% active_class = "inline-block border-b-2 border-indigo-500 px-3 py-2 text-sm font-medium text-gray-900 flex-shrink-0" %>
                 <% inactive_class = "inline-block border-b-2 border-transparent px-3 py-2 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 flex-shrink-0" %>
 
-                <%= link_to t('layout.navigation.home'), params[:locale] ? localized_root_path : root_path, class: "#{current_page?(root_path) || current_page?(localized_root_path) ? active_class : inactive_class}" %>
-                <%= link_to t('layout.navigation.about'), params[:locale] ? localized_about_path : about_path, class: "#{current_page?(about_path) || current_page?(localized_about_path) ? active_class : inactive_class}" %>
-                <%= link_to t('layout.navigation.projects'), params[:locale] ? localized_projects_path : projects_path, class: "#{current_page?(projects_path) || current_page?(localized_projects_path) ? active_class : inactive_class}" %>
-                <%= link_to t('layout.navigation.contact'), params[:locale] ? localized_contact_path : contact_path, class: "#{current_page?(contact_path) || current_page?(localized_contact_path) ? active_class : inactive_class}" %>
+                <%= link_to t('layout.navigation.home'), localized_root_path, class: "#{current_page?(root_path) || current_page?(localized_root_path) ? active_class : inactive_class}" %>
+                <%= link_to t('layout.navigation.about'), localized_about_path, class: "#{current_page?(about_path) || current_page?(localized_about_path) ? active_class : inactive_class}" %>
+                <%= link_to t('layout.navigation.projects'), localized_projects_path, class: "#{current_page?(projects_path) || current_page?(localized_projects_path) ? active_class : inactive_class}" %>
+                <%= link_to t('layout.navigation.contact'), localized_contact_path, class: "#{current_page?(contact_path) || current_page?(localized_contact_path) ? active_class : inactive_class}" %>
               </div>
             </div>
             

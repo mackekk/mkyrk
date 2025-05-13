@@ -1,0 +1,192 @@
+<div class="bg-gray-50 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Back to projects link -->
+      <div class="mb-8" style="display: none;">
+        <%= link_to projects_path, class: "inline-flex items-center text-green-600 hover:text-green-700" do %>
+          <svg class="mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+          </svg>
+          <%= t('project0.back_to_projects') %>
+        <% end %>
+      </div>
+
+      <!-- Project header -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-10">
+        <div class="px-6 py-8 relative">
+          <!-- Contact button above title for desktop -->
+          <div class="hidden md:flex justify-end mb-6">
+            <%= link_to params[:locale] ? localized_contact_path : contact_path, class: "inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700" do %>
+              <%= t('project0.contact_me') %>
+              <svg class="ml-2 -mr-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            <% end %>
+          </div>
+
+          <h1 class="text-3xl font-bold text-gray-900 mb-4">Samplanering.se – ett digitalt steg mot strukturerad dialog</h1>
+          
+          <div class="flex items-center mb-6">
+            <div class="bg-green-100 rounded-full p-2 mr-3">
+              <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <span class="text-gray-600"><%= t('projects.work_example.timeline') %></span>
+            <span class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <%= t('projects.work_example.status') %>
+            </span>
+          </div>
+          
+          <div class="border-l-4 border-green-500 pl-4 italic mt-6">
+            <p class="text-xl text-gray-800">
+              <%= raw(t('projects.work_example.quote')) %>
+            </p>
+          </div>
+          
+          <!-- Mobile contact button (inside project header with added margin) -->
+          <div class="md:hidden mt-8 flex justify-end">
+            <%= link_to params[:locale] ? localized_contact_path : contact_path, class: "inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 shadow-md" do %>
+              <%= t('project0.contact_me') %>
+              <svg class="ml-2 -mr-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content sections -->
+      <div class="space-y-8">
+        
+        <!-- Project Overview Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="px-6 py-8">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+                <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.work_example.sections.section_headings.project_overview') %></h2>
+            </div>
+            
+            <!-- Background & Purpose content -->
+            <div class="prose prose-indigo max-w-none text-gray-800 mb-8">
+              <%= raw(t('projects.work_example.sections.background_purpose.content')) %>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('projects.work_example.sections.tools_services.stack_title') %></h3>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <% t('projects.work_example.sections.tools_services.stack_list').each do |tool| %>
+                  <div class="flex items-center mb-2">
+                    <svg class="h-5 w-5 mr-2 text-green-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-800"><%= tool %></span>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+            
+            <!-- My Role & Services -->
+            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-3"><%= t('projects.work_example.sections.tools_services.services_title') %></h3>
+              
+              <p class="text-gray-800 mb-4"><%= raw(t('projects.work_example.sections.tools_services.services_intro')) %></p>
+              
+              <ul class="space-y-3 text-gray-800">
+                <% t('projects.work_example.sections.tools_services.services').each do |service| %>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 mr-2 text-green-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span><%= raw(service) %></span>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+            
+            <div class="bg-green-50 border-l-4 border-green-400 p-4">
+              <p class="text-green-800 font-medium">
+                <%= t('projects.work_example.sections.background_purpose.bold_statement') %>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Results Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="px-6 py-8">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+                <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.work_example.sections.section_headings.results') %></h2>
+            </div>
+            
+            <div class="text-gray-800 mb-6">
+              <%= raw(t('projects.work_example.sections.results.intro')) %>
+            </div>
+            
+            <div class="bg-gray-50 p-5 rounded-lg">
+              <ul class="grid md:grid-cols-2 gap-4">
+                <% t('projects.work_example.sections.results.outcomes').each do |outcome| %>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 mr-2 text-green-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span><%= raw(outcome) %></span>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lessons Learned Section -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="px-6 py-8">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+                <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.work_example.sections.section_headings.lessons_learned') %></h2>
+            </div>
+            
+            <p class="text-gray-800 mb-4"><%= raw(t('projects.work_example.sections.lessons.intro')) %></p>
+            
+            <ul class="space-y-4">
+              <% t('projects.work_example.sections.lessons.list').each do |lesson| %>
+                <li class="flex items-start bg-gray-50 p-3 rounded-lg">
+                  <svg class="h-5 w-5 mr-2 text-green-500 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-800"><%= raw(lesson) %></span>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Back Button -->
+      <div class="mt-6 mb-12">
+        <%= link_to params[:locale] ? localized_projects_path : projects_path, class: "inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
+          <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+          </svg>
+          <%= t('project0.back_to_projects') %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> 

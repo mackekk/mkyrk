@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [ :send_contact ], if: -> { request.format.json? }
 
   # Redirect non-localized routes to localized ones
-  before_action :redirect_to_localized, except: [ :index, :about, :contact, :send_contact, :projects, :project0, :cv ]
+  before_action :redirect_to_localized
 
   def index
     # This is our Hello World page
@@ -76,7 +76,7 @@ class HomeController < ApplicationController
   def redirect_to_localized
     # Only redirect if locale is not present in the URL
     unless params[:locale]
-      redirect_to url_for(locale: I18n.default_locale, controller: controller_name, action: action_name)
+      redirect_to url_for(locale: :sv, controller: controller_name, action: action_name)
     end
   end
 end
