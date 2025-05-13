@@ -38,6 +38,6 @@ module Mkyrk
     # - Register our custom middleware early in the stack to modify problematic Accept headers
     # - This provides a global solution instead of modifying every controller
     # Add custom middleware for handling content negotiation
-    config.middleware.insert_before ActionDispatch::Static, Middleware::ContentNegotiationMiddleware
+    #config.middleware.insert_before ActionDispatch::Static, Middleware::ContentNegotiationMiddleware
   end
 end
