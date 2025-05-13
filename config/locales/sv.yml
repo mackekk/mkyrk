@@ -326,76 +326,95 @@ sv:
       title: The Social Chef
     title: Mina projekt
     work_example:
-      description: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering. 
-        När teknik används för att bygga broar mellan verksamheter, kulturer och geografier.
-      card_description: Digitalt projekt för att effektivisera samplanering mellan skogsbruk och rennäring. Som projektledare ansvarade jag för att samordna verksamhet, IT och extern leverantör – med fokus på teknik, användarbehov och långsiktig förvaltning.
+      card_description: Digitalt projekt för att effektivisera samplanering mellan
+        skogsbruk och rennäring. Som projektledare ansvarade jag för att samordna
+        verksamhet, IT och extern leverantör – med fokus på teknik, användarbehov
+        och långsiktig förvaltning.
       card_title: Samplanering.se – ett digitalt steg mot strukturerad dialog
+      description: Digital samverkan med samebyar – ett projekt i förändringsledning
+        och digitalisering. När teknik används för att bygga broar mellan verksamheter,
+        kulturer och geografier.
       keywords: Projektledning, Digitalisering, IT-samverkan, Systeminförande
-      tech_list: Samplaneringsplattform, Digital samrådsprocess, Förändringsledning
-      technologies: 'Tekniker använda:'
-      title: Digital samverkan med samebyar
-      timeline: "Maj - December 2023"
-      status: "Slutfört"
-      quote: "<strong>Hur kan digital teknik stötta samverkan mellan skogsbruk och rennäring?</strong>
-I projektet Samplanering.se fick jag som projektledare leda ett arbete där teknisk lösning, verksamhetens behov och ett nära samarbete med IT och leverantör behövde gå hand i hand."
+      quote: "<strong>Hur kan digital teknik stötta samverkan mellan skogsbruk och
+        rennäring?</strong> I projektet Samplanering.se fick jag som projektledare
+        leda ett arbete där teknisk lösning, verksamhetens behov och ett nära samarbete
+        med IT och leverantör behövde gå hand i hand."
       sections:
         background_purpose:
-          title: Om projektet
+          bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning
+            och digitalisering.
           content: |-
             <p>I Samplanering.se fick jag leda arbetet med att införa ett nytt digitalt verktyg som skulle förbättra kommunikationen och informationsutbytet mellan Holmen och berörda samebyar – för att effektivisera planeringen och skapa bättre förutsättningar för samråd.</p>
-            
+
             <div class="mt-6"></div>
             <p>Lösningen togs fram i samarbete med en extern systemleverantör och omfattade allt från datamigrering och funktionstestning till utbildningsinsatser och införande i verksamheten.</p>
-            
+
             <div class="mt-6"></div>
             <p>För den som inte är bekant med begreppet: <strong>samplanering</strong> är en strukturerad form av dialog mellan skogsnäring och rennäring, där parterna gemensamt planerar inför skogsbruksåtgärder i renskötselområden. Syftet är att skapa ömsesidig förståelse, underlätta samråd och fatta mer välgrundade beslut.</p>
-            
+
             <div class="mt-6"></div>
             <p>Projektet bedrevs i tätt samarbete mellan verksamhet, IT och externa leverantörer. Vi arbetade agilt och målstyrt, med fokus på kvalitet, användarbehov och tidsramar.</p>
-          
-          bold_statement: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering.
-          
           services:
-            - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
-            - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
-            - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande av långsiktig hållbarhet"
-        tools_services:
-          title: Projektöversikt
-          stack_title: Mål
-          stack_list:
-            - Införa ett nytt digitalt verktyg för en effektivare samplanering  
-            - Skapa en användarvänlig upplevelse för alla parter
-            - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
-          services_title: Arbetssätt
-          services_intro: "Vi drev projektet i nära samarbete mellan verksamhet, IT och leverantör, med fokus på kvalitet, tempo och framtida förvaltning. Några av de viktigaste momenten:"
-          services:
-            - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning för att säkerställa kvalitet och funktionalitet"
-            - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete med tekniska partners"
-            - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande av långsiktig hållbarhet"
+          - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning
+            för att säkerställa kvalitet och funktionalitet"
+          - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete
+            med tekniska partners"
+          - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande
+            av långsiktig hållbarhet"
+          title: Om projektet
+        lessons:
+          intro: 'Att driva ett digitalt projekt i samverkan med både verksamhet,
+            IT och en extern leverantör gav flera konkreta lärdomar:'
+          list:
+          - Tydlig rollfördelning och gemensamma förväntningar från start gjorde arbetet
+            smidigare och minskade friktion i beslutsvägarna
+          - När förvaltningen kopplas in tidigt, blir övergången från projekt till
+            drift betydligt enklare och mer hållbar
+          - Olika användare har olika behov – att vara lyhörd för det, även när de
+            inte sitter med i projektgruppen, har stor påverkan på hur väl en lösning
+            tas emot
+          title: Lärdomar
         results:
-          title: Resultat
           intro: |-
             <div class="mt-6"></div>
 
             <p>Projektet resulterade i en stabil och fungerande plattform som idag används i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar. Projektet resulterade i en stabil och fungerande plattform som idag används aktivt i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar.</p>
 
             <div class="mt-6"></div>
-            
+
             <p>En av de stora vinsterna är att vidareutvecklingen nu sker gemensamt med andra skogsbolag och systemleverantören. Det gör att användarupplevelsen blir densamma för rennäringen oavsett vem som bjuder in till samråd – något som både förenklar och sänker tröskeln för att delta digitalt.</p>
           outcomes:
-            - "Systemet togs i drift enligt plan och används idag som ett stöd för samrådsprocesser"
-            - "Effektivisering av interna arbetssätt och förbättrad tillgänglighet till digitala underlag"
-            - "Modell för framtida digitaliseringsinitiativ där olika aktörer samverkar"
-        lessons:
-          title: Lärdomar
-          intro: "Att driva ett digitalt projekt i samverkan med både verksamhet, IT och en extern leverantör gav flera konkreta lärdomar:"
-          list:
-            - "Tydlig rollfördelning och gemensamma förväntningar från start gjorde arbetet smidigare och minskade friktion i beslutsvägarna"
-            - "När förvaltningen kopplas in tidigt, blir övergången från projekt till drift betydligt enklare och mer hållbar"
-            - "Olika användare har olika behov – att vara lyhörd för det, även när de inte sitter med i projektgruppen, har stor påverkan på hur väl en lösning tas emot"
+          - Systemet togs i drift enligt plan och används idag som ett stöd för samrådsprocesser
+          - Effektivisering av interna arbetssätt och förbättrad tillgänglighet till
+            digitala underlag
+          - Modell för framtida digitaliseringsinitiativ där olika aktörer samverkar
+          title: Resultat
         section_headings:
-          project_overview: "Projektöversikt"
-          technologies_used: "Använd teknik"
-          my_role: "Min roll"
-          results: "Resultat"
-          lessons_learned: "Lärdomar"
+          lessons_learned: Lärdomar
+          my_role: Min roll
+          project_overview: Projektöversikt
+          results: Resultat
+          technologies_used: Använd teknik
+        tools_services:
+          services:
+          - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning
+            för att säkerställa kvalitet och funktionalitet"
+          - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete
+            med tekniska partners"
+          - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande
+            av långsiktig hållbarhet"
+          services_intro: 'Vi drev projektet i nära samarbete mellan verksamhet, IT
+            och leverantör, med fokus på kvalitet, tempo och framtida förvaltning.
+            Några av de viktigaste momenten:'
+          services_title: Arbetssätt
+          stack_list:
+          - Införa ett nytt digitalt verktyg för en effektivare samplanering
+          - Skapa en användarvänlig upplevelse för alla parter
+          - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
+          stack_title: Mål
+          title: Projektöversikt
+      status: Slutfört
+      tech_list: Samplaneringsplattform, Digital samrådsprocess, Förändringsledning
+      technologies: 'Tekniker använda:'
+      timeline: Maj - December 2023
+      title: Digital samverkan med samebyar
