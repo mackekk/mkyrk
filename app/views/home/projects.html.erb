@@ -153,17 +153,17 @@
         <%= link_to params[:locale] ? localized_projectW1_path : projectW1_path, class: "block group h-full" do %>
           <div class="bg-white shadow-sm rounded-lg overflow-hidden flex flex-col relative h-full transition-all duration-200 transform group-hover:shadow-md group-hover:-translate-y-1 border-t-4 border-green-200">
             <!-- Status badge -->
-            <span class="absolute top-3 right-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-              <%= t('projects.project_status.coming_soon') %>
+            <span class="absolute top-3 right-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <%= t('projects.work_example.status') %>
             </span>
-            <div class="p-6 pt-8 flex-grow">
+            <div class="p-6 pt-12 flex-grow">
               <div class="flex items-center mb-4">
                 <div class="bg-green-100 rounded-full p-2 mr-3">
                   <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-gray-800"><%= t('projects.work_example.title') %></h2>
+                <h2 class="text-xl font-semibold text-gray-800"><%= t('projects.work_example.card_title') %></h2>
               </div>
               <!-- Project type tag -->
               <div class="mb-3 flex items-center">
@@ -172,10 +172,10 @@
                 </span>
               </div>
               <p class="text-gray-600 mb-5 text-sm">
-                <%= t('projects.work_example.description') %>
+                <%= t('projects.work_example.card_description') %>
               </p>
               <p class="text-sm font-medium text-gray-500">
-                <%= t('projects.work_example.technologies') %> <span class="text-gray-700"><%= t('projects.work_example.tech_list') %></span>
+                <%= t('projects.keyword_label') %>: <span class="text-gray-700"><%= t('projects.work_example.keywords') %></span>
               </p>
             </div>
             <div class="p-4 bg-gray-50 border-t border-gray-100">

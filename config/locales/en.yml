@@ -300,6 +300,7 @@ en:
       title: Filter Projects
       work: Work Projects
     intro: Here are some of the projects I have worked on.
+    keyword_label: Keywords
     mkyrk:
       description: Personal website built with modern tools and AI-assisted development.
         A project to explore the future of work.
@@ -332,73 +333,75 @@ en:
       title: The Social Chef
     title: My Projects
     work_example:
-      description: Digital collaboration with Sami villages – a project in change management
-        and digitalization. When technology is used to build bridges between operations, cultures, and geographies.
+      description: Digital transformation in forestry collaboration – a project combining change management and technology solutions to bridge operations across diverse stakeholders and landscapes.
+      card_description: Strategic digital initiative to enhance coordination between forestry and reindeer husbandry sectors. As project manager, I led the integration between business operations, IT teams, and technology partners – prioritizing user experience, technical quality, and sustainable implementation.
+      card_title: A digital step towards structured dialogue
+      keywords: Project Management, Digitalization, IT Collaboration, System Implementation
       tech_list: Collaboration platform, Digital consultation process, Change management
       technologies: 'Technologies used:'
-      title: Digital Collaboration with Sami Villages
+      title: Digital Collaboration Platform
       timeline: "May - December 2023"
       status: "Completed"
       quote: "<strong>How can digital technology support collaboration between forestry and reindeer husbandry?</strong>
-In the Samplanering.se project, as a project manager I led work where technical solutions, business needs, and close collaboration with IT and suppliers needed to go hand in hand."
+As project manager for Samplanering.se, I led an initiative where technical solutions, business requirements, and close stakeholder partnerships needed to work in perfect harmony."
       sections:
         background_purpose:
           title: About the Project
           content: |-
-            <p>In Samplanering.se, I led the work to implement a new digital tool that would improve communication and information exchange between Holmen and affected Sami villages – to streamline planning and create better conditions for consultation.</p>
+            <p>With Samplanering.se, I led the implementation of a digital platform designed to enhance communication and information exchange between Holmen and the sami villages. Streamlining planning processes and creating better foundations for meaningful consultation.</p>
             
             <div class="mt-6"></div>
-            <p>The solution was developed in collaboration with an external system provider and included everything from data migration and functionality testing to training initiatives and implementation in operations.</p>
+            <p>We developed the solution in partnership with a specialized technology provider, covering everything from data migration and functionality testing to training programs and operational implementation.</p>
             
             <div class="mt-6"></div>
-            <p>For those unfamiliar with the concept: <strong>samplanering</strong> (co-planning) is a structured form of dialogue between the forestry industry and reindeer husbandry, where parties jointly plan forestry measures in reindeer herding areas. The purpose is to create mutual understanding, facilitate consultation, and make more well-founded decisions.</p>
+            <p>For context: <strong>samplanering</strong> (co-planning) represents a structured dialogue framework between forestry companies and reindeer herders, enabling collaborative planning for forestry activities in shared territories. The goal is to foster mutual understanding, facilitate effective consultation, and support better-informed decision making.</p>
             
             <div class="mt-6"></div>
-            <p>The project was conducted in close collaboration between business operations, IT, and external suppliers. We worked in an agile and goal-oriented manner, focusing on quality, user needs, and timeframes.</p>
+            <p>The project featured close collaboration between business stakeholders, IT specialists, and external technology partners. We embraced agile methodologies with a strong focus on quality, user experience, and timeline management.</p>
           
-          bold_statement: Digital collaboration with Sami villages – a project in change management and digitalization.
+          bold_statement: A digital transformation initiative bridging forestry operations and indigenous land use through technology and collaborative planning.
           
           services:
-            - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
-            - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
-            - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"
+            - "<strong>Testing environment and functionality validation</strong>: Comprehensive testing protocols to ensure robust performance and feature integrity"
+            - "<strong>Technology partner engagement</strong>: Ongoing collaboration and dialogue with development teams"
+            - "<strong>Operational readiness planning</strong>: Ensuring long-term sustainability through proper transition and maintenance strategies"
         tools_services:
           title: Project Overview
           stack_title: Goals
           stack_list:
-            - Implement a new digital tool for effective co-planning
-            - Create a user-friendly experience for all parties
-            - Secure a long-term maintainable system with good technical stability
+            - Implement an effective digital platform to enhance collaborative planning
+            - Create an intuitive, accessible user experience for all stakeholders
+            - Establish a sustainable system with strong technical foundations and maintenance pathways
           services_title: Approach
-          services_intro: "We drove the project in close collaboration between operations, IT, and supplier, focusing on quality, pace, and future maintenance. Some of the key elements:"
+          services_intro: "We drove the project through close partnerships between business units, IT teams, and technology providers, with unwavering focus on quality, implementation pace, and future sustainability. Key components included:"
           services:
-            - "<strong>Test environment and functionality review</strong>: Careful testing to ensure quality and functionality"
-            - "<strong>Collaboration with external developers</strong>: Close dialogue and cooperation with technical partners"
-            - "<strong>Preparation for operations and maintenance</strong>: Ensuring long-term sustainability"
+            - "<strong>Testing environment and functionality validation</strong>: Comprehensive testing protocols to ensure robust performance and feature integrity"
+            - "<strong>Technology partner engagement</strong>: Ongoing collaboration and dialogue with development teams"
+            - "<strong>Operational readiness planning</strong>: Ensuring long-term sustainability through proper transition and maintenance strategies"
         results:
           title: Results
           intro: |-
             <div class="mt-6"></div>
 
-            <p>The project resulted in a stable and functional platform that is used today in the daily co-planning work between Holmen and affected Sami villages. We achieved our goal – and most importantly, the tool is being used for real.</p>
+            <p>The project delivered a stable, functional platform now actively used in daily planning activities between Holmen and sami villages. We achieved our objectives – and most importantly, created a solution that's become integral to actual operations.</p>
 
             <div class="mt-6"></div>
             
-            <p>One of the major benefits is that further development now happens jointly with other forestry companies and the system provider. This ensures that the user experience remains the same for reindeer husbandry regardless of who invites to consultation – something that both simplifies and lowers the threshold for digital participation.</p>
+            <p>A key strategic benefit is that ongoing development now happens collaboratively with other forestry companies and the platform provider. This ensures consistent user experience for reindeer herders regardless of which company initiates consultation – significantly lowering barriers to digital participation.</p>
           outcomes:
-            - "The system was put into operation according to plan and is used today as a support for consultation processes"
-            - "Streamlining of internal working methods and improved accessibility to digital materials"
-            - "Model for future digitalization initiatives where different actors collaborate"
+            - "The system was successfully deployed according to plan and now serves as a core tool supporting consultation processes"
+            - "Significant improvements in internal workflow efficiency and enhanced accessibility to critical digital resources"
+            - "Created a replicable model for future digital initiatives requiring multi-stakeholder collaboration"
         lessons:
-          title: Key Learnings
-          intro: "Leading a digital project in collaboration with operations, IT, and an external supplier provided several concrete learnings:"
+          title: Key Insights
+          intro: "Leading this collaborative digital initiative across business units, IT teams, and external partners yielded valuable lessons:"
           list:
-            - "Clear role distribution and shared expectations from the start made the work smoother and reduced friction in decision pathways"
-            - "When maintenance teams are involved early, the transition from project to operation becomes significantly easier and more sustainable"
-            - "Different users have different needs – being responsive to those needs, even when they're not part of the project team, has a major impact on how well a solution is received"
+            - "Clear role definition and aligned expectations from project inception dramatically reduced friction in decision processes and accelerated implementation"
+            - "Early involvement of maintenance and operations teams significantly eased the transition from project development to production deployment"
+            - "Addressing diverse user requirements – even for stakeholders not directly represented in project teams – proved essential for adoption and satisfaction"
         section_headings:
           project_overview: "Project Overview"
           technologies_used: "Technologies Used"
           my_role: "My Role"
           results: "Results"
-          lessons_learned: "Lessons Learned"
+          lessons_learned: "Key Insights"

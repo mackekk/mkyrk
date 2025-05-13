@@ -293,6 +293,7 @@ sv:
       title: Filtrera Projekt
       work: Arbetsprojekt
     intro: Här är några av de projekt jag har arbetat med.
+    keyword_label: Nyckelord
     mkyrk:
       description: Personlig webbplats byggd med moderna verktyg och AI-assisterad
         utveckling. Ett projekt för att utforska framtidens arbetssätt.
@@ -327,6 +328,9 @@ sv:
     work_example:
       description: Digital samverkan med samebyar – ett projekt i förändringsledning och digitalisering. 
         När teknik används för att bygga broar mellan verksamheter, kulturer och geografier.
+      card_description: Digitalt projekt för att effektivisera samplanering mellan skogsbruk och rennäring. Som projektledare ansvarade jag för att samordna verksamhet, IT och extern leverantör – med fokus på teknik, användarbehov och långsiktig förvaltning.
+      card_title: Samplanering.se – ett digitalt steg mot strukturerad dialog
+      keywords: Projektledning, Digitalisering, IT-samverkan, Systeminförande
       tech_list: Samplaneringsplattform, Digital samrådsprocess, Förändringsledning
       technologies: 'Tekniker använda:'
       title: Digital samverkan med samebyar
@@ -373,7 +377,7 @@ I projektet Samplanering.se fick jag som projektledare leda ett arbete där tekn
           intro: |-
             <div class="mt-6"></div>
 
-            <p>Projektet resulterade i en stabil och fungerande plattform som idag används i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar. Vi nådde vårt mål – och viktigast av allt, verktyget används på riktigt.</p>
+            <p>Projektet resulterade i en stabil och fungerande plattform som idag används i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar. Projektet resulterade i en stabil och fungerande plattform som idag används aktivt i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar.</p>
 
             <div class="mt-6"></div>
             
