@@ -329,6 +329,10 @@ en:
       tech_list: React, Node.js, AI APIs, image generation
       technologies: 'Planned technologies:'
       title: The Social Chef
+    logistics:
+      card_title: Digital Logistics System for Traceable Timber Handling
+      card_description: Project management for the development of a digital system to track sawn timber packages at the terminal – from goods receiving to container loading and rail transport. The goal is to streamline the flow and increase digital traceability.
+      keywords: Sawn Timber, Logistics, Traceability, Terminal, Project Management
     title: My Projects
     work_example:
       card_description: Strategic digital initiative to enhance coordination between

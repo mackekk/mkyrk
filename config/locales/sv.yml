@@ -322,6 +322,10 @@ sv:
       tech_list: React, Node.js, AI API:er, bildgenerering
       technologies: 'Tekniker planerade:'
       title: The Social Chef
+    logistics:
+      card_title: Digitalt logistiksystem för spårbar virkeshantering
+      card_description: Projektledning för utveckling av ett digitalt system som spårar virkespaket på terminalen – från mottagning till containrar och tåglastning. Målet är att effektivisera flödet och öka den digitala spårbarheten.
+      keywords: Virkespaket, Logistik, Spårbarhet, Terminal, Projektledning    
     title: Mina projekt
     work_example:
       card_description: Digitalt projekt för att effektivisera samplanering mellan
