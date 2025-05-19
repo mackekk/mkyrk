@@ -380,43 +380,111 @@ sv:
           intro: |-
             <div class="mt-6"></div>
 
-            <p>Projektet resulterade i en stabil och fungerande plattform som idag används aktivt i det dagliga samplaneringsarbetet mellan Holmen och berörda samebyar.</p>
+            <p>Projektet levererade en stabil, fungerande plattform som nu används aktivt i den dagliga planeringen mellan Holmen och berörda samebyar. Vi nådde våra målsättningar – och framför allt skapade vi en lösning som faktiskt gör skillnad i verksamheten.</p>
 
             <div class="mt-6"></div>
 
-            <p>En av de stora vinsterna är att vidareutvecklingen nu sker gemensamt med andra skogsbolag och systemleverantören. Det gör att användarupplevelsen blir densamma för rennäringen oavsett vem som bjuder in till samråd – något som både förenklar och sänker tröskeln för att delta digitalt.</p>
+            <p>En strategiskt viktig effekt är att fortsatt utveckling nu sker i samverkan med andra skogsbolag och plattformsleverantören. Detta säkerställer en enhetlig användarupplevelse för rennäringen oavsett vilket bolag som initierar samråd – vilket avsevärt förenklar det digitala deltagandet.</p>
           outcomes:
-          - Systemet togs i drift enligt plan och används idag som ett stöd för samrådsprocesser
-          - Effektivisering av interna arbetssätt och förbättrad tillgänglighet till
-            digitala underlag
-          - Modell för framtida digitaliseringsinitiativ där olika aktörer samverkar
+          - Systemet infördes enligt plan och har nu användare från både skogsbolag
+            och samebyar
+          - Förenklad logistik och smidigare planering av samråd med hjälp av digitala
+            kartor och information
+          - Förbättrad kvalitet och spårbarhet i dokumentationen av samrådsprocessen
+          - Positiv feedback från både interna och externa användare
           title: Resultat
-        section_headings:
-          lessons_learned: Lärdomar
-          my_role: Min roll
-          project_overview: Projektöversikt
-          results: Resultat
-          technologies_used: Använd teknik
-        tools_services:
-          services:
-          - "<strong>Testmiljö och funktionalitetsgranskning</strong>: Noggrann testning
-            för att säkerställa kvalitet och funktionalitet"
-          - "<strong>Samverkan med externa utvecklare</strong>: Nära dialog och samarbete
-            med tekniska partners"
-          - "<strong>Förberedelse för drift och förvaltning</strong>: Säkerställande
-            av långsiktig hållbarhet"
-          services_intro: 'Vi drev projektet i nära samarbete mellan verksamhet, IT
-            och leverantör, med fokus på kvalitet, tempo och framtida förvaltning.
-            Några av de viktigaste momenten:'
-          services_title: Arbetssätt
-          stack_list:
-          - Införa ett nytt digitalt verktyg för en effektivare samplanering
-          - Skapa en användarvänlig upplevelse för alla parter
-          - Säkra ett långsiktigt förvaltningsbart system med god teknisk stabilitet
-          stack_title: Mål
-          title: Projektöversikt
-      status: Slutfört
-      tech_list: Samplaneringsplattform, Digital samrådsprocess, Förändringsledning
-      technologies: 'Tekniker använda:'
       timeline: Maj - December 2023
-      title: Digital samverkan med samebyar
+      title: Digital samverkansplattform
+    
+    
+    projectW2:
+      status: Pågående
+      title: Utvecklingsprojekt för ett spårbart logistikflöde
+      description: Projektet handlar om att utveckla en ny lösning för att hantera & spåra logistikflödet på en tågterminal. Målet är att skapa bättre överblick, tydligare struktur och stöd i det dagliga arbetet för personalen på terminalen.
+      timeline: April 2025 - Pågående
+      contact_me: Kontakta mig
+      time_period: Tidsperiod
+      about_project:
+        title: Bakgrund
+        content: |-
+          <p>Projektet startade i april 2025 utifrån ett identifierat behov i verksamheten av att förbättra hanteringen av logistikflödet på terminalen. Arbetet har tidigare skötts med Excel-listor, manuella utskrifter och muntlig kommunikation. Det analoga arbetssättet innebär en hög risk för att felaktigheter kan uppstå, samtidigt som det saknas transparens i flödet. Det gör det också svårt att veta vad som faktiskt finns på lagret, vilket påverkar både effektivitet och arbetsflöde negativt.</p>            
+          <div class="mt-6"></div>
+          <p>Syftet med projektet är att skapa ett digitalt system som ger kontroll, överblick och spårbarhet i det interna logistikflödet på terminalen.</p> 
+          <p>Genom att digitalisera flödet vill vi:</p>
+          <div class="mt-6"></div>
+          <ul>
+            <li>Minska risken för fel och missförstånd</li>
+            <li>Göra det enklare att veta vad som finns på lagret och var det finns</li>
+            <li>Skapa ett gemensamt och lättillgängligt arbetssätt för personalen</li>
+            <li>Koppla ihop information om virkespaket, containrar och tågtransporter i ett och samma flöde</li>
+          </ul>
+     
+     
+      approach:
+        title: Arbetssätt
+        content: |-
+          <p>Vi har jobbat i tvåveckorssprintar med korta ledtider och snabba leveranser. Det har gett oss bra fart i projektet och möjlighet att testa och förbättra lösningen längs vägen. Jag har haft ett nära samarbete med både IT och verksamheten, och varit närvarande på plats. Det har gjort det möjligt att fånga upp upplevelser och feedback direkt från dem som ska använda systemet, och se till att vi bygger något som faktiskt fungerar i det dagliga arbetet.</p>
+          <div class="mt-6"></div>
+          
+        contributions: |-
+          <p>Under projektets gång har jag bidragit med flera  insatser som hjälpt oss att lyckas:</p>
+          <div class="mt-6"></div>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Projektplanering och roadmap</strong> – Jag utvecklade och etablerade en tydlig roadmap för projektet med olika sprintar, vilket gav oss en strukturerad plan för implementering och gjorde leveranserna förutsägbara.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Möteskoordinering</strong> – Jag har ansvarat för att planera, organisera och leda projektmöten, samt säkerställt att viktiga deadlines följs av alla parter för att hålla projekttidsramen.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Dokumentation och kommunikation</strong> – Jag har säkerställt att all projektkommunikation dokumenterats och delats mellan teammedlemmar, vilket skapade en transparent arbetsprocess där alla varit informerade om projektets status och framsteg.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Samordning mellan intressenter</strong> – Jag har fungerat som länk mellan IT-utvecklare och verksamheten, vilket har säkerställt att tekniska lösningar motsvarar verksamhetens behov och förväntningar.</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6"></div>
+          
+          <p>Dessa insatser har varit avgörande för att hålla projektet strukturerat och på rätt spår, samtidigt som vi säkerställt bra kommunikation och förståelse mellan alla inblandade parter.</p>
+       
+      my_role:
+        title: Min roll som projektledare
+        content: |-
+          <p>Som projektledare har jag ansvarat för att driva projektet framåt med fokus på både leverans och kvalitet. Jag har arbetat nära både verksamheten och Holmens IT-avdelning, och fungerat som brygga mellan användarnas behov och det tekniska genomförandet.</p>
+            
+          <div class="mt-6"></div>
+            
+          <p>Mitt arbete har inkluderat planering, koordinering, sprintledning och att skapa en gemensam riktning för teamet, samtidigt som vi hanterat förändringar, tekniska utmaningar och snabba beslut längs vägen.</p>
+      success_factors:
+        title: Framgångsfaktorer
+        intro: Projektets framdrift har vilat på flera avgörande faktorer
+        factors:
+          - title: Tätt samarbete
+            description: Mellan verksamhet och IT – med gemensam förståelse för målen.
+          - title: Tvärfunktionellt engagemang
+            description: Alla parter har bidragit aktivt, med lösningsfokus.
+          - title: Hög energi och gemensamt driv
+            description: Vilket skapat momentum trots kort deadline.
+          - title: Verklighetsförankrat utvecklingsfokus
+            description: Där lösningen byggts utifrån faktiska behov på plats.
