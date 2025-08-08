@@ -190,6 +190,48 @@
         <% end %>
       </div>
 
+      <!-- Digital Logistics System Project -->
+      <div class="project-card" data-type="work">
+        <%= link_to params[:locale] ? localized_projectW2_path : projectW2_path, class: "block group h-full" do %>
+          <div class="bg-white shadow-sm rounded-lg overflow-hidden flex flex-col relative h-full transition-all duration-200 transform group-hover:shadow-md group-hover:-translate-y-1 cursor-pointer border-t-4 border-green-200">
+            <!-- Status badge -->
+            <span class="absolute top-3 right-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+              <%= t('projects.project_status.ongoing') %>
+            </span>
+            <div class="p-6 pt-12 flex-grow">
+              <div class="flex items-center mb-4">
+                <div class="bg-green-100 rounded-full p-2 mr-3">
+                  <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18m4-14l4 4m0 0l4 4m-4-4H4" />
+                  </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-800"><%= t('projects.logistics.card_title') %></h2>
+              </div>
+              <!-- Project type tag -->
+              <div class="mb-3 flex items-center">
+                <span class="text-xs font-medium text-green-800 bg-green-50 px-2 py-1 rounded-md">
+                  <%= t('projects.project_type.work') %>
+                </span>
+              </div>
+              <p class="text-gray-600 mb-5 text-sm">
+                <%= t('projects.logistics.card_description') %>
+              </p>
+              <p class="text-sm font-medium text-gray-500">
+                <%= t('projects.keyword_label') %>: <span class="text-gray-700"><%= t('projects.logistics.keywords') %></span>
+              </p>
+            </div>
+            <div class="p-4 bg-gray-50 border-t border-gray-100">
+              <span class="inline-flex items-center text-green-600 font-medium text-sm">
+                <%= t('projects.more_info') %>
+                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
     </div>
 
     <!-- No projects found message -->

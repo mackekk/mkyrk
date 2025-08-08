@@ -1,0 +1,157 @@
+<div class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+   
+
+    <!-- Project header -->
+    <div class="bg-white shadow rounded-lg overflow-hidden mb-6">
+      <div class="relative h-96 bg-green-50">
+        <div class="absolute top-4 right-4">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+            <%= t('projects.projectW2.status') %>
+          </span>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center p-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"><%= t('projects.projectW2.title') %></h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto italic">
+              <%= t('projects.projectW2.description') %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 p-6 bg-white text-sm text-gray-500 flex justify-between items-center">
+        <span>
+          <span class="font-medium"><%= t('projects.projectW2.time_period') %>:</span> <%= t('projects.projectW2.timeline') %>
+        </span>
+        <div>
+          <%= link_to params[:locale] ? localized_contact_path : contact_path, class: "inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
+            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <%= t('projects.projectW2.contact_me') %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background section -->
+    <div class="bg-white shadow rounded-lg overflow-hidden mb-6">
+      <div class="p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+            <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.projectW2.about_project.title') %></h2>
+        </div>
+
+        <div class="mt-6 prose prose-green max-w-none">
+          <!-- Get content from locale file and convert regular unordered list to styled list -->
+          <% about_content = t('projects.projectW2.about_project.content') %>
+          
+          <% if about_content.include?('<ul>') %>
+            <% # Split the content to isolate the list section %>
+            <% parts = about_content.split('<ul>') %>
+            <% before_list = parts[0] %>
+            <% list_and_after = parts[1] %>
+            
+            <% # Further split to get the list items and any content after %>
+            <% list_parts = list_and_after.split('</ul>') %>
+            <% list_content = list_parts[0] %>
+            <% after_list = list_parts.size > 1 ? list_parts[1] : '' %>
+            
+            <% # Extract list items %>
+            <% list_items = list_content.scan(/<li>(.*?)<\/li>/).flatten %>
+            
+            <%= raw(before_list) %>
+            
+            <ul class="mt-3 space-y-2 ml-1">
+              <% list_items.each do |item| %>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span><%= raw(item) %></span>
+                </li>
+              <% end %>
+            </ul>
+            
+            <%= raw(after_list) %>
+          <% else %>
+            <%= raw(about_content) %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Approach section -->
+    <div class="bg-white shadow rounded-lg overflow-hidden mb-6">
+      <div class="p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+            <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.projectW2.approach.title') %></h2>
+        </div>
+
+        <div class="mt-6 prose prose-green max-w-none">
+          <%= raw(t('projects.projectW2.approach.content')) %>
+          
+          <% if t('projects.projectW2.approach.contributions').present? %>
+            <div class="mt-8 bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4"><%= t('projects.projectW2.approach.contributions_title') %></h3>
+              <div class="prose prose-green max-w-none">
+                <%= raw(t('projects.projectW2.approach.contributions')) %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Factors section -->
+    <div class="bg-white shadow rounded-lg overflow-hidden">
+      <div class="p-6">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-100 rounded-md p-3">
+            <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h2 class="ml-4 text-2xl font-bold text-gray-900"><%= t('projects.projectW2.success_factors.title') %></h2>
+        </div>
+
+        <div class="mt-6 prose prose-green max-w-none">
+          <p><%= t('projects.projectW2.success_factors.intro') %></p>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <% t('projects.projectW2.success_factors.factors').each do |factor| %>
+            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <h3 class="font-medium text-gray-900 text-lg mb-2"><%= factor[:title] %></h3>
+              <p class="text-gray-600"><%= factor[:description] %></p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    
+<!-- Back Button -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-6">
+    <div class="flex">
+      <%= link_to params[:locale] ? localized_projects_path : projects_path, class: "inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-200" do %>
+        <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+        </svg>
+        <%= t('project0.back_to_projects') %>
+      <% end %>
+    </div>
+  </div>
+</div> 
+  </div>
+</div> 
+  

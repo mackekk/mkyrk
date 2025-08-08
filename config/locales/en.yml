@@ -329,6 +329,10 @@ en:
       tech_list: React, Node.js, AI APIs, image generation
       technologies: 'Planned technologies:'
       title: The Social Chef
+    logistics:
+      card_title: Digital Logistics System for Traceable Timber Handling
+      card_description: Project management for the development of a digital system to track sawn timber packages at the terminal – from goods receiving to container loading and rail transport. The goal is to streamline the flow and increase digital traceability.
+      keywords: Sawn Timber, Logistics, Traceability, Terminal, Project Management
     title: My Projects
     work_example:
       card_description: Strategic digital initiative to enhance coordination between
@@ -426,3 +430,94 @@ en:
       technologies: 'Technologies used:'
       timeline: May - December 2023
       title: Digital Collaboration Platform
+    projectW2:
+      status: Ongoing
+      title: Digital Logistics System for Traceable Timber Handling 
+      description: The project involves developing a new solution for managing & tracking the logistics flow at a rail terminal. The goal is to create better overview, clearer structure, and support for the daily work of terminal staff.
+      timeline: April 2025 - Ongoing
+      contact_me: Contact me
+      time_period: Time period
+      about_project:
+        title: Background
+        content: |-
+          <p>The project was initiated in April 2025 due to an identified need in the organization to improve the handling of logistics flow at the terminal. Work was previously managed using Excel spreadsheets, manual printouts, and verbal communication. This analog approach involves a high risk of errors occurring, while also lacking transparency in the flow. It also makes it difficult to know what is actually in stock and where it is located, negatively affecting both efficiency and workflow.</p>
+          
+          <div class="mt-6"></div>
+          
+          <p>The purpose of the project is to create a digital system that provides control, overview, and traceability in the internal logistics flow at the terminal.</p>
+          
+          <p>By digitalizing the flow, we aim to:</p>
+          <ul>
+            <li>Reduce the risk of errors and misunderstandings</li>
+            <li>Make it easier to know what's in inventory and where it's located</li>
+            <li>Create a common and easily accessible workflow for staff</li>
+            <li>Connect information about timber packages, containers, and train transports in a single flow</li>
+          </ul>
+      approach:
+        title: Work Approach
+        content: |-
+          <p>We have worked in two-week sprints with short lead times and rapid deliveries. This has given us good momentum in the project and the opportunity to test and improve the solution along the way. I have maintained close collaboration with both IT and the business operations, and been present on-site. This has made it possible to capture experiences and feedback directly from those who will use the system, and ensure that we build something that actually works in daily operations.</p>
+          <div class="mt-6"></div>
+          
+        contributions: |-
+          <p>Throughout the project, I have made several contributions that have helped us succeed:</p>
+          <div class="mt-6"></div>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Project planning and roadmap</strong> – I developed and established a clear roadmap for the project with different sprints, providing a structured implementation plan and making deliveries predictable.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Meeting coordination</strong> – I've been responsible for planning, organizing, and leading project meetings, as well as ensuring important deadlines are met by all parties to maintain the project timeline.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Documentation and communication</strong> – I've ensured that all project communication is documented and shared between team members, creating a transparent work process where everyone is informed about project status and progress.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white mr-3 flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span><strong>Stakeholder coordination</strong> – I've served as the link between IT developers and the business operations, ensuring that technical solutions meet the business needs and expectations.</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6"></div>
+          
+          <p>These contributions have been crucial in keeping the project structured and on track, while ensuring good communication and understanding between all involved parties.</p>
+          
+      my_role:
+        title: My Role as Project Manager
+        content: |-
+          <p>As project manager, I have been responsible for driving the project forward with a focus on both delivery and quality. I have worked closely with both the business operations and Holmen's IT department, functioning as a bridge between user needs and technical implementation.</p>
+            
+          <div class="mt-6"></div>
+            
+          <p>My work has included planning, coordination, sprint leadership, and creating a common direction for the team, while handling changes, technical challenges, and quick decisions along the way.</p>
+      success_factors:
+        title: Success Factors
+        intro: The project's progress has relied on several critical factors
+        factors:
+          - title: Close collaboration
+            description: Between operations and IT – with a shared understanding of the goals.
+          - title: Cross-functional engagement
+            description: All parties have actively contributed, with a solution-focused approach.
+          - title: High energy and shared drive
+            description: Which created momentum despite the short deadline.
+          - title: Reality-based development focus
+            description: Where the solution was built based on actual needs in the field.
