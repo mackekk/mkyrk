@@ -26,6 +26,8 @@ class HomeController < ApplicationController
       message = params_data["message"]
       website = params_data["website"]
       turnstile_token = params_data["turnstile_token"]
+      # Fallback to Turnstile's default field names if present
+      turnstile_token ||= params_data["cf-turnstile-response"] || params_data["cf_turnstile_response"]
     else
       # Regular form submission
       name = params[:name]
@@ -33,6 +35,8 @@ class HomeController < ApplicationController
       message = params[:message]
       website = params[:website]
       turnstile_token = params[:turnstile_token]
+      # Fallback to Turnstile's injected hidden input name
+      turnstile_token ||= params["cf-turnstile-response"] || params[:"cf-turnstile-response"] || params[:cf_turnstile_response]
     end
 
     # Validate input

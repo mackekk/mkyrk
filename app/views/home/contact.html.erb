@@ -42,7 +42,7 @@
         <p id="error-text"><%= t('contact.form.error') %></p>
       </div>
       
-      <form id="contact-form" action="<%= params[:locale] ? "/#{params[:locale]}/send_contact" : "/send_contact" %>" method="POST">
+      <form id="contact-form" action="<%= params[:locale] ? "/#{params[:locale]}/send_contact" : "/send_contact" %>" method="POST" data-turbo="false">
         <%= csrf_meta_tags %>
         <div class="space-y-6">
           <div>
