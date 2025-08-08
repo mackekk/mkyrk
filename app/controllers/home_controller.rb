@@ -1,3 +1,6 @@
+require "net/http"
+require "uri"
+
 class HomeController < ApplicationController
   # Add protection for CSRF in API endpoints
   protect_from_forgery with: :exception
@@ -21,11 +24,15 @@ class HomeController < ApplicationController
       name = params_data["name"]
       email = params_data["email"]
       message = params_data["message"]
+      website = params_data["website"]
+      turnstile_token = params_data["turnstile_token"]
     else
       # Regular form submission
       name = params[:name]
       email = params[:email]
       message = params[:message]
+      website = params[:website]
+      turnstile_token = params[:turnstile_token]
     end
 
     # Validate input
@@ -35,6 +42,27 @@ class HomeController < ApplicationController
         format.json { render json: { success: false, error: I18n.t("contact.form.fields_required") }, status: :unprocessable_entity }
       end
       return
+    end
+
+    # Honeypot check
+    if website.present?
+      respond_to do |format|
+        format.html { redirect_to params[:locale] ? localized_contact_path(locale: params[:locale]) : contact_path, alert: I18n.t("contact.form.spam_detected", default: "Spam detected.") }
+        format.json { render json: { success: false, error: I18n.t("contact.form.spam_detected", default: "Spam detected.") }, status: :unprocessable_entity }
+      end
+      return
+    end
+
+    # CAPTCHA verification (Cloudflare Turnstile)
+    if ENV["TURNSTILE_SECRET_KEY"].present?
+      passed = verify_turnstile(turnstile_token)
+      unless passed
+        respond_to do |format|
+          format.html { redirect_to params[:locale] ? localized_contact_path(locale: params[:locale]) : contact_path, alert: I18n.t("contact.form.captcha_failed", default: "Verification failed. Please try again.") }
+          format.json { render json: { success: false, error: I18n.t("contact.form.captcha_failed", default: "Verification failed. Please try again.") }, status: :unprocessable_entity }
+        end
+        return
+      end
     end
 
     # Send the email
@@ -78,5 +106,34 @@ class HomeController < ApplicationController
     unless params[:locale]
       redirect_to url_for(locale: :sv, controller: controller_name, action: action_name)
     end
+  end
+
+  def verify_turnstile(token)
+    return false if token.blank?
+
+    secret_key = ENV["TURNSTILE_SECRET_KEY"]
+    return false if secret_key.blank?
+
+    uri = URI.parse("https://challenges.cloudflare.com/turnstile/v0/siteverify")
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+
+    http_request = Net::HTTP::Post.new(uri.request_uri)
+    http_request.set_form_data({
+      "secret" => secret_key,
+      "response" => token,
+      "remoteip" => request_ip
+    })
+
+    response = http.request(http_request)
+    json = JSON.parse(response.body) rescue {}
+    json["success"] == true
+  rescue => e
+    Rails.logger.error("Turnstile verification error: #{e.message}")
+    false
+  end
+
+  def request_ip
+    request.remote_ip
   end
 end

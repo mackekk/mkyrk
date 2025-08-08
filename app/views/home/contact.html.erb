@@ -57,12 +57,23 @@
               <input id="email" name="email" type="email" autocomplete="email" required class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
             </div>
           </div>
+          <!-- Honeypot field (hidden from users) -->
+          <div aria-hidden="true" class="absolute -left-[10000px] top-auto w-px h-px overflow-hidden">
+            <label for="website">Leave this field empty</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+          </div>
           <div>
             <label for="message" class="block text-sm font-medium text-gray-700"><%= t('contact.form.message') %></label>
             <div class="mt-1">
               <textarea id="message" name="message" rows="4" required class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"></textarea>
             </div>
           </div>
+          <% site_key = ENV['TURNSTILE_SITE_KEY'] %>
+          <% if site_key.present? %>
+            <div class="mt-2">
+              <div class="cf-turnstile" data-sitekey="<%= site_key %>" data-callback="onTurnstileSuccess" data-expired-callback="onTurnstileExpired"></div>
+            </div>
+          <% end %>
           <div>
             <button type="submit"
                     id="submit-button"
@@ -83,6 +94,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const successMessage = document.getElementById('success-message');
   const errorMessage = document.getElementById('error-message');
   const errorText = document.getElementById('error-text');
+  let turnstileToken = null;
+
+  // Cloudflare Turnstile callbacks
+  window.onTurnstileSuccess = function(token) {
+    turnstileToken = token;
+  }
+  window.onTurnstileExpired = function() {
+    turnstileToken = null;
+  }
   
   form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -100,9 +120,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const data = {
       name: formData.get('name'),
       email: formData.get('email'),
-      message: formData.get('message')
+      message: formData.get('message'),
+      website: formData.get('website') || '',
+      turnstile_token: turnstileToken
     };
     
+    // If Turnstile is enabled but not solved, block submission client-side
+    <% if ENV['TURNSTILE_SITE_KEY'].present? %>
+    if (!data.turnstile_token) {
+      submitButton.disabled = false;
+      submitButton.innerHTML = '<%= t('contact.form.send') %>';
+      errorText.textContent = '<%= t('contact.form.captcha_failed', default: 'Verification failed. Please try again.') %>';
+      errorMessage.classList.remove('hidden');
+      return;
+    }
+    <% end %>
+
     // Get the CSRF token from meta tags
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     
@@ -127,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
         successMessage.classList.remove('hidden');
         // Reset the form
         form.reset();
+        turnstileToken = null;
       } else {
         // Show error message
         errorText.textContent = data.error || '<%= t('contact.form.error') %>';
@@ -146,3 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script> 
+
+<%# Cloudflare Turnstile script (loaded only once) %>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
