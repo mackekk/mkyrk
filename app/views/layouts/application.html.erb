@@ -20,6 +20,8 @@
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%#= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%# Allow child views to include third-party scripts like Turnstile %>
+    <%= yield :scripts %>
   </head> 
 
   <body class="h-full">

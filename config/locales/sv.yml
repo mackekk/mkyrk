@@ -50,6 +50,8 @@ sv:
       sending: Skickar...
       success: Ditt meddelande har skickats! Tack för att du kontaktade mig.
       title: Skicka meddelande
+      spam_detected: Misstänkt skräppost upptäcktes.
+      captcha_failed: Verifieringen misslyckades. Försök igen.
     info:
       email: 'Email:'
       github: 'GitHub:'
