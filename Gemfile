@@ -44,7 +44,7 @@ gem "thruster", require: false
 gem "tailwindcss-rails"
 
 # Environment variables
-gem "dotenv-rails", "~> 2.8", groups: [ :development, :test ]
+gem "dotenv-rails", "~> 3.1", groups: [ :development, :test ]
 
 # Add fiddle gem to address Ruby 3.5.0 compatibility warning
 gem "fiddle"
